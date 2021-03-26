@@ -101,7 +101,7 @@ def build_report():
 
 
 def img_relative_path(img_path):
-    return '/'.join(img_path.split("/")[-3:])
+    return '/'.join(img_path.split("/")[-2:])
 
 
 def read_results():

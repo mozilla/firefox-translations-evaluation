@@ -55,7 +55,7 @@ def evaluate(pair, set_name, translator):
 
 
 def save_results(results):
-    lines = ['#Evaluation results']
+    lines = ['# Evaluation results']
 
     for lang_pair, datasets in results.items():
         # add average score on all datasets
@@ -63,7 +63,7 @@ def save_results(results):
         datasets['avg'] = {tran: statistics.mean([s for _, s in scores])
                            for tran, scores in groupby(lambda x: x[0], tran_scores).items()}
 
-        lines.append(f'\n##{lang_pair}\n')
+        lines.append(f'\n## {lang_pair}\n')
         lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
         lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
         inverted = defaultdict(dict)

@@ -48,13 +48,18 @@ Build and run docker container:
 
 `bash start_docker.sh`
 
+On completion, your terminal should be attached to the launched container.
+
 ## Run all
 
-To install all at once and run evaluation with maximum available options,
+To install all at once and run evaluation with maximum available options:
 
-from inside docker container run:
+From inside docker container run:
 
-`bash run_all.sh`
+```
+cd bergamot-evaluation
+bash run_all.sh
+```
 
 
 ## Installation scripts
@@ -106,6 +111,6 @@ and evaluation will run for all of them.
 
 ## Results
 
-See results reports [here](results/results.md).
+See results reports [here](results/).
 
 Intermediate results and translations are be written to `results/xx-xx` folders.

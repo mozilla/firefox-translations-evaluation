@@ -7,6 +7,7 @@ import statistics
 from sacrebleu import dataset
 import click
 from toolz import groupby
+from glob import glob
 
 HOME_DIR = '/workspace'
 BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'bergamot-evaluation')
@@ -41,7 +42,7 @@ def evaluate(pair, set_name, translator):
         my_env['MARIAN_APP_DIR'] = MARIAN_APP_DIR
         cmd = f'bash {MARIAN_PATH}'
     elif translator == 'google':
-        cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'google.py')}"
+        cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'google_translate.py')}"
     elif translator == 'microsoft':
         cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'microsoft.py')}"
     else:
@@ -54,7 +55,18 @@ def evaluate(pair, set_name, translator):
     return float(res.stdout.decode('utf-8').strip())
 
 
-def save_results(results):
+def build_report():
+    results = defaultdict(dict)
+    for bleu_file in glob(RESULTS_DIR+'/*/*.bleu'):
+        dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
+        pair = bleu_file.split('/')[-2]
+        with open(bleu_file) as f:
+            score = float(f.read().strip())
+
+        if dataset_name not in results[pair]:
+            results[pair][dataset_name] = {}
+        results[pair][dataset_name][translator] = score
+
     lines = ['# Evaluation results']
 
     for lang_pair, datasets in results.items():
@@ -73,7 +85,7 @@ def save_results(results):
 
             for translator, score in translators.items():
                 if translator != 'bergamot' and bergamot_res:
-                    change = (score - bergamot_res) / score * 100
+                    change = (score - bergamot_res) / bergamot_res * 100
                     sign = '+' if change > 0 else ''
                     formatted_score = f'{score:.2f} ({sign}{change:.2f}%)'
                 else:
@@ -102,22 +114,22 @@ def save_results(results):
               is_flag=True,
               help='Whether to skip already calculated scores. '
                    'They are located in `results/xx-xx` folders as *.bleu files.')
-def run(pairs, translators, skip_existing):
+@click.option('--report',
+              default=True,
+              is_flag=True,
+              help='Build report based on all evaluation results.')
+def run(pairs, translators, skip_existing, report):
     lang_pairs = [(pair[:2], pair[-2:])
                   for pair in (os.listdir(BERGAMOT_MODELS_DIR) if pairs == 'all' else pairs.split(','))]
-    results = {}
-    print(lang_pairs)
+    print(f'Language pairs to evaluate: {lang_pairs}')
 
     for pair in lang_pairs:
         formatted_pair = f'{pair[0]}-{pair[1]}'
-        results[formatted_pair] = {}
 
         for dataset_name, descr in dataset.DATASETS.items():
             # consider only official wmtXX datasets
             if not dataset_name.startswith('wmt') or len(dataset_name) > 5 or formatted_pair not in descr:
                 continue
-
-            results[formatted_pair][dataset_name] = {}
 
             for translator in translators.split(','):
                 print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
@@ -130,9 +142,9 @@ def run(pairs, translators, skip_existing):
                     bleu = evaluate(pair, dataset_name, translator)
 
                 print(f'Result BLEU: {bleu}\n')
-                results[formatted_pair][dataset_name][translator] = bleu
 
-    save_results(results)
+    if report:
+        build_report()
 
 
 if __name__ == '__main__':

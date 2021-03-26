@@ -3,10 +3,13 @@
 
 import os
 
-from google.cloud import translate_v2 as translate
+from google.cloud import translate_v2
 import sys
 
-translate_client = translate.Client()
+from tqdm import tqdm
+import toolz
+
+translate_client = translate_v2.Client()
 
 
 def translate(texts):
@@ -18,8 +21,13 @@ def translate(texts):
     source = os.environ['SRC']
     target = os.environ['TRG']
 
-    results = translate_client.translate(texts, target_language=target, source_language=source)
-    return [r['translatedText'] for r in results]
+    results = []
+    # decrease batch size if hitting limit of max 204800 bytes per request
+    for partition in tqdm(list(toolz.partition_all(100, texts))):
+        response = translate_client.translate(partition, target_language=target, source_language=source)
+        results += [r['translatedText'] for r in response]
+
+    return results
 
 
 if __name__ == '__main__':

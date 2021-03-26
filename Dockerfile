@@ -23,11 +23,9 @@ RUN sh -c 'echo deb https://apt.repos.intel.com/mkl all main > /etc/apt/sources.
 # pcre2 is requried to build berrgamot-translator with -DUSE_WASM_COMPATIBLE_SOURCES=off
 RUN apt-get install -y libpcre2-dev
 
-# SacreBLEU
+# SacreBLEU and python dependencies
 RUN apt-get update && apt-get install -y python3 python3-venv python3-pip
-
-ADD ./ ./
-
+ADD ./requirements.txt ./
 RUN pip3 install -r requirements.txt
 
 

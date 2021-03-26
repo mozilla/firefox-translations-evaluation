@@ -8,10 +8,12 @@ from sacrebleu import dataset
 import click
 from toolz import groupby
 from glob import glob
+import pandas as pd
 
 HOME_DIR = '/workspace'
 BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'bergamot-evaluation')
 RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results')
+IMG_DIR = os.path.join(RESULTS_DIR, 'img')
 
 EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval', 'eval.sh')
 
@@ -56,29 +58,21 @@ def evaluate(pair, set_name, translator):
 
 
 def build_report():
-    results = defaultdict(dict)
-    for bleu_file in glob(RESULTS_DIR+'/*/*.bleu'):
-        dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
-        pair = bleu_file.split('/')[-2]
-        with open(bleu_file) as f:
-            score = float(f.read().strip())
-
-        if dataset_name not in results[pair]:
-            results[pair][dataset_name] = {}
-        results[pair][dataset_name][translator] = score
+    results = read_results()
+    add_avg_scores(results)
+    os.makedirs(IMG_DIR, exist_ok=True)
 
     lines = ['# Evaluation results']
+    all_img_path = os.path.join(IMG_DIR, f'all.png')
+    plot_avg_scores(results, all_img_path)
+    lines.append(f'\n![All results]({img_relative_path(all_img_path)})')
 
     for lang_pair, datasets in results.items():
-        # add average score on all datasets
-        tran_scores = [(tran, score) for data, trans in datasets.items() for tran, score in trans.items()]
-        datasets['avg'] = {tran: statistics.mean([s for _, s in scores])
-                           for tran, scores in groupby(lambda x: x[0], tran_scores).items()}
-
         lines.append(f'\n## {lang_pair}\n')
         lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
         lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
-        inverted = defaultdict(dict)
+        inverted_formatted = defaultdict(dict)
+        inverted_scores = defaultdict(dict)
 
         for dataset_name, translators in datasets.items():
             bergamot_res = translators.get('bergamot')
@@ -90,16 +84,68 @@ def build_report():
                     formatted_score = f'{score:.2f} ({sign}{change:.2f}%)'
                 else:
                     formatted_score = f'{score:.2f}'
-                inverted[translator][dataset_name] = formatted_score
+                inverted_formatted[translator][dataset_name] = formatted_score
+                inverted_scores[translator][dataset_name] = score
 
-        for translator, scores in inverted.items():
+        for translator, scores in inverted_formatted.items():
             lines.append(f'| {translator} | {" | ".join(scores.values())} |')
+
+        img_path = os.path.join(IMG_DIR, f'{lang_pair}.png')
+        plot_lang_pair(datasets, inverted_scores, img_path)
+        lines.append(f'\n![Results]({img_relative_path(img_path)})')
 
     results_path = os.path.join(RESULTS_DIR, datetime.today().strftime('%Y-%m-%d') + '_results.md')
     with open(results_path, 'w+') as f:
         f.write('\n'.join(lines))
+        print(f'Results are written to {results_path}')
 
-    print(f'Results are written to {results_path}')
+
+def img_relative_path(img_path):
+    return '/'.join(img_path.split("/")[-3:])
+
+
+def read_results():
+    results = defaultdict(dict)
+    for bleu_file in glob(RESULTS_DIR + '/*/*.bleu'):
+        dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
+        pair = bleu_file.split('/')[-2]
+        with open(bleu_file) as f:
+            score = float(f.read().strip())
+
+        if dataset_name not in results[pair]:
+            results[pair][dataset_name] = {}
+        results[pair][dataset_name][translator] = score
+    return results
+
+
+def add_avg_scores(results):
+    for lang_pair, datasets in results.items():
+        tran_scores = [(tran, score)
+                       for data, trans in datasets.items()
+                       for tran, score in trans.items()]
+        avg_scores = {tran: statistics.mean([s for _, s in scores])
+                      for tran, scores in groupby(lambda x: x[0], tran_scores).items()}
+        datasets['avg'] = avg_scores
+
+
+def plot_lang_pair(datasets, inverted_scores, img_path):
+    df = pd.DataFrame({t: s.values() for t, s in inverted_scores.items()}, index=datasets.keys())
+    plot(df, img_path)
+
+
+def plot_avg_scores(results, img_path):
+    avg_scores = [(tran, score) for datasets in results.values()
+                  for tran, score in datasets['avg'].items()]
+    groups = {key: [s for t, s in scores]
+              for key, scores in groupby(lambda x: x[0], avg_scores).items()}
+    df = pd.DataFrame(groups, index=results.keys())
+    plot(df, img_path)
+
+
+def plot(df, img_path):
+    fig = df.plot.bar(ylim=(20, None), ylabel='bleu').get_figure()
+    fig.set_size_inches(18.5, 10.5)
+    fig.savefig(img_path, bbox_inches="tight")
 
 
 @click.command()
@@ -114,11 +160,7 @@ def build_report():
               is_flag=True,
               help='Whether to skip already calculated scores. '
                    'They are located in `results/xx-xx` folders as *.bleu files.')
-@click.option('--report',
-              default=True,
-              is_flag=True,
-              help='Build report based on all evaluation results.')
-def run(pairs, translators, skip_existing, report):
+def run(pairs, translators, skip_existing):
     lang_pairs = [(pair[:2], pair[-2:])
                   for pair in (os.listdir(BERGAMOT_MODELS_DIR) if pairs == 'all' else pairs.split(','))]
     print(f'Language pairs to evaluate: {lang_pairs}')
@@ -143,8 +185,7 @@ def run(pairs, translators, skip_existing, report):
 
                 print(f'Result BLEU: {bleu}\n')
 
-    if report:
-        build_report()
+    build_report()
 
 
 if __name__ == '__main__':

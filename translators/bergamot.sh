@@ -35,4 +35,4 @@ ARGS=(
     --quiet
 )
 
-$BERGAMOT_APP_DIR/translate "${ARGS[@]}" $@
+$BERGAMOT_APP_DIR/bergamot-translator-app "${ARGS[@]}" $@

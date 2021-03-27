@@ -62,7 +62,7 @@ def build_report():
     add_avg_scores(results)
     os.makedirs(IMG_DIR, exist_ok=True)
 
-    lines = ['# Evaluation results']
+    lines = ['# Evaluation results', '\n## Average on all datasets']
     all_img_path = os.path.join(IMG_DIR, f'all.png')
     plot_avg_scores(results, all_img_path)
     lines.append(f'\n![All results]({img_relative_path(all_img_path)})')

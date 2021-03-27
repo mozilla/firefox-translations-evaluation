@@ -1,6 +1,6 @@
 # Bergamot Evaluation
 
-Calculates BLEU scores for [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares to other translation systems.
+Calculates BLEU scores for [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
 
 
 ## Clone repo

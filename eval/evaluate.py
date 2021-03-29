@@ -24,6 +24,11 @@ BERGAMOT_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.s
 MARIAN_APP_DIR = os.path.join(HOME_DIR, 'marian-dev', 'build')
 MARIAN_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'marian.sh')
 
+trans_order = {'bergamot': 0,
+               'marian': 1,
+               'google': 2,
+               'microsoft': 3}
+
 
 def evaluate(pair, set_name, translator):
     source, target = pair
@@ -51,7 +56,6 @@ def evaluate(pair, set_name, translator):
         raise ValueError(f'Translator is not supported: {translator}')
 
     my_env['TRANSLATOR_CMD'] = cmd
-    # print(f'Running evaluation with env:\n{my_env}\ncmd: {cmd}')
     res = subprocess.run(['bash', EVAL_PATH], env=my_env, stdout=subprocess.PIPE)
 
     return float(res.stdout.decode('utf-8').strip())
@@ -62,7 +66,10 @@ def build_report():
     add_avg_scores(results)
     os.makedirs(IMG_DIR, exist_ok=True)
 
-    lines = ['# Evaluation results', '\n## Average on all datasets']
+    lines = ['# Evaluation results',
+             '\n Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) '
+             'and official WMT ([Conference on Machine Translation](http://statmt.org/wmt17)) datasets.',
+             '\n## Average on all datasets']
     all_img_path = os.path.join(IMG_DIR, f'all.png')
     plot_avg_scores(results, all_img_path)
     lines.append(f'\n![All results]({img_relative_path(all_img_path)})')
@@ -77,11 +84,13 @@ def build_report():
         for dataset_name, translators in datasets.items():
             bergamot_res = translators.get('bergamot')
 
-            for translator, score in translators.items():
+            reordered = sorted(translators.items(), key=lambda x: trans_order[x[0]])
+            for translator, score in reordered:
                 if translator != 'bergamot' and bergamot_res:
-                    change = (score - bergamot_res) / bergamot_res * 100
+                    change_perc = (score - bergamot_res) / bergamot_res * 100
+                    change = score - bergamot_res
                     sign = '+' if change > 0 else ''
-                    formatted_score = f'{score:.2f} ({sign}{change:.2f}%)'
+                    formatted_score = f'{score:.2f} ({sign}{change:.1f}, {sign}{change_perc:.2f}%)'
                 else:
                     formatted_score = f'{score:.2f}'
                 inverted_formatted[translator][dataset_name] = formatted_score
@@ -129,8 +138,8 @@ def add_avg_scores(results):
 
 
 def plot_lang_pair(datasets, inverted_scores, img_path):
-    df = pd.DataFrame({t: s.values() for t, s in inverted_scores.items()}, index=datasets.keys())
-    plot(df, img_path)
+    trans_scores = {t: s.values() for t, s in inverted_scores.items()}
+    plot(trans_scores, datasets.keys(), img_path)
 
 
 def plot_avg_scores(results, img_path):
@@ -138,11 +147,11 @@ def plot_avg_scores(results, img_path):
                   for tran, score in datasets['avg'].items()]
     groups = {key: [s for t, s in scores]
               for key, scores in groupby(lambda x: x[0], avg_scores).items()}
-    df = pd.DataFrame(groups, index=results.keys())
-    plot(df, img_path)
+    plot(groups, results.keys(), img_path)
 
 
-def plot(df, img_path):
+def plot(trans_scores, datasets, img_path):
+    df = pd.DataFrame(trans_scores, index=datasets, columns=trans_order.keys())
     fig = df.plot.bar(ylim=(20, None), ylabel='bleu').get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")
@@ -173,7 +182,8 @@ def run(pairs, translators, skip_existing):
             if not dataset_name.startswith('wmt') or len(dataset_name) > 5 or formatted_pair not in descr:
                 continue
 
-            for translator in translators.split(','):
+            reordered = sorted(translators.split(','), key=lambda x: trans_order[x])
+            for translator in reordered:
                 print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
 
                 res_path = os.path.join(RESULTS_DIR, formatted_pair, f'{dataset_name}.{translator}.{pair[1]}.bleu')

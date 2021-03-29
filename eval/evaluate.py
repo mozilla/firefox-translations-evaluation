@@ -63,45 +63,17 @@ def evaluate(pair, set_name, translator):
 
 def build_report():
     results = read_results()
-    add_avg_scores(results)
     os.makedirs(IMG_DIR, exist_ok=True)
 
     lines = ['# Evaluation results',
              '\n Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) '
-             'and official WMT ([Conference on Machine Translation](http://statmt.org/wmt17)) datasets.',
-             '\n## Average on all datasets']
-    all_img_path = os.path.join(IMG_DIR, f'all.png')
-    plot_avg_scores(results, all_img_path)
-    lines.append(f'\n![All results]({img_relative_path(all_img_path)})')
+             'and official WMT ([Conference on Machine Translation](http://statmt.org/wmt17)) datasets.']
+
+    avg_results = get_avg_scores(results)
+    build_section(avg_results, 'avg', lines)
 
     for lang_pair, datasets in results.items():
-        lines.append(f'\n## {lang_pair}\n')
-        lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
-        lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
-        inverted_formatted = defaultdict(dict)
-        inverted_scores = defaultdict(dict)
-
-        for dataset_name, translators in datasets.items():
-            bergamot_res = translators.get('bergamot')
-
-            reordered = sorted(translators.items(), key=lambda x: trans_order[x[0]])
-            for translator, score in reordered:
-                if translator != 'bergamot' and bergamot_res:
-                    change_perc = (score - bergamot_res) / bergamot_res * 100
-                    change = score - bergamot_res
-                    sign = '+' if change > 0 else ''
-                    formatted_score = f'{score:.2f} ({sign}{change:.1f}, {sign}{change_perc:.2f}%)'
-                else:
-                    formatted_score = f'{score:.2f}'
-                inverted_formatted[translator][dataset_name] = formatted_score
-                inverted_scores[translator][dataset_name] = score
-
-        for translator, scores in inverted_formatted.items():
-            lines.append(f'| {translator} | {" | ".join(scores.values())} |')
-
-        img_path = os.path.join(IMG_DIR, f'{lang_pair}.png')
-        plot_lang_pair(datasets, inverted_scores, img_path)
-        lines.append(f'\n![Results]({img_relative_path(img_path)})')
+        build_section(datasets, lang_pair, lines)
 
     results_path = os.path.join(RESULTS_DIR, datetime.today().strftime('%Y-%m-%d') + '_results.md')
     with open(results_path, 'w+') as f:
@@ -109,8 +81,38 @@ def build_report():
         print(f'Results are written to {results_path}')
 
 
-def img_relative_path(img_path):
-    return '/'.join(img_path.split("/")[-2:])
+def build_section(datasets, key, lines):
+    lines.append(f'\n## {key}\n')
+    lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
+    lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
+
+    inverted_formatted = defaultdict(dict)
+    inverted_scores = defaultdict(dict)
+
+    for dataset_name, translators in datasets.items():
+        bergamot_res = translators.get('bergamot')
+        reordered = sorted(translators.items(), key=lambda x: trans_order[x[0]])
+
+        for translator, score in reordered:
+            if translator != 'bergamot' and bergamot_res:
+                change_perc = (score - bergamot_res) / bergamot_res * 100
+                change = score - bergamot_res
+                sign = '+' if change > 0 else ''
+                formatted_score = f'{score:.2f} ({sign}{change:.1f}, {sign}{change_perc:.2f}%)'
+            else:
+                formatted_score = f'{score:.2f}'
+
+            inverted_formatted[translator][dataset_name] = formatted_score
+            inverted_scores[translator][dataset_name] = score
+
+    for translator, scores in inverted_formatted.items():
+        lines.append(f'| {translator} | {" | ".join(scores.values())} |')
+
+    img_path = os.path.join(IMG_DIR, f'{key}.png')
+    plot_lang_pair(datasets, inverted_scores, img_path)
+
+    img_relative_path = '/'.join(img_path.split("/")[-2:])
+    lines.append(f'\n![Results]({img_relative_path})')
 
 
 def read_results():
@@ -127,30 +129,20 @@ def read_results():
     return results
 
 
-def add_avg_scores(results):
+def get_avg_scores(results):
+    scores = {}
     for lang_pair, datasets in results.items():
         tran_scores = [(tran, score)
                        for data, trans in datasets.items()
                        for tran, score in trans.items()]
         avg_scores = {tran: statistics.mean([s for _, s in scores])
                       for tran, scores in groupby(lambda x: x[0], tran_scores).items()}
-        datasets['avg'] = avg_scores
+        scores[lang_pair] = avg_scores
+    return scores
 
 
 def plot_lang_pair(datasets, inverted_scores, img_path):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
-    plot(trans_scores, datasets.keys(), img_path)
-
-
-def plot_avg_scores(results, img_path):
-    avg_scores = [(tran, score) for datasets in results.values()
-                  for tran, score in datasets['avg'].items()]
-    groups = {key: [s for t, s in scores]
-              for key, scores in groupby(lambda x: x[0], avg_scores).items()}
-    plot(groups, results.keys(), img_path)
-
-
-def plot(trans_scores, datasets, img_path):
     df = pd.DataFrame(trans_scores, index=datasets, columns=trans_order.keys())
     fig = df.plot.bar(ylim=(20, None), ylabel='bleu').get_figure()
     fig.set_size_inches(18.5, 10.5)

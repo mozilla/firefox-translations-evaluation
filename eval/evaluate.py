@@ -18,11 +18,11 @@ IMG_DIR = os.path.join(RESULTS_DIR, 'img')
 EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval', 'eval.sh')
 
 BERGAMOT_MODELS_DIR = os.path.join(HOME_DIR, 'bergamot-models', 'prod')
-BERGAMOT_APP_DIR = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app')
-BERGAMOT_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.sh')
+BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot-translator-app')
+BERGAMOT_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.sh')
 
-MARIAN_APP_DIR = os.path.join(HOME_DIR, 'marian-dev', 'build')
-MARIAN_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'marian.sh')
+MARIAN_APP_PATH = os.path.join(HOME_DIR, 'marian-dev', 'build', 'marian-decoder')
+MARIAN_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'marian.sh')
 
 trans_order = {'bergamot': 0,
                'marian': 1,
@@ -42,12 +42,12 @@ def evaluate(pair, set_name, translator):
 
     if translator == 'bergamot':
         my_env['MODEL_DIR'] = os.path.join(BERGAMOT_MODELS_DIR, f'{source}{target}')
-        my_env['BERGAMOT_APP_DIR'] = BERGAMOT_APP_DIR
-        cmd = f'bash {BERGAMOT_PATH}'
+        my_env['APP_PATH'] = BERGAMOT_APP_PATH
+        cmd = f'bash {BERGAMOT_EVAL_PATH}'
     elif translator == 'marian':
         my_env['MODEL_DIR'] = os.path.join(BERGAMOT_MODELS_DIR, f'{source}{target}')
-        my_env['MARIAN_APP_DIR'] = MARIAN_APP_DIR
-        cmd = f'bash {MARIAN_PATH}'
+        my_env['APP_PATH'] = MARIAN_APP_PATH
+        cmd = f'bash {MARIAN_EVAL_PATH}'
     elif translator == 'google':
         cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'google_translate.py')}"
     elif translator == 'microsoft':

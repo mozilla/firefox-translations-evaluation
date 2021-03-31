@@ -30,7 +30,7 @@ def translate(texts):
     }
 
     results = []
-    # decrease batch size if hitting limit of max 10000 characters per request
+    # decrease partition size if hitting limit of max 10000 characters per request
     for partition in tqdm(list(toolz.partition_all(20, texts))):
         body = [{'text': text} for text in partition]
         response = requests.post(url, params=params, headers=headers, json=body)
@@ -45,5 +45,5 @@ def translate(texts):
 
 if __name__ == '__main__':
     texts = [line.strip() for line in sys.stdin]
-    tranlations = translate(texts)
-    sys.stdout.write('\n'.join(tranlations))
+    translations = translate(texts)
+    sys.stdout.write('\n'.join(translations))

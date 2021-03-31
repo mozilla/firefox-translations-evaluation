@@ -20,5 +20,3 @@ cd marian-dev/build
 cmake .. -DUSE_SENTENCEPIECE=on -DCOMPILE_CPU=on -DUSE_FBGEMM=on -DCOMPILE_CUDA=off
 make -j$(nproc)
 cd ../..
-
-

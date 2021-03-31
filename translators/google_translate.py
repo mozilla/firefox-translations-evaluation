@@ -22,7 +22,7 @@ def translate(texts):
     target = os.environ['TRG']
 
     results = []
-    # decrease batch size if hitting limit of max 204800 bytes per request
+    # decrease partition size if hitting limit of max 204800 bytes per request
     for partition in tqdm(list(toolz.partition_all(100, texts))):
         response = translate_client.translate(partition, target_language=target, source_language=source)
         results += [r['translatedText'] for r in response]
@@ -32,5 +32,5 @@ def translate(texts):
 
 if __name__ == '__main__':
     texts = [line.strip() for line in sys.stdin]
-    tranlations = translate(texts)
-    sys.stdout.write('\n'.join(tranlations))
+    translations = translate(texts)
+    sys.stdout.write('\n'.join(translations))

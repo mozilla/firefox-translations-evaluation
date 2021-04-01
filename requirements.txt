@@ -1,0 +1,8 @@
+sacrebleu
+click
+google-cloud-translate
+requests
+toolz
+tqdm
+pandas
+matplotlib

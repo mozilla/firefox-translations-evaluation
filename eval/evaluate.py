@@ -98,7 +98,7 @@ def build_section(datasets, key, lines):
                 change_perc = (score - bergamot_res) / bergamot_res * 100
                 change = score - bergamot_res
                 sign = '+' if change > 0 else ''
-                formatted_score = f'{score:.2g} ({sign}{change:.1g}, {sign}{change_perc:.2g}%)'
+                formatted_score = f'{score:.2f} ({sign}{change:.2f}, {sign}{change_perc:.2f}%)'
             else:
                 formatted_score = f'{score:.2f}'
 

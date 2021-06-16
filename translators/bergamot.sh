@@ -1,17 +1,18 @@
 #!/bin/bash
 
-VOCAB=$(echo vocab.*.spm)
-MODEL=$(echo *.bin)
+VOCAB=$(echo $MODEL_DIR/vocab.*.spm)
+MODEL=$(echo $MODEL_DIR/model.$SRC$TRG.intgemm.alphas.bin)
 
 # These Marian options are set according to
 # https://github.com/mozilla-extensions/bergamot-browser-extension/blob/main/src/core/static/wasm/bergamot-translator-worker.appendix.js#L36
 # to imitate production setting
 
 ARGS=(
-    -m $MODEL_DIR/$MODEL
+    --bergamot-mode wasm
+    -m $MODEL
     --vocabs
-        $MODEL_DIR/$VOCAB # source-vocabulary
-        $MODEL_DIR/$VOCAB # target-vocabulary
+        $VOCAB # source-vocabulary
+        $VOCAB # target-vocabulary
     --beam-size 1
     --normalize 1.0
     --word-penalty 0
@@ -23,7 +24,7 @@ ARGS=(
     --cpu-threads 0
     --quiet
     --quiet-translation
-    --shortlist $MODEL_DIR/lex.$SRC$TRG.s2t 50 50
+    --shortlist $MODEL_DIR/lex.50.50.$SRC$TRG.s2t.bin 50 50
 )
 
 $APP_PATH "${ARGS[@]}" $@

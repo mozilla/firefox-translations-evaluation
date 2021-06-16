@@ -12,4 +12,4 @@ chmod +x translators/bergamot.sh
 chmod +x translators/marian.sh
 
 echo "Running evaluation"
-python3 eval/evaluate.py --translators=bergamot,marian,google,microsoft --pairs=all --skip-existing
+python3 eval/evaluate.py --translators=bergamot,marian,google,microsoft --pairs=all --skip-existing --envs=prod,dev

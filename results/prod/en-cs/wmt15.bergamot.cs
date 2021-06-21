@@ -14,7 +14,7 @@ Zatím má bilanci 1-1-2 v lize, a o víkendu se rozloučil s Lille s 1:1 remíz
 Dnes se na bulvárních anglických internetových stránkách objevily zprávy, že Queens Park Rangers možná chtějí Čecha.
 Nicméně, podle anglických bookmakerů, Čechův odchod z Chelsea na poslední chvíli není příliš pravděpodobný.
 Skybet mu přidělil kurz 4:1.
-Petře, je možné, že během zbývajících hodin změníte svou uniformu?
+Petře, je možné, že během zbývajících hodin si vyměníte uniformu?
 Nečekám to, ale ve fotbale nic není stoprocentně.
 Například během dne může přijít nabídka, která nemůže být odmítnuta.
 Jak by taková nabídka mohla vypadat?
@@ -63,7 +63,7 @@ Reconnecting With the Very American Ideal That Labor Rights Are Human Rights
 Kongresmani Keith Ellison a John Lewis navrhli legislativu na ochranu odborových organizací jako občanského práva.
 „Jak už to jdou odbory, tak si poletuj do střední třídy,“ říká Ellison, demokrat z Minnesoty, který působí jako spolupředseda Kongresového Progresivního výboru.
 Proto jsem hrdý na to, že mohu zavést zákon Employee Empowerment s ikonou občanských práv Johnem Lewisem.
-Tato průlomová legislativa poskytne pracovníkům stejné právní možnosti organizování diskriminace odborů jako u jiných forem diskriminace – zastavení protiodborových sil v jejich stopách
+Tato průlomová legislativa poskytne pracovníkům stejné právní možnosti pro organizaci odbory jako u jiných forem diskriminace – zastavení protiodborových sil v jejich stopách
 Změna zákona o národních odborových lécích, aby se pracovníci, kteří čelí diskriminaci za to, že se účastní odborových organizací, zažalují za spravedlnost u občanskoprávních soudů – a vybírání odškodného a sankčního odškodného – je zdravou a nezbytnou iniciativou.
 Rozhodně to však není radikální iniciativa – alespoň podle amerických měřítek.
 Nejlepší způsob, jak pochopit, co navrhují Ellison, Lewis a spolusponzoři jejich legislativy, je jako znovuzvolení s velmi americkou myšlenkou.
@@ -105,7 +105,7 @@ Při argumentaci proti rozsudku louisianské úřady prohlásily, že nebudou tr
 Zpožděná diagnóza a neschopnost získat nejlepší léčbu, že rakovina vaječníků zabíjí více ve venkovských oblastech
 Angelina Jolie a její bratr James zveřejnili video poctu své zesnulé matce, která zemřela na rakovinu vaječníků v roce 2007.
 Ženy žijící na australském venkovském australském australském jeardu s vyšším rizikem, že zemřou na rakovinu vaječníků než jejich městské protějšky.
-Výzkumníci analyzovali lékařské záznamy více než 1100 australských žen s diagnózou rakoviny vaječníků v roce 2005, přičemž zjistili, že pouhých 35 procent žilo pět let po stanovení diagnózy.
+Výzkumníci analyzovali lékařské záznamy více než 1100 australských žen s diagnózou rakoviny vaječníků v roce 2005, přičemž zjistili, že jen 35 procent žilo pět let po stanovení diagnózy.
 Vedoucí výzkumu Susan Jordan z Institutu lékařského výzkumu QIMRR Berghofer řekl, že u těch, kteří žijí v regionálních a odlehlých oblastech státu, je asi o 20 procent vyšší pravděpodobnost, že během studie zemřou, než u městských oblastí.
 MALÝ STUDY: Nové léky mohou zpomalit rakovinu vaječníků
 Výzkumníci sledovali ženské lékařské cesty po dobu sedmi let.
@@ -115,7 +115,7 @@ U osob žijících v regionálních a odlehlých oblastech státu bylo během st
 Ačkoli studie nebyla navržena tak, aby určila, proč ženy žijící mimo město spíše umíraly na rakovinu vaječníků, doktorka Jordanová naznačila, že opožděná diagnóza a neschopnost získat nejlepší léčbu by mohla být faktory.
 „Tato nemoc je nejlépe léčit gynekologickými onkologickými chirurgii a většinou sídlí ve velkých městech,“ řekla.
 Navzdory zlepšení služeb na dálku, které mají zmírnit turistiku vzdálenosti, navrhla, aby více letící, přeletové služby, které by umožnily specialistům léčit ženy blíže k domovu a programy na podporu lidí v zacházení mimo jejich komunity by mohly pomoci.
-Doktor Jordan řekl, že bez ohledu na geografický stav studie zjistila, že dlouhodobé přežití u žen s rakovinou vaječníků je špatné, což posiluje potřebu lepší léčby a preventivních strategií.
+Doktor Jordan řekl, že bez ohledu na zeměpisný stav je studie podle studie špatné dlouhodobé přežití u žen s rakovinou vaječníků, což posiluje potřebu lepší léčby a preventivních strategií.
 Výzkum, financovaný Rakovinou společnosti Rio Tinto Ride to Conquer, bude dnes zveřejněn v Medical Journal of Australia.
 V březnu 2012, ve 33 letech, byla mladá maminka z Gold Coast Elisha Neaveová informována o agresivní formě rakoviny vaječníků.
 Zahradní centra rue v majiteli domů
@@ -182,7 +182,7 @@ Turistický letovisko v Magaluf, oblíbené především u mladých britských r
 První jarní den s mokrými a bouřlivými podmínkami ovlivňujícími lety na letiště v Adelaide
 SPRING vyvolal na jihu Jižní Austrálie zimní překvapení a přinesl silné přeháňky a silný vítr, který ovlivnil lety na letišti v Adelaide.
 Dalších 5 mm deště spadlo na město večer až do 9 hodin, po 6,6 mm, které spadlo přes noc v neděli.
-Poslední déšť přišel s laskavým svolením pár krátkých bouřlivých přehávek, včetně výbuchu, který začal těsně před osmou hodinou, který se zbavil téměř 4 mm za 10 minut.
+Poslední déšť přišel zásluhou několika krátkých bouřlivých přehávek, včetně výbuchu, který začal těsně před osmou hodinou, který se zbavil téměř 4 mm za 10 minut.
 Poté, co zima přinesla minulý týden časnou dávku jara, teploty ve městě opět klesly na teplotu o pouhých 15,8 °C.
 Předpokládá se, že všouratomované podmínky přispěly ke zpožděnému přistání letadla společnosti Virgin Airlines z Melbourne do Adelaide.
 Letadlo mělo přistát krátce po půl osmé, ale zasáhla se mukara – náhlá změna rychlosti nebo směru větru na krátké vzdálenosti – a bylo nuceno se stáhnout.
@@ -289,7 +289,7 @@ Tati, je mi 22!
 S Dawn French.
 Proč bych se s ní neměl kamarádit?
 Je to skvělá máma.
-Stále se přátelí s francouzštinou, se kterým byl 25 let ženatý.
+Stále se přátelí s francouzštinou, se kterým byl ženatý 25 let.
 Dawn je dobrý člověk.
 Proč bych se s Dawn kamarádil?
 Je to skvělá máma.
@@ -317,7 +317,7 @@ I když to byla divná, trestuhodně pozice, ve které jsem mohla být, pracoval
 Ale to, co bylo „ocenně oceněnou světelnou zábavní stálicí britské televize po léta a roky“ byla také „groteskní parodií na černochy“.
 Představoval postavy, které se prosadily a oslavovaly černošskou britskou kulturu, a v osmdesátých letech pracoval na alternativním komediálním okruhu.
 První řada The Lenny Henry Show se vysílala v roce 1984 a v devadesátých letech byl znám jako šéfkuchař Gareth Blacklock v komediálním seriálu Chef!.
-Reklamy, dokumenty, televizní seriály a role ve filmech pohltily jeho příští dekádu, ale po jeho sérii BBC z roku 2008, LennyHenry.tv, si pomyslel: „Co budeš dělat dál, Lene, protože to všechno trochu jako zapisuješ čas nebo se trochu stavíš na bok.“
+Jeho příští dekádu pohltily reklamy, dokumenty, televizní seriály a role ve filmech, ale po jeho seriálu BBC v roce 2008, LennyHenry.tv, si pomyslel: „Co budeš dělat dál, Lene, protože to všechno trochu jako by sis připomínal čas nebo jsi trochu nabočky.“
 Co se stalo, že se na Radio 4 objevil dokumentární seriál s názvem Co je tak skvělé...?
 První byl na Shakespearovi.
 Měl jsem skutečnou alergii na Shakespeara.
@@ -367,13 +367,13 @@ Lidé milují příběhy.
 Keňa registruje státní úředníky, aby se zaměřili na „zbožející pracovníky duchů“
 Keňa začala biometricky registrovat všechny státní úředníky ve snaze odstranit „dělníky duchů“ z výplatní listiny vlády.
 Zaměstnanci, kteří se v příštích dvou týdnech nezaregistrují, již nebudou placeni, uvádí se ve vládním prohlášení.
-Vláda má podezření, že tisíce lidí nadále dostávají platy i po odchodu ze státní služby.
+Vláda má podezření, že tisíce lidí po odchodu ze státní služby nadále dostávají plat.
 Prezident Uhuru Kenyatta se po nástupu do úřadu v roce 2013 zavázal, že po nástupu do úřadu v roce 2013 potlačí korupci ve veřejné službě.
 Letošní audit zjistil, že nejméně 1 milion dolarů (700 000 liber) měsíčně se ztratilo v platbách „dělníkům duchů“ a dalším nekalým finančním praktikám.
 Vláda má podezření, že platy jsou nadále ukládány na bankovní účty, a to i poté, co osoba zemře nebo opustí službu veřejné služby, hlásí Wanyama Chebusiri z hlavního města Nairobi.
 Všichni státní zaměstnanci se musí v příštích dvou týdnech prezentovat v identifikačních střediscích, aby se ujistili, že jejich údaje budou zachyceny prostřednictvím biometrické registrace, uvádí se ve vládním prohlášení.
 Každý, kdo by to neudělal bez řádné výmluvy, by byl vyřazen z výplatní listiny, stálo tam.
-„Toto cvičení významně přispěje k racionalizaci veřejné služby stanovením skutečných počtů státních zaměstnanců a bude také použito na očištění mzdy na obou úrovních vlády – čímž se zastaví otázku 'zaměstnanců duchů',“ uvedla Anne Waiguruová, tajemnice vlády na ministerstvu pro decentralizaci a plánování.
+„Toto cvičení významně přispěje k racionalizaci veřejné služby stanovením skutečných počtů státních zaměstnanců a bude také použito k očistení mzdy na obou úrovních vlády – čímž zastaví otázku 'zbožníků duchů',“ uvedla Anne Waiguruová, tajemnice vlády na ministerstvu pro decentralizaci a plánování.
 Desetenice tureckých policistů zatčenými kvůli „splnění“ proti Gov't
 V Turecku bylo zadrženo celkem 33 policistů kvůli podezření, že „nabídkách proti vládě“, tvrdí místní média.
 Policejní úředníci se k tomu okamžitě nevyjádřili.
@@ -392,11 +392,11 @@ Celá Ukrajina, obrovská fronta ukrajinského lidu, musí bojovat za mírumilov
 Aleksan Pastuchov, vedoucí učitel Slavianské školy, kterého navštěvovala Yatsenikova dcera, hovořil rusky.
 Doufáme, že zde bude konečně nastolen mír a že se dětem dostane znalostí, které budou užitečné v jejich budoucím životě.
 První den ve škole tradičně oslavují děti s vyšívanými košilemi, nosí balónky a rozdávají své učitele květiny.
-V Rona Fairhead mohla BBC najít impozantního šéfa, kterého potřebuje.
+V Rona Fairhead, BBC možná našla hrozivého šéfa, kterého potřebuje.
 Přichází za mraky slávy ze světa bankovnictví, mediálního managementu a vnitřních konkláve toryovské strany.
 Vskutku, má vlastní zkušenosti v první linii.
 Její kariéra začala na globálních manažerských konzultantech Bain and Co, poté postoupila přes Morgan Stanley, Bombadier, ICI a mediální svět Pearsons.
-Byla sedm let výkonnou ředitelkou Financial Times, rezignací, když nejvyšší posty v její mateřské společnosti Pearson připadlo mladšímu mužskému kolegovi.
+Sedm let byla výkonnou ředitelkou Financial Times, když nejvyšší posty v její mateřské společnosti Pearson připadlo mladšímu mužskému kolegovi.
 Její odměna se prý blíží 1 milionu liber.
 Její politické hodnocení je také robustní.
 Davidu Cameronovi ji doporučil lord Browne, bývalý šéf BP, když se snažil do Whitehallu přinést soukromé odborné znalosti: stala se poradcem v kanceláři.
@@ -408,7 +408,7 @@ Jedná se o téměř neobnovitelný duopol vyzývající k úplné reformě koř
 Ale to, co by nastupujícímu předsedovi hrozilo, že přijde, se zhroutí a rozřeže instituci tak složitou jako čínská dynastie pro případ, že by se přitom zbavili práce.
 Je to těžké.
 Kdyby to nebylo dost tvrdé, spousta lidí by se chtěla rozřezat na velikosti BBC – její moc, finance a její postavení se přepracovaly.
-Jak konkurenti kroužkují stále blíže a nové technologie zpochybňuje útulné staré jistoty, blížící se vyjednávání o koncesionářských poplatcích je plné speciálního nebezpečí pro BBC.
+Jak konkurenti krouží stále blíže a nové technologie zpochybňuje útulné staré jistoty, blížící se vyjednávání koncesionářských poplatků je plné especial nebezpečí pro BBC.
 Za skromnou částku 145,50 liber ročně se britská veřejnost přičte do toho, co je určitě největším mediálním podnikem na světě.
 BBC vypráví dobrý příběh: tvrdí, že její produkce zasahuje 96 procent domácností a každá z nich stojí jen 40 pencí denně.
 A co víc, popularita Beeb se zřejmě zvyšuje: 53 procent dnes podporuje oproti 31 procentům před 10 lety.
@@ -444,10 +444,10 @@ Průměrné prodejní ceny soukromých, cenově dostupných a studentských proj
 Posilující libra však v posledních měsících učinila londýnskou nemovitost méně atraktivní pro zahraniční kupce – některé z nich také odrazilo zavedení nových daní z nemovitosti a politické rétoriky kolem potenciální „daňové daně ze sídla“ před všeobecnými volbami, které se budou konat v květnu příštího roku.
 Londýnský realitní makléř Foxtons minulý týden varoval, že dubnový přezkum hypotečního trhu, který zavedl přísnější pravidla pro poskytování úvěrů, rovněž během druhé poloviny roku vyvolá nižší tempo růstu trhu jak v prodejních transakcích, tak v cenách nemovitostí.
 Čerstvé údaje Bank of England v pondělí ukázaly pokles počtu schválení hypoték v červenci, což dále naznačuje, že trh s bydlením se ochlazuje.
-Hamptons International, další realitní makléř, snížil svou prognózu růstu cen londýnských cen v Londýně na 3 procenta na základě toho, že sentiment cen nemovitostí už začíná slábnout.
+Hamptons International, další realitní makléř, snížil na rok 2015 prognózu růstu cen londýnských nemovitostí na 3 procenta na základě toho, že sentiment cen nemovitostí už začíná slábnout.
 Objem transakcí se mezitím podle agenta WA Ellise meziročně snížil o čtvrtinu drahých poštovních směrovacích čísel, jako jsou Chelsea, Mayfair a Kensington.
 Přesto je chuť na bydlení v hlavním městě přívětivou pro Berkeley, což zvedá hotovost splatnou s tržbami na více než 2,2 miliardy liber.
-Pan Pidgley dodal: „Pohyb pro správný produkt s dobrým designem v nejlepších lokalitách zůstal odolný a v závislosti na tom byl zachován forwardový prodej.“
+Pan Pidgley dodal: „Poptávka po správném výrobku s dobrým designem v nejlepších lokalitách zůstala odolná a s ohledem na to byl pokračovatelný prodej.
 V červnu společnost oznámila, že v roce do konce dubna prodala 3 742 nových bytů, což je téměř o třetinu více než předkrizový vrchol v roce 2007.
 Roční zisk před zdaněním meziročně vzrostl o 40 procent na 380 milionů liber, a to o 18 procent na 1,6 miliardy liber.
 Pan Pidgley v pondělí před výročním zasedáním společnosti řekl, že výdělky v Berkeley za rok by měly být v souladu se současnými tržními očekáváními.
@@ -456,11 +456,11 @@ Akcie Berkeley se v odpoledním londýnském obchodování na nule vyrovnaly na 
 Nahé fotky Jennifer Lawrence unikly na internet hackerem
 Jennifer Lawrencová přijíždí na 85. ročníku udílení Oscarů.
 Nahé fotky oscarové herečky Jennifer Lawrencové unikly na internet hackera, který tvrdil, že má „master seznam“ obrázků 100 dalších hvězdiček.
-Zástupce hvězdy „Holiči her“ potvrdil, že Lawrencovy fotografie byly skutečné a hackera za „fazánné narušení soukromí“.
+Zástupce hvězdy „Holiči her“ potvrdil, že Lawrencovy fotografie byly skutečné a hackera za „flaptické narušení soukromí“.
 Úřady byly kontaktovány a budou stíhat každého, kdo zveřejní ukradené fotografie Jennifer Lawrencové.
 Fotografie, které byly původně zveřejněny na serveru 4chan, se údajně získaly díky slabinám v online úložišti iCloudu společnosti Apple a podle BuzzFeed je údajná „mistrovská listina“ obětí hackerských útoků, včetně Rihanniny, Kim Kardashian, Mary Elizabeth Winsteadové a Mary-Kate Olsenové.
 Není jasné, kolik snímků je autentických, ačkoli „Scott Pilgrim vs. the World“ hvězda Winstead se na Twitteru odsoudil hack stejně.
-„Ti, které se dívají na fotky, které jsem před lety pořídila s manželem v soukromí našeho domova, doufám, že se cítíte skvěle,“ tweetoval Winstead.
+„Tím, že když se díváte na fotky, které jsem před lety pořídila s manželem v soukromí našeho domova, doufám, že se cítíte skvěle,“ tweetoval Winstead.
 Nicméně, Victoria Justice, ze série Nickolodeon „iCarly“ a „Victorious“, popřel, že by fotografie byly na ní, tweetoval: „Tyto tak zvané akty mě jsou lidé FAKE.
 Nechte mě to hned teď v zárodku odskočit. *paso*.
 Buzzfeed v neděli pozdě večer oznámil, že mluvčí popové hvězdy Ariany Grande popřel, že by údajné její fotografie byly autentické.
@@ -543,7 +543,7 @@ Mohl říct, „Miluju tě,“ ale na to bylo příliš brzy.
 Já jsem v tom perverzní.
 Vyšlo to špatně.
 Chtěl, aby to bylo vtipné.
-To znamená, že je vtipný, často ho dostal do průšvihu, protože stejně jako jeho otec postrádal uklidňující kouzlo nezbytné k mírnosti, které se vtipejících vtíravě.
+Což znamenalo, že je vtipný, často ho přivedla do jídelny, protože mu stejně jako jeho otec postrádalo uklidňující kouzlo nezbytné k mírnosti, které se vtípkovalo vtipy.
 Možná měl jeho otec v úmyslu být krutý.
 Možná to udělal, Kevern.
 I přes jeho laskavé oči.
@@ -556,12 +556,12 @@ Bylo mu jí líto, a to jak z důvodu zbytečné nelinády jeho slov, tak kvůli
 Myslela si, že ji udeří?
 Nemluvila s ním o životě na severním souostroví, kde vyrostla, o životě, ale nepochyboval o tom, že je ve všech podstatných věcech podobných tady.
 Stejný rozlehlý a ledový oceán se na ně oba zřítil.
-Stejní zmatení muži, ještě hubenější a nadšenější po WHAT HAPPENED, než byli jejich pašeráci a vrakoví předkové, se zlostně potulovali z hospody do hospody a připravené zvednout ruku na každou ženu, která se je odvážila odmítnout nebo napíchnout.
+Stejní zmatení muži, ještě hubenější a podrážděnější po WHAT HAPPENED, než byli jejich pašeráci a vrakoví předkové, se zlostně potulovali z hospody do hospody do hospody, připravené zvednout ruku na každou ženu, která se je odvážila odmítnout nebo zašít.
 Hustá hlava?
 Ukazují by jí hustou pěst, kdyby si nedala pozor!
 Sneg její první – snog se stal nejčastějším výrazem erotické podráždění mezi muži a ženami; protijed na nevýrazné balady lásky přebula konzole – se poprvé snesla a později ji nasazovala.
 Zbytečné vytříbení v Kevernově názoru, protože snofist byl sám aktem násilníka.
-Ailinn Solomonsová se svým tělem podepsala, aby odešel.
+Ailinn Solomonsová se svým tělem označila, aby odešel.
 Vynořil se z lehátka jako stařec.
 Cítila se sama olověná, ale tíha jeho zármutku ji překvapila.
 Tohle nebyl konec světa.
@@ -592,7 +592,7 @@ Ale určité druhy přecitlivělosti, i když jsou samy o sobě zcela přijateln
 Očividně jste proti církvi předpojat; a ty věci, které nazýváte „zlomyslnými“ a „brutsky“, by si to ostatní mohli vyložit jako vyjádření přirozené vervoty a vitality.
 Ještě se o tom, že se bude honit o WHAT HAPPENED, IF IT HAPPENED, jako by se to stalo, by se to včera stalo, je vysát zemi své základní životní síly.
 Esme Nussbaumová se rozhlédla po ní, zatímco Rabinowitz promluvil.
-Za jeho hlavou se naříkavný růžový LED svitek opakoval, že se Ofnow do země vydával poslední čtvrt století nebo i déle.
+Za jeho hlavou se na ledě s trhlinou růžovým svitkem opakoval, že se Ofnow do země vydával poslední a čtvrt století nebo i déle.
 Usmívej se na souseda, opatruj si svého manžela, poslouchej balady, choď na muzikály, mluv, vysvětlí, poslouchej, omluv.
 Řeči jsou lepší než mlčení, zpívané slovo je lepší než psané, ale nic není lepší než láska.
 „Plně chápu, co klástte,“ odpověděla Esme Nussbaumová tichým hlasem, jakmile si byla jistá, že její nadřízený dochoval, „a já říkám, že ne víc než že se neberu zahořklí tak efektivně, jak si namlouváme.
@@ -623,7 +623,7 @@ Vojáci v Lesothovi popřeli, že by provedli převrat, aby svrhli vládu, a pro
 Premiér Thomas Thabane uprchl ze země s tím, že tamní armáda obklíčila jeho oficiální dům a obsadila vládní budovy v hlavním městě Maseru.
 Premiér odvezl svou rodinu do sousední Jižní Afriky poté, co řekl, že mu byla vyhrožována atentátem.
 Vojenský mluvčí major Ntlele Ntoi řekl, že ve skutečnosti nedošlo k převratu, ale že armáda reaguje na výhrůžku „politických fanatiků“, které se policie pokoušela vyzbrojit.
-„To, co se dnes ráno stalo, bylo, že velení nad silami obraně Lesošského státu jednalo poté, co obdržely několik zpráv rozvědky, že mezi policejními službami existují některé prvky, které se ve skutečnosti plánují vyzbrojit některé politické, stranické politické fanatiky mládeže, kteří byli na pokraji pavěku,“ řekl Hlasu Ameriky.
+„Dneska ráno se stalo to, že velení nadlo Lesotho obranných sil jednalo poté, co obdržely několik zpráv rozvědky, že mezi policejní službou existují některé prvky, které ve skutečnosti plánují vyzbrojit některé politické, stranické fanatiky pro mládež, kteří byli na pokraji toho, aby pustošil katastrofu,“ řekl pro Voice of America.
 Mluvčí jihoafrické vlády Clayson Monyela řekl, že vojenské akce se dostavily při svržení.
 „I když nikdo netvrdil, že by převzal vládu pomocí síly, podle všech pohledávek aktivity obranných sil v Lesothu zatím nesou znaky převratu,“ řekl.
 Vojáci Lesotho uvedli, že vojáci se v neděli vrátili do kasáren a v hlavním městě je klid.
@@ -637,19 +637,19 @@ Konečný Markit's Eurozone Manufacturing Purchasing Managers' Index (PMI) se v 
 Obraz nad 50 znamená rozšíření.
 Nové objednávky se ztenčily a továrny trpěly rostoucím napětím mezi EU a Ruskem ohledně Ukrajiny.
 Čísla přicházejí před čtvrtečním zasedáním Evropské centrální banky (ECB).
-Trhy budou od banky hledat jasný plán na řešení zablokovaného oživení eurozóny a také hrozbu deflace s inflací dosahující pouhých 0,3%.
+Trhy budou hledat jasný plán banky, který by se vypořádal s zablokovaným oživením v eurozóně, stejně jako hrozbu deflace s inflací dosahující pouhých 0,3%.
 Spekuluje se, že by šéf ECB Mario Draghi mohl později tento týden nabídnout další náznaky, že uvažuje o systému kvantitativního uvolňování pro eurozónu, podobně jako v Británii a USA během finanční krize.
 „I když je určitý růst lepší než žádný růst, brzdný účinek rostoucí ekonomické a geopolitické nejistoty na výrobce je stále viditelnější,“ uvedl Rob Dobson, hlavní ekonom společnosti Markit.
 Továrna PMI pro Německo, největšího obchodního partnera Ruska v EU, klesla na 11měsíční minimum 51,4.
 Ve druhé největší ekonomice bloku, Francii, se přitom PMI propadla na 46,9.
 Francie zůstává skutečným problémem, stejně jako sestup Itálie od pevné expanze až po stagnaci.
-Signál, že růstový impuls slábne v klíčovém průmyslovém motoru Německa a také ve Španělsku a Nizozemsku, je také méně než uklidňující,“ řekl pan Dobson.
+Známky toho, že růstový impuls slábne v klíčovém průmyslovém motoru Německa a také ve Španělsku a Nizozemsku, je také méně než uklidňující,“ řekl pan Dobson.
 Zpomalení v průmyslu pravděpodobně přiláká palbu další palivo pro analytiky, kteří očekávají, že bude zaveden další měnová nebo fiskální stimul.
 Pozitivní notu byla Irská republika, která zaznamenala růst PMI na 57,3, což je nejvyšší úroveň od konce roku 1999.
 Howard Archer, hlavní ekonom IHS Global Insight, řekl: „Nejlepší, co lze říci v srpnu pro průzkum nákupních manažerů pro zpracovatelskou výrobu v eurozóně, je to, že to naznačuje, že toto odvětví stále roste.“
 Dodal: „Výrobci eurozóny v současné době zjevně velmi obtížně zjišťují, že současný zesílený geopolitický napětím – zejména v souvislosti s Ruskem/Ukrajinou – v mnoha zemích dodávají nejistotu stále náročným podmínkám.
-Tato zvýšená nejistota zjevně zasáhla podnikání – a důvěru spotřebitelů, a pravděpodobně způsobí, že některé objednávky budou zpožděny nebo dokonce zrušeny, zejména velké objednávky.
-Řekl, že to vypadá „vřetičněji“, že by ECB nakonec musela podstoupit nějakou formu QE, „i když máme podezření, že bude omezená“.
+Tato zvýšená nejistota zjevně zasáhla podnikání – zejména a důvěru spotřebitelů, a pravděpodobně způsobí, že některé objednávky budou zpožděny nebo dokonce zrušeny, zejména velké objednávky.
+Řekl, že to vypadá „vůbecji“, že ECB bude muset nakonec převzít nějakou formu QE, „i když máme podezření, že bude omezená.“
 Beslanské přeživší desetiletí pekla: Deset let od strašlivého obléhání ve škole, jak děti, které se do něj zapletly, stále trpí
 Před deseti lety bylo asi tisíc lidí zajato jako rukojmí čečenskými militanty ve škole v jižním Rusku Beslan
 Více než 330 lidí, z nichž více než polovina byli dětmi, bylo zabito při třídenním utrpení, které šokovalo svět.
@@ -689,7 +689,7 @@ Chlapec, který utekl krupobitím kulek, se domnívá, že jeho matka je mrtvá.
 Byl na svém prvním dni ve škole (Rusové nastupují do školy ve věku 7 let) a přežil třídenní obléhání objímající se s maminkou Tamarou.
 Pak mu sedmělo řeklo: „Maminka mi řekla, abych si lehl, kdyby došlo k výbuchu a držela ji za ruku.“
 Po jedné explozi si myslel, že umírá.
-Řekla mu: „Utíkej“.
+Řekla mu: „Utíkejte“.
 V obavě, že je mrtvá, utekl a cestou uviděl plačící batole, popadl dítě za ruku a prchl do krupobití kulek.
 Jeho otec Vladimir, který sebral svého syna venku, řekl: „Damir mi řekl, že mu zemřela matka.
 Řekl: 'Nemohl jsem ji zachránit'.“
@@ -703,7 +703,7 @@ Přesto můžu říct, že to v hlavě slábne.
 Hned potom si vzpomínám, že jsem zahodil všechny své hračky.
 Ale teď můžu hrát počítačové hry se střílečkou a pro mě to není problém.
 „Nebojím se vrátit do tělocvičny, ale nemyslím na sebe.
-Pamatuju si ty děti, se kterými jsem si hrál na dvoře, které se nikdy nedostaly ven.
+Pamatuju si ty děti, si s kterými jsem si hrála na dvoře, které se nikdy nedostaly ven.
 Nikdy neříkáme, že byli zabiti nebo mrtví.
 Říkáme, že zůstali v tělocvičně.
 Vzpomínám si na svůj výlet do Londýna tak dobře, speciálně v hračkářství, kde jsem si mohl vybrat, co jsem chtěl, a jezdit v otevřeném top autě.
@@ -718,7 +718,7 @@ Vzpomínám si na hrozné ticho hned po obléhání, prostě nebyly žádné dě
 Lidé v Londýně brečeli, když jsem vyprávěl náš příběh.
 Uvědomil jsem si, že lidé na druhé straně světa mohou pochopit naše pocity, může ukázat svou podporu.
 Byla vděčná „Cherie Blairové a její nadaci za tuto cenu a příležitost jet do Londýna na podzim roku 2004.
-Přála bych si, abych mohla zavolat Cherie a říct to sama, že jich uběhlo 10 let, ale pořád si pamatuju, že jsem se s ní a jejím manželem setkala v Londýně a s tím, jak to pomohlo Damirovi a mně.
+Přála bych si, abych mohla zavolat Cherie a sama to říct, že deset let je pryč, ale pořád si pamatuju, že jsem se s ní a jejím manželem setkala v Londýně a s tím, jak to Damirovi a mně pomohlo.
 Vzpomínám si, že když chtěl Damir jíst borzovou polévku, zavolali všechny místní ruské restaurace.
 Vzpomínám si, jak si hrál s číšníky v restauraci, Damir na ně střílel z vodní pistole a oni si s ním hráli.
 A pak jsme byli jen měsíc od naší hrůzy.
@@ -738,7 +738,7 @@ Nespal, oči měl otevřené.
 Také si vzpomínám, jak zahodil všechny své zbraně a další armádní hračky.Damir je teď 17, vyšší než já, hezkého, hezkého, chytrého a zdravého.
 Nemůžu uvěřit, že jsem si byla jistá, že je mrtvý a už ho nikdy neuvidím.
 Když se mi podařilo po výbuchu se vzpamatovat a postavil se na nohy, rozhlédl jsem se, viděl jsem kolem sebe, když všude ležely části těl.
-Byla jsem si naprosto jistá, že můj malý chlapec nemůže přežít v tomhle pekle.
+Byla jsem si naprosto jistá, že můj malý chlapec v tomhle pekle nepřežil.
 „Pamatuju si, že jsem na něj křičel 'Damire, utíkej, uteče' ale znovu jsem si byl tak jistý, že mě neslyšel.
 Ale slyšel to a utekl.
 Takže život pro nás jde na rozdíl od tolika lidí.
@@ -747,7 +747,7 @@ Chlapec, jehož šokující obraz po obléhání začal definovat hrůzu Beslan
 Pohodlí: Trilan přežil Georgy Ilyin se svou maminkou Fatimou po obléhání v roce 2004, zatímco vpravo je Georgy dnes
 Zkrvavená tvář měl zakrvácenou strachem, když utíkal o život, zatímco čečenští teroristé postříleli po spolužácích.
 Jeho obraz byl jedním z nejotřesnějších symbolů barbarství v Beslanu.
-Jeho matka Fatima, 54, starší lékařka, ho vysadil na první den ve škole, než se rozběhla s jejím starším synem Vladimirem na univerzitu.
+Jeho matka Fatima, 54, starší lékařka, ho vysadil na první den ve škole, než se rozběhla vzít svého staršího syna Vladimira na univerzitu.
 „Odešla jsem dvě minuty, než se teroristé vřítili na dvůr, takže můj chlapeček zůstal tam tři dny hrůzy sám,“ vzpomíná.
 Ne úplně sami, měli jsme tam rodinu příbuzných, ale všechny byly zabity.
 Jen můj Georgy se podařilo přežít.
@@ -758,7 +758,7 @@ Nikdo na to nikdy nezapomene, to ti slibuju.
 Strašení: Obraz Georgyho (vlevo) byl jedním z nejvíce šokujících z útoku a byl zvěčněn v soše (vpravo)
 Pamatuju si, že Georgyho toho dne chtěl jít do školy, že by chtěl objat svého učitele.
 Jen jsem poznal, že je naživu, když jsem ho viděl v televizi.
-A teď je dokonce socha na pláči Georgyho v San Marinu.
+A teď je dokonce socha plakat Georgyho v San Marinu.
 Georgy se na tento obrázek nerad dívá a je skryt v knihovně v našem domě.
 Rozumím, ale také si myslím, že díky tomuto obrazu lidé z celého světa cítí naši bolest.
 Georgy teď říká: „Je důležité, aby se to už nikdy neopakovalo.
@@ -866,7 +866,7 @@ Také nastavte fotoaparát, aby odpovídal typu fotografií nebo videa, které b
 Některé kamery a kamkordéry mají scénu nebo natáčecí režimy, které optimalizují expozici pro dim podmořská nastavení.
 A než do toho skočíte, vězte, jak hluboko vaše zařízení může být.
 Některé kamery jsou hodnoceny na pouhých 5 stop, jiné do 50 nebo 60 stop.
-Podívejte se na našeho nákupního průvodce a hodnocení pro digitální fotoaparáty pro konvenční i vodotěsné modely.
+Podívejte se na našeho nákupního průvodce a ratingu pro digitální fotoaparáty pro konvenční i vodotěsné modely.
 Vezměte si více záběrů – protože mnoho z nich nebude fungovat.
 Kamery s bodem a střelbou mají LCD, které vám pomohou zkombinovat fotografie, zatímco akční kamery obecně ne.
 I když máte LCD, bude těžké ho vidět pod vodou, a skládat si záběr bude hit-or-miss proces.
@@ -907,7 +907,7 @@ Taková samolibost je však nemístná.
 Ukázalo se, že Británie je dnes na vrcholu epidemie mezoteliomu.
 Je tu víc mezoteliomů, než v kterékoli jiné zemi na planetě.
 S každoročním počtem asi 2500 lidí zemře na tuto nemoc více než dvojnásobek, než u nehod v motorových vozidlech.
-Úmrtí na mezotýzách v ročníku 1980 a předpokládal budoucí úmrtí ve Velké Británii
+Úmrtí na mezotýlech od roku 1980 a předpokládá budoucí úmrtí ve Velké Británii
 Důvodem, proč nyní pociťujeme jeho smrtelné účinky, je ten, že ačkoli azbestové užívání je už léta nezákonné (všechny typy azbestu byly nakonec zakázány zákonem v roce 1999), obvykle trvá desítky let, než se rozvíjí mezoteliom.
 A metla mesothelioma se neomezuje jen na veterány průmyslového stavebního bydlení.
 Azbest byl a v mnoha případech stále je zakotven v domech, ve kterých žijeme, v kancelářích, ve kterých pracujeme, ve školách, ve kterých jsme vzdělaní, a v obchodech, ve kterých nakupujeme.
@@ -955,7 +955,7 @@ Janice Allenová se možná nemyslela na typickou oběť mezoteliomu, ale práce
 Vyvolal studii nemocných, která naznačuje, že „významná část mezoteliomů bez známého povolání nebo expozice v domácnosti byla pravděpodobně způsobena expozicí azbestu v oblasti životního prostředí“.
 Mnohé z této expozice je podle něj způsobeno „normální okupací a přečteným“ našich budov.
 Zdá se, že nikdo si nemůže být jistý, že jsou v bezpečí.
-Zpráva Goddard Consulting, která se zabývala Westminsterským palácem, ukazuje, jak lidé, dokonce i v srdci vlády, mohli být odhaleni nepřipravenými.
+Zpráva Goddard Consulting, která se zabývala Westminsterským palácem, ukazuje, jak lidé, dokonce i v srdci vlády, mohli být odhaleni nepřipraveni.
 V roce 2009 Goddard oznámil, že služební šachty a potrubí kanály za místnostmi parlamentních výborů byly kontaminovány azbestem, jehož smrtelná vlákna by mohla být narušena něčím tak neškodným jako „silné proudy vzduchu“.
 Poslanci jsou často obviňováni, že se starají o své vlastní zájmy, ale v tomto případě se zdá, že opak byl možná pravdou.
 Zatímco parlamentní ředitelství pro pracovní služby trvalo na tom, že Westminsterský palác dostal „čistý zdravotní stav“, nyní je akceptováno, že práce ve výši 1 miliardy liber trvající několik let je nutná k přepracování parlamentu, modernizace elektriky a odstranění azbestu a že po volbách v roce 2015 mohou poslanci zasedat v nedalekém konferenčním centru QE2 spíše než na Green Benches ve Westminsteru.
@@ -980,7 +980,7 @@ Přesto se stav nediagnostikoval.
 Pomalu se mu zlepšilo zdraví a vrátil se do práce.
 Ale čas od času se mu vrátily stejné příznaky, často po cvičení a těžce dýchaly.
 V roce 2011 jeden z Abbottových pacientů dorazil na operaci svého lékaře s podobnými příznaky jako on a následně mu byl diagnostikován mesotheliom.
-Ale ani pak Abbott nenavázal spojení s vlastním případem.
+Ale ani pak Abbott nenavázal spojení se svým vlastním případem.
 Koneckonců, jeho pacient byl o několik desetiletí starší a pracoval přímo azbest.
 Souvislost v tom případě byla jasná.
 V září 2011 se Abbottův stav opět zhoršil a jeho konzultant předvedl CT a rentgen před panel expertů.
@@ -994,7 +994,7 @@ Graham Abbott: s diagnózou mezoteliomu
 Najednou se Abbott dostal do setkání sestermi Macmillanu, z nichž jedna navrhla, aby se spojil s právníkem.
 Tehdy si uvědomil rozsah epidemie.
 „Ukázalo se, že azbest byl široce používán, zejména ve velkých veřejných budovách, které často pociťují azbesty pocitu na trubkách,“ říká.
-Lidé, kteří byli v těchto budovách vystaveni azbestu, se s touto nemocí zřívají.
+Lidé, kteří byli v těchto budovách vystaveni azbestu, se s touto nemocí zřítí.
 Takže mesotheliom se nyní ovlivňuje mladší lidi v typických profesích.
 Nejnebezpečnější trubky s azbestem v nemocnicích byly pod úrovní terénu, takže je nepravděpodobné, že by se to dotklo.
 Ale mnoho zaměstnanců, kteří chodili v pěších tunelech, aby se dostali z jedné budovy do druhé (jako Andrew Lawson), nebo jedí v suterénních jídelnách (jako Graham Abbott často) téměř jistě přišel do kontaktu s toxickou látkou.
@@ -1027,14 +1027,14 @@ To je ono."“
 Mesothelioma je zhoubný, protože je mechanikou toho, jak zůstáváme naživu – samotný akt dýchání – který způsobuje rakovinu, která zabíjí.
 Většina případů mezoteliomu je způsobena expozicí azbestu.
 Azbest se tvoří z malých vláken.
-Když je azbest narušen a vláknina se vdechne, mohou být vloženy do pleury, podšívky plic.
+Když je azbest narušen a vláknina se vdechne, mohou být zabudována do pleury, podšívky plic.
 Azbestová vlákna dráždí pleuru a mohou způsobit buněčné mutace.
 „Problém pochází z inhalačních vláken ve tvaru jehly azbestu,“ řekl profesor Tom Treasure, kardio-thorikakický chirurg, který se v roce 2001 přestěhoval do Guyovy nemocnice.
 Právě nemocnice, kde měl Andrew Lawson podezření, že byl vystaven azbestu, je nyní paradoxně vedoucím centrem v léčbě mezoteliomu.
 Poklad znal Lawsona a ošetřoval některé další, kteří by byli pravděpodobně vystaveni při výcviku v nemocnici.
 Jakmile se azbestové jehlice dostanou do plicní tkáně, říká Treasure, „akt dýchání je tlačí na periferii, což je místo, kde je lemování.
 Je to ze své podstaty invazivní od samého začátku.
-Normální možnosti pro léčbu jiných forem rakoviny pracovat méně dobře s mesotheliom.
+Normální možnosti pro léčbu jiných forem rakoviny pracovat méně dobře s mesotheliomem.
 O účinnosti chirurgie se například živě diskutuje.
 Někteří si myslí, že stojí za to se snažit.
 Poklad nesouhlasí.
@@ -1047,7 +1047,7 @@ Naštěstí někteří pacienti žijí daleko, daleko nad očekávání.
 Autor Stephen Jay Gould zemřel 20 let po stanovení diagnózy.
 Dva a půl po své vlastní diagnóze Graham Abbott stále bojuje.
 Po kontaktu s mesothelioma Abbott byl spojen s Andrew Lawson, který, čtyři roky po jeho diagnóze, se stal one-man podporu a poradenský úřad pro kolegy trpící.
-„Ahoj, docentra na rakovinu,“ oznamoval nadšeně, když mu volali.
+„Ahoj, docentra na rakovinu,“ oznamoval nadšeně, když zavolali.
 „Byl velmi pozitivní,“ říká Abbott.
 Před 4 roky mu byla diagnostikována a stále velmi aktivní.
 Zpočátku bylo Abbottovi nabídnuto šest cyklů chemoterapie, které by trvaly čtyři měsíce, a pravděpodobně by mu prodloužila život o pouhý jeden měsíc.
@@ -1077,20 +1077,20 @@ Zákon vytvořil banku ve výši 350 milionů liber, financovaného pojišťovni
 V těchto případech budou nemocní přiznáni 80 procent toho, co mohl soud v běžném odškodném poskytnout – asi 120 000 liber.
 Očekává se každý rok přibližně 300 úspěšných nároků na tento program.
 Andrew Morgan, stejně jako mnozí, kteří se podíleli na mezoteliomu trpících, si myslí, že 350 milionů liber představuje „velmi dobrou práci“ pro pojišťovnictví.
-„Je to dohoda, kterou pojednávají pojistníci na pojistitele,“ říká, že částka je čtvrtinou toho, co by pojišťovny museli zaplatit, kdyby se neučinil zákulisním postupem, a trpící mezoteliomem byli schopni vystopovat společnosti a žalovat je normálním způsobem.
+„Je to dohoda sepsaná pojistiteli pro pojistitele,“ říká, což naznačuje, že částka je čtvrtina toho, co by pojišťovny museli zaplatit, kdyby se neuštěnila žádná zástavba, a trpící mesotheliomem byli schopni vystopovat společnosti a žalovat je normálním způsobem.
 Dokonce i Mike Penning, tehdejší ministr práce a důchodů, připustil, že zákon „není dokonalý“.
 Ale jak Penning, tak Morgan připouštějí, že při smrti sedm obětí je třeba jednat.
 „Lidé tolik trpí a dnes potřebují pomoc,“ řekl Penning během Mesothelioma Bill druhé čtení v prosinci loňského roku.
 V té době už byl Graham Abbott v rukou prof. Loice Lang-Lazdunského po dobu 19 měsíců.
 Po počátečních konzultacích Lang-Lazdunski radil chirurgii, která má na rozdíl od Toma Treasureho pozitivní účinek.
-Následovala radioterapie a chemoterapie – triteroterapie, u níž se Lang-Lazdunski může pochlubit pětiletou mírou přežití až 40 procent.
+Následovala radioterapie a chemoterapie – triterteroterapie, u níž se Lang-Lazdunski může pochlubit pětiletým přežitím až 40 procent.
 Abbott se cítil silnější.
 „To je samozřejmě jedna z nejdůležitějších věcí,“ říká Abbott.
 Vidíte to u pacientů pořád.
 Je tu nějaký pohon, který vás udržuje v chodu.
 Když se vzdáte, můžete se velmi rychle zhoršit.
 Graham Abbott se v březnu 2012 na operaci dostavil.
-Koncem srpna dokončil poslední ze svých šesti cyklů chemoterapie.
+Koncem srpna dokončil poslední ze šesti cyklů chemoterapie.
 Následné snímky neodhalily žádné známky nemoci.
 Pak jsem byl na snímku v březnu [2014].
 Kolem hrudníku bylo několik lidí, kteří se na mě ptali na rakovinu.
@@ -1117,10 +1117,10 @@ Ale pro mesothelioma trpící takové diskuse nejsou kvašené nadějí, a to an
 Nemoc s sebou nese (i tak jako u Stephena Jaye Goulda) zachmuřenou jistotou.
 Jak říká Andrew Morgan, „mesotrom není život ohrožující.
 Těla nabalzamovaných faraonů zabalených do azbestových hadrů.
-Azolezová vlákna slouží k posílení hrnců na vaření a zajištění větší tepelné odolnosti.
+Azolezová vlákna sloužící k posílení hrnců na vaření a zajištění větší tepelné odolnosti.
 Pětovný starší popisuje azbest.
 Nyní bylo vynalezeno prádlo, které je neomybojátné.
-Viděl jsem ubrousky z něj zářit na krbu na banetách
+Viděl jsem ubrousky z něj zářit na krbách na banlikách
 Moderní komerční azbestové použití začíná v Itálii, kde se používá k výrobě papíru (i bankovky) a látky.
 Hlavní azbestové doly se otevírají v Kanadě a Jižní Africe a brzy poté v Americe, Itlay a v Rusku.
 Je ideálním izolátorem pro parní a turbíny průmyslové revoluce.
@@ -1143,7 +1143,7 @@ Mesothelioma Act prošel ve Velké Británii.
 Je oznámen kompenzační systém ve výši 350 milionů liber.
 Azbest je zakázán ve více než 50 zemích, ale bílý azbest se stále používá jako levný stavební materiál v mnoha částech světa.
 Celosvětová produkce se ročně pohybuje kolem 2 milionů tun.
-Čína odmítá dát Hongkongu právo volit si vůdce; protestující se zapřísahají pomsty
+Čína odmítá dát Hongkongu právo volit si vůdce; protestující se uráží pomsty
 Čínský parlament se v neděli rozhodl proti tomu, aby hongkongští voliči nominovali kandidáty do voleb v roce 2017, navzdory rostoucí agitaci za demokratickou reformu.
 Tento krok pravděpodobně vyvolá dlouho slibované protesty v hongkongské obchodní čtvrti, protože aktivisté začali plánovat a mobilizovat během několika hodin po oznámení.
 Rozhodnutí čínského Všečínského shromáždění lidových zástupců v podstatě umožňuje komunistickým vůdcům vylíčit žádné kandidáty, kteří nejsou loajální Pekingu.
@@ -1187,7 +1187,7 @@ Podle vyjádřeného právního názoru přístup druholigového fotbalového t�
 „Situace však dává příslušnému orgánu důvod ke změně pravidel pro přidělování grantů a dotací,“ vysvětlil mluvčí radnice Radek Tulis.
 Vytáhnout granty z města a zároveň vyjádřit podporu jediné politické straně ve volbách, protože druholigový fotbalový tým je pravděpodobně nepřijatelné.
 Žádná podobná žádost nebyla dosud adresována politickým fotbalu na Vysočině.
-Předpokládejme například, že regionální šampionát Sociálnědemokratické strany, divizi Občanské demokratické strany nebo Křesťansko-skemokratická unie-svazověšská lidová strana 1.
+Předpokládejme například, že regionální šampionát Sociálnědemokratické strany, divizi Občanské demokratické strany nebo Křesťanskodemokratická unie-Československá lidová strana 1.
 Byla vytvořena kategorie nebo podobné soutěžní akce.
 Nebyl bych pro.
 Místo toho bych byl rád, kdyby nás kontaktovali sponzoři z řady firem,“ řekl předseda Sdružení pro regionální fotbalové asociace Miroslav Vrzáček.
@@ -1229,7 +1229,7 @@ Ale pro Pereze to prokazuje významný posun.
 Lidé měli pocit, aby vyjádřili něco o tom, co se stalo.
 Je to velmi symbolické pro krizi, které čelíme, a protože [situace ve Fergusonu] je tak rasová, musí to vyzvat.
 Pro profesorku angličtiny na Ohijské státní univerzitě Korithu Mitchellovou vyvolala Fergusonová na světlo problémy, kterým se černošské Američanky potýkají každý den, ale které nejsou vnímány jako „ženské problémy“ v kulturní sféře.
-„Můžu na Facebooku zveřejnit něco legračního o tom, co se mnou a mým partnerem se bude dít a že to bude mít 150 lajků z celého světa,“ řekl Mitchell.
+„Můžu na Facebooku zveřejnit něco legračního o tom, co se mnou a mým partnerem se stane, a z celého světa to bude mít 150 lajků,“ řekl Mitchell.
 Když zveřejním něco o tom, jak jsou barevní lidé v obležení ve své vlastní zemi, ticho je ohlušující.
 „Jak je bezpečné, aby ženy veřejně mluvily o vztazích, ale ne o bezpečnosti ve veřejné sféře?“ zeptala se.
 Pro černošky, jako je Mitchell, které studovaly rasu, pohlaví a sexualitu v historii USA, neexistuje žádná dichotomie mezi otázkami týkajícími se rasy a pohlaví.
@@ -1237,7 +1237,7 @@ Pro černošky, jako je Mitchell, které studovaly rasu, pohlaví a sexualitu v 
 Zatímco bělošky dnes kombinují rasové a genderové feministické sféry hlavního proudu, profesorka žen a genderových studií na Univerzitě George Masona uvedla, že jejich předchůdkyně udělala pravý opak.
 „Mezi lety 1865 a 1890, bylo zlynčováno nejméně 10 000 černochů a ospravedlniteli bylo téměř vždy znásilňování bělošky,“ řekl Hattery.
 Potřeboval jste, aby se běloška podílela na vyprávění, která by ospravedlnila lynčování.
-Pro Hatteryho došlo k rozpadu mezi běloškami a černými ženami, když bílí sufražetky jako Susan B. Anthony si prohlédl krajinu na konci 19. století a viděl, že boj za hlasovací práva bude fungovat pouze pro jednu skupinu po druhé: ženy nebo černoch.
+Pro Hatteryho došlo k rozpadu mezi běloškami a černými ženami, když bílí sufražetky jako Susan B. Anthony na konci 19. století zkoumal krajinu a viděl, že boj za hlasovací práva bude fungovat pouze pro jednu skupinu po druhé: ženy nebo černochy.
 „Rozhodli se, že se vejci vloží do koše pro hlasy pro ženy a hlasy pro černochy přijdou později,“ řekla Hattery.
 Ohlédnout se za věcmi, jako je tato věc, nám dává silný pohled na to, proč barevné ženy nevěří bílým ženám.
 Neodvedli jsme dobrou práci.
@@ -1249,8 +1249,8 @@ Mitchellové se vzedmutí reakcí bílé feministické reakce na otázky, které
 Feministky z druhé vlny, které se dostaly do kariéry z boje za reprodukční práva a přístupu k antikoncepci, nyní zjišťují, co to znamená.
 Známá bílá feministická aktivistka Gloria Steinemová se na Facebooku objevila na Facebooku dva týdny poté, co Michael Brown postoval ostrý sloupkařka Guardianu Rebeccu Carrollovou, který požadoval další protesty od bílých Američanů na téma rasismu.
 „Doufám, že ženy, které mají jiný, ale paralelní důvod pro pochopení nebezpečí, které se nachází v těle – a rasistické názory, které se ve veřejných průzkumech veřejného mínění zásadně liší – povedou změnu,“ napsala Steinemová.
-I když se Steinemová zaručila za průnibnější feminismus, který zahrnuje otázky rasy i pohlaví, její komentáře k rase v Americe stále ještě hádají.
-Uměňkyně American Enterprise Institute Christina Sommersová, autorka knihy „Who Stole Feminism?“, řekla listu The People, že mladí muži ve Spojených státech, zejména mladí muži v barvě pleti, jsou „mnohem zranitelnější než jejich sestry“, ale Steinemovy poznámky na Fergusonovi proti kritice, kterou v minulosti spustila.
+I když se Steinemová zaručila za průsečící feminismus, který zahrnuje otázky rasy i pohlaví, její komentáře k rase v Americe stále ještě některé hádanky.
+Vědkyně American Enterprise Institute Christina Sommersová, autorka knihy „Who Stole Feminism?“, řekla listu The People, že mladí muži ve Spojených státech, zejména mladí muži v barvě pleti, jsou „mnohem zranitelnější než jejich sestry“, ale Steinemovy poznámky na Fergusonové proti kritice, kterou v minulosti spustila.
 Nyní máme stovky speciálních programů pro dívky a mladé ženy, ale pro chlapce téměř nic.
 Ale když Bílý dům nedávno inicioval malý program My Brother's Keeper, aby pomohl zranitelným černošským a hispánským mladým mužům, objevilo se rozhořčené reakce mnoha feministek, včetně Glorie Steinemové.
 Policejní vztahy s černošskou komunitou nejsou jediným tématem, který se tlačí na přední místo hlavního proudu feminismu.
@@ -1258,7 +1258,7 @@ Poté, co americká pohraniční hlídka letos na jihozápadní hranici země za
 Andrea Mercadová, spolupředsedkyně organizace We Belong Together, která mobilizuje ženy pro imigrační reformu, řekla, že aby se tato otázka stala zásadní pro ženy, stačí jen sdílet příběhy žen přistěhovalců.
 „Mluví za sebe,“ řekl Mercado.
 Když je dána velká většina pracovních víz [samotickým přistěhovalcům], ženy, které s nimi přicházejí, ponechány v postavení zranitelného domácím násilím a vykořisťováním.
-„Tyto příběhy rezonují s ženskými organizacemi,“ řekla.
+„Tyto příběhy rezonují u ženských organizací,“ řekla.
 Ipswich 'prach v rezidenci' dům na prodej
 Obrázek pro dům na prodej v Suffolku byl odstraněn realitními makléři, když vyšlo najevo, že je na něm v obývacím pokoji velké prase.
 Na prodej za 120 000 liber, samostatný jednopokojový objekt stojí na soukromé silnici v Ipswichi.
@@ -1270,14 +1270,14 @@ Přestože agentura snímek ze svých internetových stránek odstranila, stále
 Prodej domu vyvolal zájem na sociálních sítích, kde se někteří ptali, zda je prase zahrnuto do prodeje.
 SW město Harvey má po vítězství v Lotto čerstvého milionáře
 Hráč Harveyho loterie je v měsíci.
-Pátrá se po novém milionáři na jihozápadě Perthu, kde si jeden šťastný člověk odnese domů téměř 1,1 milionu dolarů z sobotního losování v loteriku.
+Pátrá se po novém milionáři na jihozápadě Perthu, kde si jeden šťastný člověk odnese domů téměř 1,1 milionu dolarů z sobotního večerního losování v lotyku.
 Harvey newsagency narazil na zlato v divizi jeden los podruhé za pět let, poslední byl 1 milion dolarů v listopadu 2009.
 Nicméně šťastný vítěz se ještě nepřihlásil.
 Majitel obchodu Steve Forward řekl, že výhra vyvolává rozruch kolem městečka na jihozápadě Perthu.
 Mluví se o něm ve městě a všichni jsou nadšení.
 Mysleli jsme, že taková výhra by mohla být těsná.
 Osm vítězů WA oslavilo minulý měsíc vítězství v divizi, které završily několik šťastných týdnů pro hráče státu.
-Minulý týden se hráč z Canning Vale stal jedním z pěti srpnových milionářů, po masivním výhře páru Belmontu za 7,5 milionu dolarů jen pár týdnů před.
+Minulý týden se hráč Canning Vale stal jedním z pěti srpnových milionářů, po masivním výhře páru Belmontu za 7,5 milionu dolarů jen o pár týdnů předtím.
 Vítězný pár hrál hru dvacet let a řekl, že výhra jim daroval možnost cestovat po světě a koupit si nový dům.
 Harvey milionář přináší WA až 59 vítězů divize za rok, celkem téměř 85 milionů dolarů.
 Vlaky Deutsche Bahn dnes večer nepojedou.
@@ -1298,7 +1298,7 @@ Proto skončil na Barum Rally.
 Co se vlastně stalo?
 Byla to materiální vada.
 Auto bylo úplně nové, takže mě nenapadlo, že by se něco takového mohlo stát.
-Nemohla by být výfuková trubka dočasně opravena, aby se vůz mohl řídit pomalejším tempem do servisního centra, kde ji nahradí mechanici?
+Nemohla by být výfuková trubka dočasně opravena, aby se vůz mohl řídit pomalejším tempem do servisního centra, kde by ho opravili mechanici?
 Kdybychom tam zamířili, tak ano.
 Ale čekala nás další dvě zvláštní pódia, takže to nebylo možné.
 Je v ní vysoká teplota a bylo velké riziko, že by auto mohlo vzpytat.
@@ -1329,7 +1329,7 @@ Koneckonců, jel první dvakrát.
 I Mira mi potvrdila, že jsme auto dobře připravili.
 Šel velmi rychle.
 Přesně před rokem jste oznámil konec kariéry, ale přesto jste se ukázal na začátku Barum Rally.
-Mohl by z vás váš dobrý pocit z této akce udělat pravidelného účastníka rallye?
+Mohl by z vás váš dobrý pocit z této akce udělat pravidelného účastníka rally závodů?
 Rozhodně ne v tuto chvíli.
 Loni jsem řekl, že Barum bude můj poslední závod, a pořád jsem nedodržel slib.
 Rozhodl jsem se znovu závodit.
@@ -1353,7 +1353,7 @@ Když na Corsice patřilo k mistrovství světa, dosáhli jste na pátém míst�
 Nemáš náladu zkusit tu stopu znovu?
 Ne, nejsem.
 Slovní dohoda se zaměstnavatelem může být problém.
-Bohužel jste ještě nezveřejnil svého lékaře potvrzení o vašem pracovním postižení, což slouží jako důkaz pro organizaci, že ze zdravotních důvodů nemůžete vykonávat své pracovní povinnosti.
+Bohužel jste ještě neměl ve Vašem lékaři vydat potvrzení o Vašem pracovním postižení, což slouží jako důkaz pro organizaci, že ze zdravotních důvodů nemůžete vykonávat své pracovní povinnosti.
 Navíc jste okamžitě neoznámil svého zaměstnavatele nepřítomnosti.
 Následně, i když jste se dohodli, že konkrétní dny budou zaznamenány jako dovolená, dohoda byla uzavřena pouze ústně.
 Ačkoli Úřad práce nevyžaduje, aby zaměstnanec měl povolení zaměstnavatele k písemnému převzetí dovolené potvrzeno písemně, v praxi se tento přístup ukázal jako účinný.
@@ -1372,7 +1372,7 @@ Stewart zasáhl zeď podruhé poté, co mu v sedmnáctém kole vybuchla pravá p
 Stewart zajel potlučeným autem do garáže a pak odešel, aniž by promluvil s novináři.
 Šéf jeho posádky Chad Johnston řekl, že tým 14 byl zklamaný, ale nyní se začne soustředit na závod příští víkend v Richmondu ve Virginii.
 „Přál bych si, abychom pro něj měli větší úsilí a lepší zakončení,“ řekl Johnston.
-Pojedeme do Richmondu a budeme doufat, že se tam polepšíme.
+Popojemi do Richmondu a budeme doufat, že se tam polepšíme.
 Stewart poprvé vešel do zdi v nedělním večerním závodě po srážce s Kylem Buschem, která si vyžádala práci na pravé straně auta.
 „Dneska jsem se do toho dal s docela dobrou nadějí, že se dobře dojdu,“ řekl Johnston a dodal: „Prostě to nevyšlo.“
 Nedlouho po druhé havárii bylo Stewartovo auto naloženo na nákladního vozíku a tým byl sbalen a připraven k odjezdu.
@@ -1381,18 +1381,18 @@ Rozhodl se vrátit tento týden, kdy potřeboval vyhrát buď v Atlantě, nebo v
 Vrátil se k práci jako vyšetřování tragické události, která měla za následek smrt dvacetiletého Kevina Warda mladšího, který šplhal na trať, aby se Stewarta během závodu postavil.
 Úřady v pátek uvedly, že vyšetřování příčin havárie potrvá nejméně další dva týdny.
 Nebylo rozhodnuto, zda Stewart bude čelit obvinění.
-Trojnásobný šampion sklidil velké jásot, když se představil před závodem.
+Trojnásobný šampion sklidil velké jásot, když byl představen před závodem.
 Startoval na 12. místě, Stewart běžel v první desítce na začátku závodu, dostat až na čtvrté místo.
 Pak, v kole 122 po restartu, Busch's No.
 18 stroj se uvolnil z otočné dvoupatrové zatáčky a narazil do Stewarta a oba vozy opřel o zeď.
 Stewart pokračoval, ale klesl na 21.
 Praha si vybírá novou taxi stand firmou, vydělá 12,3 milionu
 Město Praha dokončilo výběrové řízení na nového manažera svých taxi.
-Za 103 parkovišť taxíků bude vydělávat přibližně 12,3 mil. Kč ročně.
-Až donedávna vybírala 150 000 korun za stejné taxi.
+Za 103 parkovišť taxíků bude vydělávat přibližně 12,3 mil.
+Až donedávna vybírala 150 000 korun za stejné taxi stojany.
 Informace poskytl člen městské rady Lukáš Manhart (TOP 09).
 Město dříve používalo kresby pro výběr správcovských společností.
-Vítěz si pak mohl spravovat lokaci za paušální poplatek 1 000 Kč ročně.
+Vítěz si pak mohl spravovat místa za paušální poplatek 1 000 Kč ročně.
 Pravidla se však změnila.
 Výše nabídky je v současné době rozhodující.
 „Rok od ukončení původní smlouvy a zahájení výběrového řízení se ukázalo, že nový systém pronájmu bude pro Prahu mnohem prospěšnější a zcela spravedlivější,“ řekl člen rady.
@@ -1431,7 +1431,7 @@ A hustě sežraný!
 Náš sklep je taky divný.
 Někdo by mohl říct, že ten děda v krátké kráse pod domem.
 A to by nebylo daleko od pravdy.
-Stěny a podlahy jsou pouze zhuštěný písek a jen dřevěný strop.
+Stěny a podlahy jsou pouze napjatý písek a jen dřevěný strop.
 Tam jsou umístěny hlavně lodě.
 A bicykly.
 A plážová lehátka.
@@ -1486,16 +1486,16 @@ Nespokojený zaměstnanec koupil počítače pro společnost, kde pracoval, a po
 Podařilo se mu utratit peníze, které vydělal, než ho zatkla policie.
 Během krátkého období ve dvanácti případech si muž koupil celkem 16 počítačů za více než 200 000 korun.
 „Po obdržení notebooků je odvezl do Olomouce, kde je prodal zastavárny,“ řekl komisař šumperské policie Rostislav Brückner.
-Zaměstnanec byl motivován touhou pomstít se za to, že byl vyhozen a vydělávat peníze.
+Zaměstnanec byl motivován touhou pomstít se za vyhazov a vydělávat peníze.
 „Během výslechu nám řekl, že ty peníze použil na splácení půjček,“ řekl Brückner.
 Policie také zjistila, že podvodník byl patologický hráč, který opakovaně podstupoval psychiatrickou léčbu.
-Peníze proto mohly skončit v herních automatů nebo terminálech pro video loterie.
+Peníze proto mohly skončit v herních automatů nebo terminálech pro video loterii.
 „Je fakt, že jsme u něj nenašli žádné peníze,“ řekl komisař.
 Kartista už byl jednou odsouzen za krádež a nyní mu hrozí trest odnětí svobody v délce od jednoho do pěti let.
 Policie zatím neuvedla, zda zastavárny, které koupily notebooky pod jejich hodnotou a pak je prodaly, budou také čelit obvinění.
 „Je pravda, že přijali zcela nové zboží, což je přinejmenším podezřelé,“ řekl komisař.
 Žádného z majitelů zastavárny zatím nebyl obviněn.
-Pojď trochu blíž, jak to zvládnu, nebo jak se mi líbilo, že jedeme Prahou
+Pojď trochu blíž, nebo si to užiju We Run Prague
 Letos organizátoři připravili několik změn.
 Největším je změna trasy, která posunula zakončení na břehu řeky, místo aby se vracela do Žlutých lázní.
 Na závod jsem se těšil společně se zbytkem týmu Rungo.cz, ale snažil jsem se si to užít trochu z druhé strany.
@@ -1516,7 +1516,7 @@ Těsně před vstupem na Divadelní ulici vidím policejní doprovod a za nimi �
 Slyšel jsem, jak ostatní běžci chytají dech.
 Přoupím na okraj cesty a povzbuzuju ho a on si mě začne plácnout, ale těsně předtím se mi ohyne i moje legie a naše ruce se lehce mine.
 Běh po Divadelní ulici představuje příležitost k krátkému odpočinku a dechu.
-Je to nutné, protože před námi jsou místa, kde jsou úchvatné výhledy.
+Je to nutné, protože před námi jsou místa, kde jsou vnímání úchvatné.
 Přezdečný most Mánesovova představuje výhled na Prahu v její kráse se západním sluncem.
 Dýchám a nohy mě skoro nesou.
 Po prvním občerstvení nastává okamžik pravdy.
@@ -1532,7 +1532,7 @@ Po poslední přestávce na občerstvení už nikdo neběhá před námi a my se
 Zatím jsme běželi asi hodinu a patnáct minut a přidáváme minuty, takže není na co čekat.
 Tři kilometry do cíle budou bolet, ale je to opravdu nutné, aby se.
 Slunce už téměř zapadlo a končící den symbolicky pomalu končí závod.
-Poslední jíz k mostu, zatáčkou a pak jen přímá cesta do cíle.
+Poslední jíz k mostu, zatáčka a pak jen přímá cesta do cíle.
 Tempo, kterým vedeme, mě udivuje a já si říkám, odkud se pochází.
 „No tak, jdeme pod třináctou hodinu, jdeme do toho!“ Volám ven.
 Zkusíme to, rozběhneme se dopředu a je tu cílová čára.
@@ -1549,7 +1549,7 @@ Tady je zřejmé, že Kozí Lane nebyl nejužší místo.
 To místo je tady, za cílem na břehu řeky, kde se hemží téměř 10 000 běžců stlačených dohromady.
 Pokud má někdo rád davy, pak to pro něj není místo.
 Po nějaké době i já ztrácím rozum a zajímalo by mě, jestli ty krásné výhledy a zajímavější cesta než v předchozích letech stálo zažít to, co se teď děje.
-Z vlastní zkušenosti vím, že pořádání akce není nic, čemu by se měla smát.
+Z vlastní zkušenosti vím, že pořádat nějakou událost není nic, čemu by se měla smát.
 V kombinaci s 10 000 lidmi, bohatým doprovodným programem a uzavřením celého centra Prahy na veškerý provoz, je to obrovská výzva.
 Letošní změna trasy ukázala běžce na mnoha zajímavých místech, což přineslo také několik opravdu nepříjemných překvapení.
 Vynikající atmosféra, která se z Žluté lázně vytekla, si našla místo mezi běžci a v samotném závodě.
@@ -1568,13 +1568,13 @@ Probíhají jednání, řekl BNR šéf ředitelství pro popravu trestních úpl
 Očekává se, že k protestu odborového svazu vězeňských pracovníků se připojí členové odborové federace zaměstnanců ministerstva vnitra.
 Proč má vesmír více rozměrů a my je nevidíme?
 Fyzici často nepíší nejlepšího prodejce, ale Brianu Greenovi z Columbijské univerzity se v roce 1999 podařilo trefit býka do oka.
-Jeho kniha „Elegantní vesmír“ se pro veřejnost stala nejjednodušším způsobem, jak se ponořit do dnes několika teoretických fyziků řeší několik teoretických fyziků, což je snaha o sjednocení dvou výborně fungujících, ale vzájemně neslučitelných, objevů 20. století, kvantové teorie a teorie obecné relativity.
+Jeho kniha „Elegantní vesmír“ se pro širokou veřejnost stala nejjednodušším způsobem, jak se dnes zabývat několika teoriálními fyziky, které dnes řeší několik teoretických fyziků, což je snaha sjednotit dva výborně fungující, ale vzájemně neslučitelné, objevy 20. století, kvantovou teorii a teorii obecné relativity.
 Jednou z příčin úspěchu „Elegantského vesmíru“ je nepochybně to, že při hledání jednotných fyzikálních teorií to není nudný příběh.
 Fyzici se zabývali základním problémem mezi dvěma klíčovými teoriemi (koneckonců, v tuto chvíli je náš vesmír de facto rozdělen na dva světy s různými zákony) a řeší ho tak dobře, že stojí za to dokonce vysvětlit obyčejným lidem.
 Greene se s obtížným materiálem vyrovnal tak dobře, že ho nelze kritizovat za to, kolik zajímavých informací ve své knize nezahrnul.
 Kromě toho si svou „chybu“ většinou vynahrazoval v dalších dvou knihách: Struktura vesmíru a „Skrytá realita“.
 Autor by samozřejmě ani nic namítal, kdyby jeho kniha byla zastaralější rychleji, ale je fakt, že i po 15 letech „Elegantový vesmír“ i nadále poskytuje téměř vše důležité, že informovaný laik s ambicí porozumět světu by měl vědět o této důležité části teoretické fyziky.
-Je poměrně pravděpodobné, že v nadcházející letech bude situace v této oblasti o něco živější (například proto, že akcelerátor LHC konečně poběží na „plný plyn“), a tak je to dobrá příležitost vstoupit do světa moderní fyziky dveřmi, které se bez síly otevře Greene.
+Je poměrně pravděpodobné, že v příštích letech bude situace v této oblasti o něco živější (například proto, že akcelerátor LHC konečně poběží „plný plyn“), a proto je to dobrá příležitost vstoupit do světa moderní fyziky dveřmi otevřenými bez síly.
 Kolik rozměrů by mohl mít náš vesmír?
 Myšlenka, že náš vesmír může mít více než tři prostorové rozměry, by se rozhodně mohla zdát přitažený za vlasy přitažený, zvláštní nebo mystický.
 Nicméně je to specifické a zcela přijatelné.
@@ -1607,7 +1607,7 @@ To okamžitě vyvolává otázku, jak tento objev provedený společností Kaluz
 Odpověď, kterou Kaluza tiše předpověděla mezi liniemi a která byla jasně vyjádřena a vyjasněna švédským matematikem Oskarem Kleinem v roce 1926, spočívá a padá s tvrzením, že prostorová geometrie našeho vesmíru by mohla mít jak velké, tak obtočené rozměry.
 To znamená, že stejně jako rozměr ve směru délky hadice má i náš vesmír velký, rozsáhlý a snadno viditelný souhře tří rozměrů, jehož existenci si uvědomujeme v každém okamžiku.
 Ale analogicky k obvodu zahradní hadice může mít i vesmír další rozměry, pevně stočený do vesmíru, aniž by bylo zřejmé, že až dosud zůstaly skryty i před našimi nejdokonalejšími experimentálními perlikturami.
-Abychom získali jasnější představu o základně Kaluzina pozoruhodného návrhu, pojďme se na tu hadici na chvíli soustředit.
+Abychom získali jasnější představu o základně Kaluzina pozoruhodného návrhu, pojďme se na tuto hadici ještě nějakou dobu soustředit.
 Představte si, že na obvodu hadice kreslíme poměrně hustou řadu prstenců v černé barvě.
 Z dálky se hadice stále jeví jako tenká jednorozměrná čára.
 Nyní s dalekohledem, díky kresbě, můžeme odkrýt stočený rozměr ještě snadněji, jak je znázorněno na obrázku 2.
@@ -1633,10 +1633,10 @@ Ještě důležitější je, že nyní hovoříme o prostorové geometrii samotn
 Ale základní myšlenka je stejná.
 Pokud je dodatečná kruhově tvarovaná dimenze extrémně miniaturní, lze ji poznat, stejně jako kulatý obvod hostitele, mnohem obtížnější než pozorování zřejmých, velkých a rozsáhlých rozměrů.
 Je-li velikost dodatečného rozměru dostatečně malá, odkrytí bude ve skutečnosti nad možnosti našich nejmodernějších nástrojů pro rozšíření.
-Nejdůležitější však je, že dodatečná dimenze není pouhým kulatým prořízlostí uvnitř běžných rozměrů, jak chybně ukazuje dvourozměrná ilustrace.
+Nejdůležitější však je, že dodatečná dimenze není pouhou kulatou prožúraci uvnitř běžných rozměrů, jak chybně ukazuje dvourozměrná ilustrace.
 Kruhová dimenze je nová dimenze, která existuje v každém bodě tří pravidelných rozloh.
 Je to rozměr, který je nezávislý na zbývajících třech rozměrech, stejně jako horní dolní, levá-pravé a přední-back rozměry jsou vzájemně nezávislé (a diagonální).
-Dost malý mravenec by se mohl pohybovat ve všech čtyřech rozměrech a abychom určili jeho polohu, potřebujeme kromě tří obvyklých detailů i polohu v kruhovém rozměru; pokud počítáme i v čase, pak je zde pět detailů, ale v každém případě je o jedno více, než bychom normálně očekávali.
+Dost malý mravenec by se mohl pohybovat ve všech čtyřech rozměrech, a abychom určili jeho polohu, potřebovali bychom kromě tří obvyklých detailů také pozici v kruhovém rozměru; pokud počítáme také v čase, pak je zde pět detailů, ale v každém případě je o jedno více, než bychom normálně očekávali.
 Zajímalo tě to?
 Knihu „Elegantní vesmír“ od Briana Greena si můžete zakoupit na adrese l. teys.
 Cena verze e-knih je 149 Kč.
@@ -1651,7 +1651,7 @@ Od té doby se fyzici zmiňují o možnosti dalších malých prostorových rozm
 Wohnout člen Honza Homola dává rady, jak trénovat na elektrické kytaře: Part 5
 Celkovým základem „12“ je 12taktická harmonická forma, kterou můžete opakovat náhodně.
 Ten, kdo se ponoří do hudební teorie, zde podrobně projde princip.
-Jan Homola, nebo Honza Homolka Tobolka (1976)
+Jan Homola nebo Honza Homolka Tobolka (1976)
 Tento vystudovaný loutkář a smyčcový loutkář, na jehož profil na Facebooku se zde dá pohlížet, žije jako grafik od doby, kdy před dvanácti lety promoje na střední škole.
 Je kytaristou v kapele Wohnout, které je údajně nemožné skončit.
 Tím, že se stal kytaristou, šel ve stopách svého otce, stejně jako bratr Matěj, vůdce Wohnout.
@@ -1703,7 +1703,7 @@ V okolí erupce se ozve silný zápach síry a z vrcholu stoupají plyny a pára
 To rozhodně není erupcí vhodnou pro cestovní ruch, jako tomu bylo v případě erupce ve Fimmvörðuháls v roce 2010.
 „Tahle je mnohem větší a je tu také mnohem více plynů,“ říká odborník na sopky Ármann Höskuldsson.
 Od včerejška se však počasí výrazně zlepšilo a ráno to bylo v oblasti téměř klidné.
-Stopy písečné bouře byly spláchnuty deštěm.
+Stopy písečné bouře byly vyplaveny deštěm.
 Vědci mohou pokračovat ve své práci.
 Oranžová hladina (druhá nejvyšší) se vztahuje na letectví pro společnost Bárðarbungu a žlutá (třetí) pro Askju.
 Obloha nad Chebem patřila odvážné lady Peggy.
@@ -1735,7 +1735,7 @@ Na stejném místě je další perla Cheb Aviation Day, dvoumotorové Beechcraft
 Obrovský letoun nelze přehlédnout na letišti.
 Jeho leštěný hliníkový povlak svítí na velkou vzdálenost.
 Také letadlo Max Holste MH 1521M Broussard v barvách francouzského letectva se mu dostalo obdivu.
-Malé dopravní letadlo se dostalo za zřeknutý Turbolet a od německého Hof si na letecké přehlídce přivezlo domovskou část německé delegace.
+Malé dopravní letadlo se dostalo za zřeknutý Turbolet a od německého Hof si na leteckou přehlídku přivezlo domovskou část německé delegace.
 Chebovi sousedé z německé strany hranice předvedli představení, včetně některých s rekonstrukovanou letouny Jak 18T a tříčlennými formacemi s využitím Bücker Jungmannových ošuntělých.
 Lucie Borhyová: Dramatický návrat do kamery!
 Lucie Borhyová si vyměnila rodičovskou zodpovědnost za práci alespoň pro dnešní večer.
@@ -1776,7 +1776,7 @@ Pamatujete si ještě na svůj první týmový zápas?
 Na takové věci se nedá zapomenout.
 Bylo to proti Calgary Flames a byli tam tři mladí lidé, Robert Holík, Robert Reichel a já, a my jsme se přidali do jedné skupiny po třech.
 Byl to první týmový start pro všechny.
-Ale bylo by nepřesné říci, že jsme jakýmkoli způsobem dominovali.
+Ale bylo by nepřesné tvrdit, že jsme jakýmkoli způsobem dominovali.
 Dominik Hašek hrál po dlouhém období na brankovské pozici v Jihlavě.
 Co jsi říkal o jeho vystoupení?
 Hašan mě na ledě nikdy nepřekvapí.
@@ -1794,7 +1794,7 @@ Kdo by se na to netěšil?“ řekl, když se předstoupil před novináře v t�
 Český týmový program
 Pondělí, září: začátek schůze, první trénink
 Úterý, 2. září: Otevřený trénink pro fanoušky (2:30, Letná) Autograf podpis (20.)
-Středa, 3. září: Česká republika – USA (20:15, Letná)
+Středa, 3. září – Česká republika – USA (20:15, Letná)
 Úterý 9. září: Česká republika – Nizozemsko (20:45, Letná), konec jednání
 Rosický a jeho spolupracovníci mohou být podporováni fanoušky již před středečním zápasem proti USA (20:15).
 Tým pro ně zahájil v úterý trénink, který začne v Letné v 18:30.
@@ -1823,7 +1823,7 @@ Britka tvrdí, že strávila mnoho let tím, že si myslela, že po chybné diag
 Karin Rodgersová strávila většinu svého dospívání v domnění, že jí zbývá jen roky života poté, co jí byla diagnostikována jiná nemoc.
 Ve skutečnosti měla nemoc Charcot-Marie-Tooth (CMT) – skupinu dědičných poruch, které poškozují nervy mimo mozek a páteř.
 Charita CMT UK uvedla, že chybná diagnóza je běžným problémem mezi lidmi s CMT, protože o tomto stavu se ví tak málo.
-Ve Velké Británii se má za to, že CMT má asi 23 000 lidí, což může způsobit motorické příznaky, jako je svalová slabost, trapná chůze a zakřivené nohy.
+Ve Velké Británii se předpokládá, že CMT, což může způsobit motorické příznaky, jako je svalová slabost, trapné chůze a zakřivené nohy.
 Postižení mohou také pociťovat necitlivost nebo bolest a stav je nevyléčitelný a progresivní, což znamená, že příznaky se zhoršují v průběhu času.
 Když bylo Rodgersovi 13 let, měla dojem, že trpěla Friedreichovou ataxií (FA) – stavem, který měl velmi špatnou prognózu.
 Rodgers si myslel, že bude mít na vozíčku, když jí bude 18 a bude jí zabito, než dosáhne třicítky.
@@ -1869,7 +1869,7 @@ Míra korporátní Marylandu je 8,25 procenta, zatímco District má relativně 
 Podobná studie USA. Obchodní komora na začátku letošního roku ukázala, že Virginie má nižší státní a místní podnikatelské daně a celkově lepší podnikatelské daňové klima než Maryland.
 Okres nebyl ve studii hodnocen.
 Navzdory své výhodě čelí Virginie konkurenčnímu tlaku na jihu.
-Severní Karolína nedávno podepsala legislativu, která letos snížila firemní sazbu z 6,9 procenta na 6 procent, v souladu s Virginií, a sazba v příštím roce klesne na 5 procent.
+Severní Karolína nedávno podepsala legislativu, která letos snížila své firemní sazby z 6,9 procenta na 6 procent, v souladu s Virginií, a míra klesne na 5 procent v příštím roce.
 Pokud bude stát v příštím roce pokračovat ve splňování výnosů, zákon by do roku 2017 mohl zvýšit sazbu státní daně z příjmu z příjmů z podnikání až o 3 procenta.
 Zdá se, že malé podniky v regionu Washingtonu jsou přitom podle nedávné studie o to lepší, a proto platí více státních a místních daní.
 Podnikatelské daně, které majitelé drobných podnikatelů – průchozí struktura, kterou organizuje většina malých firem – se v okrese, Marylandu a Virginii loni vyšplhaly o 20 procent na 2,4 miliardy dolarů, což je mnohem rychlejší tempo růstu než celkové podnikatelské daně.
@@ -1878,12 +1878,12 @@ Oblast Washingtonu však může zaostávat, protože zpomalení federálních v�
 Co vám uniklo: Tusk povede Evropu, nůžky Novorossiya a Lafaty
 Objeví se na Ukrajině nový stát?
 Putin vyzývá k jednání o Novorossijiji
-Ruský prezident Vladimir Putin se zmínil o možnosti vytvoření nového státu na jihovýchodě Ukrajiny, kde se od dubna střetávají vládní síly s proruskými povstalci.
+Ruský prezident Vladimir Putin se zmínil o možnosti vytvoření nového státu na jihovýchodě Ukrajiny, kde se od dubna vládní síly střetávají s proruskými povstalci.
 Varoval také evropské společnosti, že nyní, když byly proti Rusku uvaleny sankce, bude pro ně obtížné vrátit se na ruský trh.
 Podporu Západu podle něj je ukrajinské armádě na východě Ukrajiny v rozporu s demokratickými hodnotami.
 Říká, že až konflikt skončí, bude záviset na Kyjevě, a proto nemůže říci, kdy ukrajinská krize skončí.
 Další sankce pro Rusko?
-Česká republika si vyhrazuje právo nesouhlasit s částmi sankcí.
+Česká republika si vyhrazila právo nesouhlasit s částmi sankcí.
 Evropská komise společně s diplomaty do týdne navrhne, jaké bude mít další kolo sankcí proti Rusku, a rozhodla se na summitu EU přes noc.
 Novinářům to řekl Herman Van Rompuy, stálý předseda schůzí, kterého se účastní členské státy.
 Podle českého premiéra Bohuslava Sobotky by konkrétní návrhy na posunutí podoby sankcí měly být připraveny již v pondělí.
@@ -1892,10 +1892,10 @@ V prosinci nahradí Van Rompuye.
 Na summitu EU byl předsedou Evropské rady polský premiér Donald Tusk, a je proto „předsedou EU“, který dohlíží na vrcholná setkání, kterých se účastní zástupci členských států.
 V prosinci nahradí Hermana Van Rompuye na dva a půl roku.
 Italská ministryně zahraničí Federica Mogheriniová nahrazuje Catherine Ashtonovou ve funkci nejvyšší diplomatky EU.
-Italka, která se stane místopředsedkyní budoucí Evropské komise, musí být v Evropském parlamentu potvrzena, než se této funkce ujme.
+Italka, která se stane místopředsedkyní budoucí Evropské komise, musí být v Evropském parlamentu potvrzena, než bude moci tuto funkci převzít.
 Asistovaná smrt je v České republice realitou, o které nikdo nemluví.
 Může být pacientovi s dlouhodobým nebo neléčitelným onemocněním pomoženo ukončit život?
-Ne v České republice legálně, protože zdejší zákony neosvědčují eutanazii.
+Ne v České republice legálně, protože zdejší zákony neberou eutanazii.
 Nicméně někteří lékaři, které LN kontaktovala, tvrdí, že takové žádosti obdrželi.
 ALS: Nejobtížnější kapitola neurologie, říká lékař o skleróze
 Česká republika má asi 300 lidí trpí amyotrofní laterální sklerózou (ALS) a 21 pacientů podstupuje experimentální léčbu kmenovými cely v pražské Motorové nemocnici.
@@ -1958,7 +1958,7 @@ Dámy a pánové v novinářské profesi, buďte prosím ve své práci opatrně
 Tak to vylepš.
 Dokud je pořád tady.
 A také prosazovat právo jediné skutečně demokratické země na Blízkém východě bránit své obyvatelstvo.
-Jak byste chtěli, aby se naše vláda chovala, kdyby se jeden z našich sousedů rozhodl, že chce zlikvidovat český národ a vymazat Českou republiku z mapy světa?
+Jak byste chtěl, aby se naše vláda chovala, kdyby se jeden z našich sousedů rozhodl, že chce zlikvidovat český národ a vymazat Českou republiku z mapy světa?
 Možná by sis měl uvědomit ještě jeden fakt.
 Téměř 20% Arabů na území Izraele má izraelské občanství.
 A cítí se dobře.
@@ -1967,26 +1967,26 @@ V Izraeli mají práci, sociální jistoty a vysoce kvalitní zdravotní péči 
 Hamás útočí na své arabské bratry svými raketami.
 Jediným skutečným způsobem, jak pomoci Gaze a napjatému regionu, je odstranit a odzbrojit Hamáše.
 A neodsoudit Izrael, byť jen nepřímo prostřednictvím novinových titulků.
-O praktikách Hamásu a jeho využívání lidí jako lidských štítů se informujte.
+O praktikách Hamásu a o jeho využívání lidí jako lidských štítů se informujte.
 Informovat o tom, že cílem Hamásu je zlikvidovat Stát Izrael za každou cenu.
 I když to způsobí smrt nevinných arabských dětí.
 Upozorňovat, že Hamás je na seznamu globálních teroristických organizací.
 Informovat o tom, že za devět let samosprávy v Gaze by mohla rozkvetnout díky humanitární pomoci z celého světa.
-Dokonce i z Izraele, který dodává vodu a elektřinu, za který samozřejmě neplatí vládci Gazy, a pak se dokonce rozčílí, když jsou dodávky elektřiny někdy přerušeny.
+Dokonce i z Izraele, který dodává vodu a elektřinu, za který samozřejmě neplatí vládci Gazy, a pak se dokonce rozčílí, když jsou dodávky elektrické energie někdy přerušeny.
 Pokud Hamás neinvestoval své peníze do výstavby podzemních tunelů, aby sebevražední atentátníci mohli proniknout do Izraele, ale místo toho do aktivit, jako je výstavba obytných domů, nemocnic a škol, jeho arabští bratři z Gazy by žili mnohem lépe.
 Amazon kupuje Twitch za 1,04 miliardy dolarů
 AMAZON právě potvrdil, co Information hlásily v pondělí ráno: on-line prodejce – a výrobce videa a stovka dalších věcí – kupuje video streamovací službu Twitch za 1,04 miliardy dolarů (970 milionů dolarů).
 Oznámení je překvapením, ne proto, že by se Twitchovi nešlo koupit, ale proto, že se od YouTube všeobecně očekávalo, že bude kupcem.
 Před třemi měsíci prodej Twitche video službě Googlu za parádní miliardu vypadal zabalený a párování se zdálo přirozené.
 Twitch, který byl založen teprve před třemi lety jako Justin.tv, se rozhodl být všeobecnou streamovací službou – živou verzí YouTube.
-Místo toho se rychle stalo platformou pro hráče, aby vysílali své herní výkony; „YouTube pro živé hraní,“ v Art Insider slova.
+Místo toho se rychle stala platformou pro hráče vysílat své herní výkony; „YouTube pro živé hraní,“ v Business Insider slova.
 Twitchovo rozhraní.
 A „jdeme si hrát“, žánr videí, ve kterých chytráci dávají (většinou starší) hry Mystery Science Theater zpracování, jsou již populární na YouTube.
 Jde o to, že YouTube se objevuje často, když Twitche popisuje, takže novinkou, že YouTube získává Twitche, byla přivítána zívnutím, učebnicovým příkladem zakoupené technologické společnosti odkoupující potenciálního konkurenta.
 Je záhadou, proč dohoda s YouTube padla, když uvážíme, že byla údajně ochotná zaplatit ne méně než Amazon.
 Vše, co v tuto chvíli máme, je toto prohlášení výkonného ředitele Twitch Emmetta Sheara: „Vybrali jsme si Amazon, protože věří v naši komunitu, sdílejí naše hodnoty a dlouhodobou vizi a chtějí nám pomoci se tam dostat rychleji.“
 Další záhadou, upřímně, je Twitchův neuvěřitelný úspěch.
-Snobům jako já, kteří prohlašují, že by raději sportovali, než se na ně dívali, je těžké vidět přitažlivost sledovat hry, než se najímat sám s ovladačem.
+Snobům jako já, kteří prohlašují, že by raději sportovali, než se na ně dívali, je těžké si představit, že by se na zápasy dívali, spíš než se chopili ovladače.
 Je to jedna věc, podívat se své kamarádce na rameno ve 3 ráno, když se prodírá Resident Evil, a něco úplně jiného sledovat, jak nějaký rando dostane 20 panáků v řadě v Call of Duty.
 Všechny zápasy, které se teď můžete dívat.
 Dalším problémem je, že mnoho dnešních nejpopulárnějších her jsou v první řadě, takže sledování záběrů z nich, bez kontroly pohledu sami, může být do to Right-worthy recept na bolest hlavy.
@@ -2005,10 +2005,10 @@ Originální video připojené.
 Druhou zakladatelskou lží kreářství je víra, že posvátná písmena byla napsána spíše božstvem než skutečnými lidskými autory.
 Když věřící se přou o to, co je v rozporu s jejich náboženstvím, často nás vyzývají, abychom se rozhodli, komu uvěříme.
 Údajné slovo Boží? Nebo ten z lidí?
-Jako by lidské vyšetřování neměla proti autoritě žádnou šanci, kterou si myslí, že je jejich doktrína.
+Jako by lidské vyšetřování neměla proti autoritě žádnou šanci, jak si představují, jejich doktrína.
 Ale když se řekne „muži“, mluví o vědě.
 A když se odvolávají na „slovo Boží“, mluví o mýtech, které o Bohu napsali lidé.
-Pokud skutečně existuje inteligentní a cílevědomý tvůrce, pak by to musel být on, kdo zkonstruoval fosilní záznamy odhalující evoluční historii, a on musí být ten, kdo vymyslel genetické vzory, které také sledují stejný směr, a musel to být on, kdo přidal další směry dokazování, které ukazují na evoluční závěr výhradně a do brilantních detailů.
+Pokud skutečně existuje inteligentní a cílevědomý tvůrce, pak by to musel být on, kdo zkonstruoval fosilní záznamy odhalující evoluční historii, a on musí být tím, kdo vymyslel genetické vzory, které také sledují stejný kurz, a musel to být on, kdo přidal další směry důkazů, které ukazují na evoluční závěr výhradně a do brilantních podrobností.
 Proč by jinak všechny ty věci existovaly?
 Jako by se nám snažil něco říct!
 Muži nemohli nic z toho vytvořit.
@@ -2019,7 +2019,7 @@ Muži, kteří byli „dojmenováni“ nebo inspirováni svými oblíbenými boh
 Pokud skutečně existoval jeden pravý bůh, měl by to být ojedinělý kompozit bohů každého náboženství, uber-galaktický super-génius a konečná entita celého vesmíru.
 Pokud by bytost takového rozsahu někdy napsala knihu, pak by byl jen jeden takový dokument; jedna kniha Boží.
 Byla by dominantní všude na světě bez předchůdců, paralel nebo alternativ v jakémkoli jazyce, protože by s ním nemohli soupeřit pouhlí lidští autoři.
-A vy byste nevěřili, byste nevěřili, protože by to bylo v souladu se všemi důkazy a prokazatelně pravdivými, odhalující hlubokou morálku a moudrost daleko za současnou lidskou schopností.
+A vy byste nevěřili víře, abyste tomu věřili, protože by to bylo v souladu se všemi důkazy a prokazatelně pravdivými, odhalujícím hlubokou morálku a moudrost daleko za současnou lidskou schopností.
 Neustále by to pro každého čtenáře vzbudilo jednotu společné víry.
 Kdyby to Bůh napsal, nemohli bychom nic jiného očekávat.
 Ale to, co vidíme, je pravý opak toho.
@@ -2035,13 +2035,13 @@ Pořád musíš mít víru.“
 Všichni vyžadují víru a také apologetiku, protože také obsahují nesrovnalosti, absurdity a primitivní pojetí, které byly kdysi pravdivé, ale které byly od té doby vyvráceny.
 Aby si mohli nárokovat žádný důkaz božské moudrosti.
 Mnozí z nich podporují ohavná zvěrstva místo morálky a mnozí tvrdí, že jsou potvrzeni proroctvím, která se nyní naplnila â €, „místo, z nichž každá může obsahovat také proroctví, které se nepodařilo přijít, jak se předpokládalo.
-Přední teologové připouštějí, že všechna písma jakéhokoli náboženství byla napsána lidskými rukama, a proto byly předmětem interpretací, dojmů a perspektiv svých primitivních a často předpojatých a politicky motivovaných autorů, a oni to uvádějí jako vysvětlení mnoha rozporů v těchto knihách, zejména těch v Bibli.
+Přední teologové připouštějí, že všechna písma jakéhokoli náboženství byly napsány lidskými rukama, a byly tak předmětem interpretací, dojmů a perspektiv jejich primitivních a často předpojatých a politicky motivovaných autorů, a uvádějí to jako vysvětlení mnoha rozporů v těchto knihách, zejména těch v Bibli.
 „No, nenazýval bych je tak jako komentářům, ten druhý.
 Opět, upozorňme na to, že zde pravděpodobně máme dva různé autory, kteří se v redakci poněkud spojili a pak se poněkud spojili v redakční revizi.“
 Má pravdu v tom, že je tu víc než jeden autor pro Genesis, a rozhodně to nebyl očitý svědek!
 Někteří odborníci dnes uznávají čtyři různé prameny jen pro Pentateuch, pět knih „Moses“, a nepřipisují Mojžíšovi jako autorovi nikoho z nich, protože zřejmě nikdy neexistoval tak, jak se to popsalo.
 Učenlivý shoda je, že Genesis byla sestavena (pravděpodobně Ezrou) z několika nesouvisejících ústních tradic před necelými 2500 lety.
-Další dokumenty se ve stejnou dobu promítaly, což vše připisuje lidským autorům.
+Další dokumenty se ve stejnou chvíli promítaly, což vše připisovalo lidským autorům.
 Bible není zdaleka tak stará, jak věřící říkají!
 Svitky z Mrtvého moře jsou nejstarší archeologické texty známé pro dosud nedokončené základ všech západních monoteatismů, ale jsou o století mladší než původ zoroastriánských, buddhistických, hinduistických, heliskistických, druhojních, čínských a egyptských náboženství.
 Křesťanství začalo s gnostickou vírou, pak s doktorsterií a Ebionity a jejich zcela odlišné perspektivy Ježíše se nakonec spojily v kompromis zvaný pravoslavnost.
@@ -2074,7 +2074,7 @@ Je zřejmé, že autoři této knihy ne.
 Kdyby Bibli sepsala nejvyšší bytost, pak by to nezadávalo chyby, které se jí stává.
 Kdyby to byla napsána skutečně nadřazenou bytost a měla být čtena jako doslovná historie, Bible by neobsahovala nic, co by to dělalo.
 Jako morální vodítko naprosto selže, protože mnoho z původních hebrejských písní bylo napsáno ignorantskými a bigotními divochy, kteří přehlíželi a podporovali týrání zvířat, incest, otroctví, týrání otroků, zneužívání manželů, zneužívání dětí, obtěžování dětí, potraty, drancování, vraždění, kanibalismus, genocidu a předsudky proti rase, národnosti, náboženství, pohlaví a sexuální orientaci.
-O ospravedlňovat svou vlastní nelidskost tvrzením, že udělají Boží vůli.
+Ospravedlnit svou vlastní nelidskost tvrzením, že páchají Boží vůli.
 Tvacionáři však stále ignorují to všechno.
 Některé z jejich stránek dokonce připouštějí, že ať už je realita v rozporu s Biblí, pak je třeba ignorovat realitu!
 A proč?
@@ -2083,7 +2083,7 @@ Jeden je druhý v jejich světě.
 Je ironií, že věřící odmítají „pěstování“ Boha jako „zrušujícího stvoření nad stvořitelem“.
 Ale pak podepřou slova lidí před Bohem, jako Bůh, a dokonce trvají na tom, že vyvrácení jejich údajně „svatých“ knih by nějak vyvrátilo i Boha.
 Nejen jejich verzi Boha, ale i verzi Boha všech ostatních.
-Křesťané si myslí, že pokud je Bible špatná, pak Bůh lhal.
+Křesťáci si myslí, že pokud je Bible špatná, pak Bůh lhal.
 Nemohou přijmout, že by Bůh mohl existovat, ale Bible se mýlila, protože nemohou odlišit doktrínu od božstva.
 Je to tedy forma modlářství, ve které věřící uctívají uměle vytvořené kompilace, jako by tyto knihy byly Bohem sám –protože si myslí, že je to HIS slovo.
 Ale Bůh nikdy nenapsal ani nediktoval žádné z biblí jakéhokoliv náboženství.
@@ -2118,14 +2118,14 @@ Ministr školství Marcel Chládek zahájil nový školní rok na soukromé spor
 Vedení školy ho oslovilo už před časem na hokejovém zápase v Litvínově.
 „Byli první, a tak jsem přijal pozvání na začátek školního roku,“ řekl ministr.
 Ministr školství Marcel Chládek (česká sociálně demokratická) zahájil školní rok na soukromé sportovní škole v Litvínově.
-Celkem 115 000 prvních ročníků letos zahájilo své první lekce.
+Celkem 115 000 prvních ročníků letos zahájilo své první třídy.
 Více než 850 000 dětí bude navštěvovat základní školy a více než 405 000 studentů bude navštěvovat střední školy, předpovídá ministerstvo školství.
 David Fiala jmenován novým televizním zpravodajským uměleckým ředitelem
 David Fiala se stal od 1. září novým uměleckým ředitelem pro zpravodajské a aktuální oddělení TV Nova.
 Nahradí Alana Zárubu, který od 1. června stojí v čele kreativního oddělení celé skupiny Nova.
 David Fiala dříve pracoval v grafickém oddělení zpravodajského kanálu Z1.
 V posledních dvou letech se pod vedením Alana Zárubu podílel na realizaci kompletní vizuální transformace večerní zpravodajské show Televizní, pořadů Střepiny, Prásk! a dalších pořadů o aktuálním dění v TV Nova.
-„David Fiala je velmi dobrý v týmové práci a komunikaci mezi zpravodajskými stoly, vedením studia a grafickým oddělením, což je v podstatě práce zpravodajského uměleckého ředitele.
+„David Fiala je velmi dobrý v týmové práci a komunikaci mezi zpravodajskými pulty, studiovým managementem a grafickým oddělením, což je v podstatě práce zpravodajského uměleckého ředitele.
 Má cit pro typografii a čistě elegantní design, což je cesta, na které chceme zůstat pro vizuální produkci pro noviny Nova,“ říká kreativní ředitel Novy Alan Zárubu.
 Apple iCloud se údajně naboural, na veřejnost unikly nahé fotky celebrit
 Screenshot se seznamem uniklých souborů
@@ -2186,7 +2186,7 @@ Někdy jsou tyto knihy v podstatě pronajaty tím, že elektronickou licenci po 
 Chegg si „Calculus“ pronajme na šest měsíců za zhruba 61 dolarů.
 Bracey říká, že studenti v literatuře mohou často najít nejlepší slevy, protože mnoho klasik je nyní k dispozici ke stažení zdarma, zatímco vědy a inženýrské texty mohou být extrémně drahé.
 Ať se děje, co se děje, nakupuj.
-Joe Gault, 29, který se chystá vstoupit do Pepperdine Law School, doporučuje použít ISBN číslo k cenám knih, protože to zajišťuje, že nakupujete pro správný text.
+Devětadvacetiletý Joe Gault, který se chystá na vstup do Pepperdine Law School, doporučuje použít ISBN číslo k cenám knih, protože zajišťuje nákupy pro správný text.
 Před objednání on-line, Gault říká, nezapomeňte zkontrolovat, zda je kniha skutečně na skladě.
 Tu lekci se naučil po zlém.
 Kniha, kterou si koupil, byla obšvána na čtyři týdny a on nakonec zaplatil plnou cenu ve vysokoškolském knihkupectví.
@@ -2211,7 +2211,7 @@ Puška byla v studni, kterou našli v studni, členové Jeseníkyho pobočky Př
 Nález skončí v depozitáři muzea na zámku v nedalekém Slezově Rudolticech.
 Ukrajinský generál: Ještě jsem nezadrženého Čecha osvobodil
 Exkluzivní rozhovor Aktuálně.cz s generálem Volodymyrem Rubanem, který osvobozuje ukrajinské vojáky ze zajetí proruskými separatisty.
-Kiev/Praha – „Promiňte, musím si ho vyzvednout... volají mi z Doněckku,“ omluvil se snad osmkrát během exkluzivního rozhovoru, který vedl Aktálněu.cz s ukrajinským generálem Volodymyrem Rubanem, který je zároveň ředitelem místního Centra pro osvobození vězeňských obyvatel.
+Kiev/Praha – „Promiňte, musím si ho vyzvednout... volali mi z Doněck,“ řekl a během exkluzivního rozhovoru, který vedl Aktálněu.cz, se v exkluzivním rozhovoru, který vedl Aktálněu.cz s ukrajinským generálem Volodymyrem Rubanem, který je zároveň ředitelem místního Centra pro osvobození vězeňských osob ve válce.
 Generál Volodymyr Ruban v televizní debatě.
 Během každého takového přerušení nebylo možné slyšet jména lidí, jejich počet a místa, kde jsou – nebo kde by měli být -, které Ruban vyjasní se svým protějškem na druhém konci telefonní linky.
 „Přesně tak, jdi tam,“ řekl a ukončil rychlou diskuzi s někým v Doněcku a pak se znovu zaměřil na naše.
@@ -2250,7 +2250,7 @@ Jeden z kyjevských důstojníků mi dal přezdívku „bláznivý generál s oc
 To mě neuráží.
 Ale možná to vyzdvihuje základ naší práce.
 Jako šéf Sdružení ukrajinských důstojníků jsem již dříve získal určitou autoritu.
-Nikdy nezkouším lidi, nikdy nepodvádím a vždycky držím slovo.
+Nikdy nezkoumu lidi, nikdy nepodvádím a vždycky držím slovo.
 Ať se stane cokoliv, jednám upřímně a říkám pravdu.
 Učiním tak, i když je to velmi nepříjemné pro ukrajinskou vládu nebo pro zástupce v Doněcku nebo Luhansku.
 A když budou hočit a zabíjet lidi?
@@ -2271,7 +2271,7 @@ Usilují o nezávislost a možná dokonce o demokracii v Doněcku nebo v Luhansk
 Už nechtějí hrát karty s ukrajinskými oligarchy.
 Separatisté už mají oligarů dost a jsou jejich neochvějnými oponenty, na celý život a na smrt.
 Jak říkáme, jsou až po krk.
-Mimochodem, ty samé sny a přání vyjadřovali lidé na Majdanu.
+Mimochodem, stejné sny a přání vyjadřovali lidé na Majdanu.
 A teď se objevují spekulace: Rusko podporuje separatisty a Západ podporuje Ukrajinu.
 Považuji jednu spekulace za velkou a druhou malou.
 Ale jen ten trest skrývá v něm nesmiřitelný spor.
@@ -2310,16 +2310,16 @@ Ale pokud jde o film na mírně starším trhu, zdá se, že problém nemusí b�
 V červenci společnost Entertainment Weekly porovnala průměrnou CinemaScore a Metacritic hodnocení za každé letní vydání, které se hrálo na nejméně 2000 obrazovkách mezi svátky Mayové Dne obětí války a 20. červencem 2013 a letošním rokem.
 Výsledky, které berou v úvahu názor diváků v kinech i filmových kritiků, naznačují, že letošní úroda filmů je podobných kalibrních hitů z loňského roku.
 Někteří komentátoři naznačují, že změna diváckých zvyků a zvýšená popularita web streamovacích služeb, jako je Netflix, může být na vině.
-Režisér Jon Favreau, který v současné době pracuje na chystaném Disneyho filmu z Džrážky, řekl webu Hollywood Reporter: „Myslím, že časy se mění.“
+Režisér Jon Favreau, který v současné době pracuje na chystaném Disneyho filmu z Džanby, řekl webu Hollywood Reporter: „Myslím, že časy se mění.“
 Musíme to uznat a ne se snažit honit, co bývalo.
 Na rozdíl od současného propadu hollywoodských návštěvnosti Netflix nedávno zaznamenal tržby ze služby streamovacího obsahu 1,2 miliardy dolarů, což se v loňském roce téměř zdvojnásobilo 837 milionů dolarů.
-Loni v létě režisér Steven Spielberg kritizoval studia za to, že se příliš spoléhají na komiksové franšízy, a předpověděl hollywoodské „zmeznění“.
+Loni v létě režisér Steven Spielberg kritizoval studia za to, že se příliš spoléhají na komiksové franšízy a předpověděl hollywoodské „zmezení“.
 Ve světle současného poklesu někteří komentátoři tvrdí, že jeho strašné proroctví na něm mohlo být pravdivé.
 S letním rokem 2015 se chystá uvrhnout do žebříčku potenciálních velkých kasovních trháků, včetně Avengers: Age of Ultron, Minions a Jurského světa, další osobnosti ve filmovém průmyslu se cítí optimističtěji.
 Producent X-Men Simon Kinberg nedávno popsal pokles tržeb jako „cyklické“ a řekl Hollywood Reporter: „Příští léto bude největším kasovním trhákem v historii a nikdo se nebude starat o podnikání.“
 Severní Korea znovu vyhrožuje Soulu odpálením rakety
 Severní Korea vypálila do moře další raketu krátkého doletu, oznámil Soul.
-Raketový test údajně nastal krátce po skončení společných vojenských manévrů ze strany Spojených států a Jižní Koreje, které Pchjongjang považuje za přípravu na invazi.
+Raketový test údajně nastal krátce po skončení společných vojenských manévrů ze strany Spojených států a Jižní Koreje, které Pchjongjang považuje za přípravu invaze.
 Provincie Chagang se nachází v severozápadní části KLDR, podél hranice země s Čínou.
 Mluvčí jihokorejského ministerstva obrany citovala agentura DPA, která uvedla, že rakety byly vypáleny z místa v severozápadní části KLDR a dosáhly vzdálenosti asi 200 km.
 Je to zřejmě poprvé, co Severní Korea vypálila z provincie Chagang raketu, uvedla jihokorejská média s odvoláním na vojenské zdroje.
@@ -2341,15 +2341,15 @@ Policisté zůstali s dvojicí přes noc a v pondělí ráno byli vyvedeni.
 Byli převezeni sanitkou ve stabilizovaném stavu do nemocnice Blue Mountains.
 Olomouc odnesla Opavu jeden bod a tiš měl na noze potenciální vítězný gól.
 Třiadvacetiletý útočník se mohl rozhodnout, ale ve svých dvou největších šancích se mu to nepodařilo.
-Po gólu se odehrála hlavně dna tři minuty před koncem, ale místo v brance ho chytil Opavský brankář Josef Květoňovi.
+Po gólu se odehrála hlavně záběr z nedalekého tři minuty před koncem, ale místo v síti ho chytil brankář Opavy Josef Květoňuovi.
 „Měl jsem ho na noze a musím využít takové šance.
-Zlobím se na sebe,“ Tyčku, který mu vylít popel na hlavu.
+Zlobím se na sebe,“ a vysušuju mu popel na hlavu.
 „Myslím, že jsem měl vystřelit výš pod špičku sítě,“ řekl.
 Obrana Sigmy nedovolila Opavě mnoho, ale výjimkou byla Mikulova střelba z 11. minuty, kterou však zablokoval glíkař Ri.
 Hráči Hanáci pak začali vyvíjet tlak, ale obhájci domácích hráčů jim nedali šanci a Květoňovi zablokoval pokusy o gól z dálky.
 Porovnali jsme to na patnáct minut a pak jsme se chopili iniciativy.
 Už ve druhém poločase jsme byli lepší, měli jsme větší zápas a Opava pro nás hrozbu jen ve standardních situacích.
-Ale tička se nepodařilo příležitost otočit, a tak to skončilo 0:0,“ řekl trenér Hanákův Leoše Kalvody a vyjádřil své zklamání.
+Ale tička se nepodařilo příležitost otočit, a tak to skončilo 0:0,“ řekl trenér Hanáků Leoše Kalvody a vyjádřil své zklamání.
 Opava se ujala bodu i kvůli absencím, kromě dvou zraněných hráčů, chyběli také střídač Petr Vavřík a třígólový střelec Petr Ševčíkovi, který hostoval ve Slezsku ze Sigmy.
 Tento tým jim neumožnil hrát, navzdory své předchozí politice.
 Náhradníci si to zaslouží.
@@ -2357,37 +2357,37 @@ Náhradníci si to zaslouží.
 Bylo možné vidět velký důraz, agresivitu a bojovnost.
 „Treferi je pravděpodobně zasloužený, protože bod pro nás je slušný zisk,“ dodal.
 S remízou se Sigma dostala na čtyři body, což znamená třinácté místo.
-Nic, co by mohlo uspokojit šéfa týmu Josefa Lébru, který po porážce v zápase se Znojmem podmínil svou investici milion do diametrálně odlišných výkonů v následujících zápasech.
+Nic, co by mohlo uspokojit šéfa týmu Josefa Lébry, který po porážce se Znojmem podmínil svou investici milionu dolijem na diametrálně odlišný výkon v následujících zápasech.
 „Uvědomili jsme si, že pan. Lébrovo varování, aby se nemohlo mluvit o tom, že kluci nechtějí bojovat,“ poznamenala Kalvoda na adresu nejlepšího střelkyněček a dodal: „Jsem si jistá, že na okamžik přijde, a jakmile vystřelí gól, začne se trefovat do terče.
 Ale po první úspěšné střelbě ho okamžitě nahradím, aby mohl střílet góly i během jiných zápasů,“ smáčel se Kalvoda.
 Al Pacino zaujal Benátky dvakrát.
 Jinak filmový festival zažívá krizi.
-Po velkém nadšení ze startovního filmu „Birdman“, jehož režisér Alejandro González Iňárritu byl zařazen mezi seriózní kandidáty na cenu Zlatého lva, následovaly dny, které následovaly, vyvolaly dojem, že zájem o jednasedmdesátiletý festival v Benátkách poněkud ztroskotal.
+Po velkém nadšení ze zahajovacího filmu „Birdman“, jehož režisér Alejandro González Iňárritu byl zařazen mezi seriózní kandidáty na Zlatého lva, které následovaly, dnes se poněkud vytratil.
 Ať už se počet míst v největším divadle zvýšil na 1 400 nebo proto, že po „Birdmanovi“ následovalo kritiky, ale pro diváky méně atraktivní, filmy jako dokument o genocidě v Indonésii v šedesátých letech, „Pohled na ticho“ a další filmy se společenskými tématy, od amerického filmu „99 Homes“ po íránské „Taleše“, stále zůstávala v kinech prázdná.
 Komiksní hrdinové
 Ani červený koberec před filmovým palácem nenavělil tolik davů jako v minulosti a na poslední chvíli se údajně přestalo potýkat s pořízením hotelového pokoje.
 O krizi se v Itálii mluví více než kdekoliv jinde a není divu, že dokonce ovlivnila zavedené akce, jako je Bienále a nejstarší filmový festival na světě.
 Naštěstí se v krizi neobjevuje v nedostatku celebrit, ale jsou přítomny pouze v souvislosti s filmy.
 Zatímco mladí fanoušci toužili po autogramech komických superhrdinských herců Michaela Shannona a Andrewa Garfielda, kteří hráli role v „99 Homes“, po všechny generace bez rozdílů byla hlavní událostí návštěva legendárního herce Al Pacina.
-Dokonce se okamžitě objevil ve dvou filmech.
-V příběhu „Epiphany“, promítaný mimo soutěž a natočený Oscarem Barry Levison podle románu Phillipa Rotha, má čtyřiasedmdesátiletý Pacino roli, která je mu blízká: velmi slavný herec, který trpí depresí z konce své kariéry a osobního života.
+Okamžitě se objevil ve dvou filmech.
+V příběhu „Epiphany“, promítaném mimo soutěž a natočeném oscarovým oceněným Barrym Levisonem podle románu Phillipa Rotha, má čtyřiasedmdesátiletý Pacino roli, která je mu blízká: vysoce slavný herec, který trpí depresí na konci své kariéry a osobního života.
 Ale vidět ho hned druhý den jako nezlatýka železářství z malého venkovského městečka ve filmu „Manglehorn“, který natočil David Gordon Green, byl opravdu nezapomenutelný zážitek.
 Očekává se, že Volpi Cup pro nejlepší herecké výkony si nechybí, ale potřebuje umělec s Pacinovým stylem ceny?
 Možná je pro něj největší uspokojení ze strany veřejnosti, zejména italský obdiv, protože ačkoliv se narodil v New Yorku, Al Pacino je hrdý na zemi, ze které jeho prarodiče pocházejí.
 Body pro Itálii
 Italský film se v Benátkách celkově daří.
-„Black Souls“ režírovaný Francescem Munzim se stal po „Birdmanovi“ prvním filmu, který se dočkal dlouhého potlesku.
+„Černá duše“, režírovaná Francescem Munzim, se stala po „Birdmanově“ prvním filmu, který se dočkal dlouhého potlesku.
 Calabrese odnož mafie v něm je vnímán prostřednictvím rodinných vztahů mezi klany, kteří se spolu perou o moc a peníze, a režisérovi se podařilo naplnit všechna očekávání za dobrý film: dobrý scénář, záběry na kamery, hudbu a herce.
 Psychozlový thriller „Hladové srdce“, natočený Saveriem Costanzem s Albou Rohrwacherovou v roli ženy, která přes záchvaty vzteku téměř zabije své vlastní dítě, také skliďte uznání.
 Souběrné francouzské filmy se však tak vřelé přijetí neužívaly ani „Ransom for Glory“ ani „3 Hearts“, které se obě řídí tradičním modelem filmů ke konzumaci, které se opírají o popularitu hereckých osobností.
 Ale nakonec, dva opravdu vynikající filmy, „Birdman“ a „Black Souls“, není na první polovinu festivalu tak málo.
-A i když festivalové filmy mají poněkud depresivní témata, nový film od Petera Bogdanoviče s názvem „She's Funny That Way“, humorné komedie promítané v Benátkách mimo soutěž a natáčené ve stylu amerických komedií ze čtyřicátých let, se podařilo všem pozvednout náladu na více než jeden den.
+A i když festivalové filmy mají poněkud depresivní témata, nový film Petera Bogdanoviče s názvem „She's Funny That Way“, humorná komedie v Benátkách před soutěží a natáčená ve stylu amerických komedií ze čtyřicátých let, se podařilo všem zvednout náladu na více než jeden den.
 Pražská policie zajala čtyři výrobce pervitinu, kteří nosili léky z Polska.
 „V minulých dnech zatkli detektivové tři muže ve věku 42 a 42. a 37, a ženu, 25 let, kteří od loňského listopadu do letošního srpna vyrobili a prodávali pervitin v Praze 9,“ uvedla policejní mluvčí Jana Rösslerová.
 Nejprve v úterý 12. srpna nasazení na Cihlářské ulici chytilo dvaačtyřicetiletého organizátora a dealera a mladou ženu, která ve skupině figurovala jako kupující léků v Polsku a prodávající dávek.
 Na základě předchozího svolení státního žalobce pak policie druhý den zatkla dalšího člena skupiny, 37letého muže.
-Poslední ze čtyř chytila policie ve středu 20. srpna ráno na místě Malešického spalovny,“ řekla mluvčí.
-Žena dostala třetinu léků výměnou za to, že léky přiveze.
+Poslední ze čtyř zachytila policie ve středu 20. srpna ráno na místě Malešického spalovacího zařízení,“ řekla mluvčí.
+Žena dostala třetinu léků výměnou za to, že do ní přinesou léky.
 Hlavní organizátor byl aktivní na mnoha místech.
 Na dílně v Letné, v domku v Horomkáchicích, v bytě na Konské ulici a na dalších vztažných místech v Praze 9 vyrobil pervitin, získal různé zásoby a chemikálie potřebné pro jeho výrobu a zajistil přepravu drog obsahujících pseudoepedrin z Polska.
 Pak zhatil vyrobenou drogu, vložil ho do plastových pytlíků a pak prodal pervitin.
@@ -2417,11 +2417,11 @@ Zrušení středních a středních škol nedává smysl.
 Začátek školního roku je tady.
 V posledních čtrnácti dnech se ve školách připravovaly velké přípravy.
 Většinou to byla rutinní příprava, jako je přivážet květiny z letních skladovacích prostor zpět do tříd a příprava křídy.
-Na střední škole na Hořickém, bude toho ještě trochu víc.
+Na Hořickém střední škole, bude toho ještě trochu.
 Pár dní před začátkem sezóny hledají nábytek, počítače a další technické vybavení, stejně jako literaturu pro knihovnu.
-To není výsledek vloupání nebo zpronevěry. Po třech letech se Hořický High School znovu otevírá a pokračuje ve své činnosti.
+To není důsledek vloupání nebo zpronevěry. Po třech letech se Hořický High School znovu otevírá a pokračuje ve své činnosti.
 Ne na veřejnosti, ale na soukromé platformě.
-Nedostatek materiálového vybavení není způsoben tím, že zakladatelé byli nekompetentní.
+Nedostatek materiálového vybavení není proto, že by zakladatelé byli nekompetentní.
 Musí počítat s tím, že existence školy bude potvrzena zápisem do rejstříku škol spravovaných Ministerstvem školství, mládeže a tělovýchovy ČR.
 Francouzští socialisté by měli „držet hubu a vyřešit Francii“, tvrdí klíčový spojenec Francoise Hollandea
 Pan Valls vyzval hluboce rozdělenou levici, aby „ukázala svou náklonnost“ k dosluhovanému socialistickému prezidentovi, jehož přeskupení se nepodařilo splnit souhlas drtivé většiny Francouzů.
@@ -2447,24 +2447,24 @@ Praha se do říjnových voleb nevyřeší a nebude moci připravovat a schváli
 „Očekává se navíc, že rozhodnutí o změnách nebudou činit současní představitelé města, jejichž mandát končí za několik týdnů,“ uvedl člen rady Lukáš Manhart (TOP 09).
 Několik místních radnic se v posledních týdnech okamžitě rozhodlo zakázat hazardní hry na svém území, například Praha 5 a 7.
 Hránové haly však nezmizí a předpisy se prozatím nezmění.
-Tento úkol bude po volbách zasáhnout nové představitele města.
-„V současné době bychom ji ani technicky nemohli zvládnout včas, například kvůli lhůtám pro podání zpětné vazby atd.“ Manhart mu to vysvětlil.
+Tento úkol bude po volbách zasáhnout novým lídrům města.
+„V současné době bychom to ani technicky technicky nezvládli včas, například kvůli lhůtám pro podání zpětné vazby atd.“ Manhart mu to vysvětlil.
 Poukázal na to, že poslední zasedání současné městské rady, které musí změnu schválit, se bude konat 11. září.
 Referendum o úplném zákazu hernických hal se bude konat v den komunálních voleb v Praze 1 a v Praze 8.
 V současné době platí zákaz herny v lokalitách jako Praha 2 a Praha 12.
 Ze stejných důvodů se nařízení nezmění ani pro street art, známé jako busking.
-Na tuto činnost si stěžovala především Praha 1, která již radnici zaslala navrhovaný seznam míst, které by chtěla na místech, kde je již zakázána, přidat.
+Na tuto činnost si stěžovala především Praha 1, která již zaslala radnici navrhovaný seznam míst, která by chtěla na místa, kde je již zakázána.
 Praha 5 nechce u A také hudebníků.
 Směrnice, která by regulovala vycházky se psy, město plánovalo už několik měsíců, ale jeho příprava ještě není dokončena.
 Místa herna a otázka buskingu řeší obecní dekresty.
 Mohou být vydávány a pozměněny pouze radou hlavního města Prahy.
 Radnice mají jen poradní slovo a samy o sobě nemohou vydávat dekrety.
 Minulý týden byli příznivci skotské nezávislosti na dosah vítězství.
-Kampaně za skotskou nezávislost hrozilo, že se stejnou chybou stane třikrát, když po celém Skotsku téměř umístila billboardy a ptala se, jestli chtějí být Skotové boháči.
-Nicméně si nezemějete srdce skotských voličů tím, že se na jejich peněženky dovolíte, a ani nezískáte jejich respekt, když jim začnete vyhrožovat.
+Kampaně za skotskou nezávislost hrozilo, že se stejnou chybou stane třikrát, když téměř umístila billboardy po celém Skotsku a ptala se, jestli chtějí být Skotové boháči.
+Nicméně si nezemějete srdce skotských voličů tím, že se na jejich peněženky obtezejte, a ani nezískáte jejich respekt, když jim začnete vyhrožovat.
 Mravita v Novém zákoně je ve Skotsku stále velmi relevantní, i když do kostela stále chodí jen malý počet Skotů.
 Skotové mají mnohem větší tendenci vytlačovat měňáky peněz ze svých bohoslužebných domů, místo aby jim ostatní diktovali, jak by měli hlasovat.
-Vůdce skotských nacionalistů Alex Salmond to velmi dobře ví, a proto se v televizní diskusi opakovaně ptal svého rivala, unionisty Darlinga, zda by byl ochoten respektovat „svrchní vůli skotského lidu“, pokud by skotští voliči zvolili nezávislost a zda by začal podporovat jednotnou měnu pro Skotsko i pro Anglii.
+Vůdce skotských nacionalistů Alex Salmond to velmi dobře zná, a proto se v televizní diskusi opakovaně ptal svého rivala, unionisty Darlinga, zda by byl ochoten respektovat „svrchistickou vůli skotského lidu“, pokud by skotští voliči zvolili nezávislost a zda by začal podporovat jednotnou měnu pro Skotsko i pro Anglii.
 To donutilo Darlinga, aby si vybral mezi skotskou občanskou společností a londýnskými bankéři, a tato situace ho donutila se šklebit.
 Darling samozřejmě nepodpoří mandát skotských voličů.
 I když tato diskuse o tom, jakou měnu by Skotsko bylo víceméně neutralizováno.
@@ -2475,7 +2475,7 @@ To je velmi nebezpečná pozice pro každého skotského politika.
 Každý skotský volič ví, že skotští podnikatelé jsou v posteli s konzervativci.
 To potvrdil David Cameron, který ve Skotsku hovořil ne k voličům, ale ke sdružení „šáfů“, Konverzace britského průmyslu.
 Začíná být jasné, že Cameronovo odmítnutí debatovat o nezávislosti se skotským premiérem Salmondem bylo pro unionistickou kampaň velkou chybou.
-Cameron vypadá jako zbabělý nepřítomný doma.
+Cameron vypadá jako zbabělec doma.
 Skotové by ho respektovali, kdyby se dostal do debaty se skotským premiérem.
 Cameronovi se alespoň podařilo říci, že Skotsko by mohlo být „úspěšnou nezávislou zemí“.
 Alistair Darlingovi se nemůže nic takového říct a skoro mu to fyzicky bolest způsobí.
@@ -2490,13 +2490,13 @@ Nové šaty, kdy je bylo možné najít v Tuzex, a boty z východního Německa.
 Dutá velká nervozita večer, ještě v režimu dovolených, spí až do půlky před koncem desáté, ale za týden to bude horší a krátce před usínáním se protahuje z několika minut na dvě hodiny, po ní následuje vstávání v půl šesté ráno.
 V pondělí přijde.
 Obvykle nebude pršet, ale místo toho se před školou bude v létě nahrbit zlým způsobem.
-Probíhá strašidelným světlem na veřejnosti a pocitu plastové figurky ve skleněném těžítku je škola ZDŠ A.
-Zápotocký, s ponurou růžovou fasádou a před ní jsou stejně známé tváře a některé nové, vyšší kluci a prsatější dívky.
+Probíhá strašidelným světlem na veřejnosti a pocitu plastové postavy ve skleněném těžítku je škola ZDŠ A.
+Zápotocký, s ponurým růžovým průměrem a před ní stejné známé tváře a některé nové, vyšší kluci a prsatější dívky.
 Jsou tam tyrani, tak se jim vyhýbej, i když je pořád zajímavé, jak drží spolu a jak jsou tu tak brzy.
 A ty dospělé dívky, které se stydlivě objevily, se teď chichotají nad něčím hystericky, což naznačuje, že se v jejich životě během dovolené muselo něco změnit, zatímco pro mě je pořád všechno stejné.
 A co ti noví prvňáci, někteří z nich nervózní a ostatní vzrušení, proč sem vůbec chodí?
 Protože musí, jako by škola byla jako povinná vojenská služba.
-Takže když vstoupíme, cítíme chladnou vlhkost podlahy, lehký pach dezinfekce, otráveného školníka mope, bohužel stále stejného, který údajně propůjčuje studentům klíč k kovové skříňce, kde může být ponecháno učebnic a z nichž je ještě tak málo.
+Takže když vstoupíme, cítíme chladnou vlhkost podlahy, lehký pach dezinfekce, otráveného školníka mope, bohužel stále stejný, který údajně propůjčuje studentům klíč kovové skříni, kde může být ponecháno učebnic a o které je ještě tak málo.
 Na láhev.
 Zápach šaten je uvízl v paměti, ale teď není přítomen, protože místo bylo dobře větrano, ale za týden to bude horší.
 Jen si představuju, že se točí žaludek a vyvolá bolest hlavy.
@@ -2507,14 +2507,14 @@ A je to teprve první den, teď už před lety.
 Nechala zemřít nenarozené dcery.
 Může jí hrozit výjimečná věta – Novinky.cz
 K prvnímu porodu došlo v březnu 2012 v přestávce na autobusové zastávce v Jihlavě.
-Bez pomoci kohokoliv jiného porodila malou holčičku, a když si přestřihla pupeční šňůru, položila dítě do připravené deky, schovala dítě pod bundu a vyvedla ji na vedlejší silnici, kde ji nechala v křoví jen pár desítek metrů od silnice.
+Bez pomoci kohokoliv jiného porodila malou holčičku a po přestřižení pupeční šňůry položila dítě do připravené deky, schovala dítě pod bundu a odvezla ji na vedlejší silnici, kde ji nechala v křoví jen pár metrů od silnice.
 Porodila se na cestě do školy.
 Stalo se to trochu brzy.
 „Byl jsem na cestě do školy.
 V autobuse jsem měla pocit, že musím jít na toaletu, a tam jsem porodila.
 Narodila se živě a dívala se na mě.
 Odříkala jsem pupeční šňůru nůžkami, které jsem nosila do školy,“ řekla obviněná a dodala, že se stydí být těhotná.
-„Druhý den se vrátila na místo, uložila tělo dítěte do batohu a odnesla ho, pak vyndala tělo z batohu, zabalila ho do černé igelitové tašky a schovala ho pod schody v babiččině domě v Havlíčkobrosku,“ píše se v žalobě a dodává se, že není zcela jasné, kdy došlo ke smrti novorozeně.
+„Druhý den se vrátila na místo, umístila tělo dítěte do batohu a odnesla ho, pak vytáhla tělo z batohu, zabalila ho do černého igelitového sáčku a schovala ho pod schody v babiččině domě v Havlíčkově Žhobrosku,“ píše se v žalobě a dodává, že není zcela jasné, kdy došlo k úmrtí novorozence.
 Mohlo to být do patnácti až půl hodiny, ale i několik hodin po narození, udušením dekou nebo při umístění pod bundou, kde se zmrzlo nebo krvácel z nekapaný břiš od nekapaný.
 K podobnému incidentu došlo příští rok na jaře.
 Žena v nejasné době mezi únorem a 12. dubnem, kdy bylo kolemjdoucí nalezeno kolemjdoucími pod křovím u rybníka v Havlíčkobrodsku, opět dítě, které rodila sama.
@@ -2548,9 +2548,9 @@ Rozsudek by mohl být vynesen již ve středu.
 Ženě hrozí až 18 let vězení nebo dokonce mimořádný trest.
 Norský Cruise se blíží 3 miliardy dolarů Prestige Cruises dohoda
 Norwegian Cruise Line Holdings Ltd NCHL.O, třetí největší provozovatel výletních lodí na světě, je v pokročilém jednání o získání peer Prestige Cruises International Inc za přibližně 3 miliardy dolarů, podle lidí obeznámených s touto záležitostí.
-Dohoda by poskytla společnosti Norwegian Cruise s tržní hodnotou 6,8 miliardy dolarů přístup k luxusním výletním lodím společnosti Prestige Cruises a movitým klientelou, která konkuruje větším rivalům Royal Caribbean Cruises Ltd (RCL.N) a Carnival Corp (CCL.N).
+Dohoda by poskytla společnosti Norwegian Cruise s tržní hodnotou 6,8 miliardy dolarů přístup k luxusním výletním lodím společnosti Prestige Cruises a bohatou klientelu, protože konkuruje větším rivalům Royal Caribbean Cruises Ltd (RCL.N) a Carnival Corp (CCL.N).
 Dohoda může být oznámena již tento týden, uvedly v neděli zdroje a upozornily, že rozhovory se stále mohou rozpadnout.
-Vlastník společnosti Prestige Cruises, soukromé investiční společnosti Apollo Global Management LLC (APO.N), vlastní také 20procentní podíl v Norwegian Cruise.
+Majitelka společnosti Prestige Cruises, soukromé investiční společnosti Apollo Global Management LLC (APO.N), vlastní také 20procentní podíl v Norwegian Cruise.
 Zdroje si nepřály být identifikovány, protože jednání nejsou veřejná.
 Zástupci společností Norwegian Cruise a Prestige Cruises na žádosti o vyjádření nereagovali, zatímco mluvčí Apolla to odmítl komentovat.
 Společnost Norwegian Cruise se sídlem v Miami provozuje 13 výletních lodí na trasách mezi Severní Amerikou, Středomořím, Pobaltí, Střední Amerikou a Karibikem.
@@ -2566,7 +2566,7 @@ Apollo v roce 2008 investoval do Norwegian Cruise ve výši jedné miliardy dola
 Společnost Norwegian Cruise vstoupila na burzu v lednu 2013.
 Genting měl 28 procent podíl, Apollo měl 20 procent podíl a soukromá investiční společnost TPG Capital LP měla od konce června 8% podíl ve společnosti, podle regulatorního podání.
 Carnival, Royal Caribbean Cruises a Norwegian Cruise dohromady tvoří 82 procent kapacity severoamerických výletních pasažérů, podle Prestige Cruises' první veřejné nabídky registračního dokladu.
-Hongkongští prodemokratičtí aktivisté den po rozhodnutí o hlasování popichují čínskou funkcionář
+Hongkongští prodemokratičtí aktivisté den po rozhodnutí o hlasování popichují čínského úředníka
 Skupina loajalistů z Pekingu stála poblíž a mávala čínskou vlajkou.
 Stálý výbor NPC v neděli podpořil rámec, který měl v hongkongských volbách v roce 2017 kandidovat pouze dva nebo tři kandidáti.
 Všichni kandidáti musí nejprve získat většinovou podporu od nominační komise, která bude pravděpodobně naplněna loajalisty z Pekingu.
@@ -2579,8 +2579,8 @@ Studentští aktivisté prohlásili, že se odpoledne sejdou před kanceláří 
 Británie se o demokracii pro Hongkong nezmínila až do smrtících dnů asi 150 let koloniální nadvlády.
 Putin požaduje, aby Kyjev zahájil jednání o „stateitě“ s východní Ukrajinou
 Ruský prezident Vladimir Putin požadoval v neděli, aby ukrajinská vláda přestala bojovat s separatisty na východě země a okamžitě zahájit jednání o „statečnosti“ odštěpeneckého regionu, jak vyplývá z ruských zpráv o jeho poznámkách.
-Jeho mluvčí Dmitrij Peskov později upřesnil, že Putin nechtěl naznačovat, že se východoukrajinské území pod kontrolou separatistů stane součástí Ruska, ale že jeho status na Ukrajině musí být revidován, aby ruskojovsky mluvící region měl být moc chránit svá práva a zájmy.
-Putinova výzva kyjevské vládě, aby s proruskými povstalci jednala, což se rovná, které se shoduje se zdánlivou strategií, kterou zastává od začátku násilí před pěti měsíci: pomoc separatistům převzít území a přinutit ukrajinskou vládu, aby nově vyhlášená Novorossijská oblast prakticky získala sladění s Ruskem místo na Západ.
+Jeho mluvčí Dmitrij Peskov později upřesnil, že Putin nechtěl naznačovat, že východoukrajinské ukrajinské území pod kontrolou separatistů se stane součástí Ruska, ale že jeho status na Ukrajině musí být revidován, aby ruskojsky mluvící region měl být oprávněn chránit svá práva a zájmy.
+Putinova výzva k kyjevské vládě, aby s proruskými povstalci vyjednala, neboť rovný korespondoval se zjevnou strategií, kterou následoval od začátku násilí před pěti měsíci: pomoc separatistům, aby zaujali území a přinutili ukrajinskou vládu, aby nově vyhlášené oblasti Novorossiya prakticky získala nezávislost narovnání s Ruskem místo na Západ.
 V rozhovoru pro státní televizi Channel One Putin odsoudil ukrajinskou vojenskou kampaň za obnovu separatisticky drženého území ve východních Doněckých a Luhanských regionech, která byla zabavena v březnu a v dubnu poté, co Moskva 18. března anektovala ukrajinský Krymský poloostrov.
 Kreml a separatisté v poslední době označují obsaditelné území za „Novorossiya“ nebo „nové Rusko“, což je termín, který se blíží k předrevolučním dobám oslav ruské říše.
 Putin řekl, že každý, kdo věří, že mírové rozhovory jsou na obzoru, když ukrajinští politici zahajují kampaně na říjen. 26 parlamentních voleb a zatímco vládní jednotky útočí na civilní komunity v separatisticky držených regionech, je „vězněmi iluzí“, uvedla Itar-Tass.
@@ -2588,7 +2588,7 @@ Putin řekl, že každý, kdo věří, že mírové rozhovory jsou na obzoru, kd
 Peskov řekl, že Putinova zmínka o státnosti je míněna v kontextu širší autonomie, o které se už několik měsíců diskutuje s kyjevským vedením, když se snaží rozptýlit obavy v rusky mluvících oblastech, že jejich kulturní a jazyková práva jsou v nebezpečí.
 Pouze ukrajinská vláda může dát východnímu regionům potřebnou autonomii, řekl Peskov.
 Není to věc, o které by se jednalo mezi Ukrajinou a Ruskem, řekl Peskov, „protože to není konflikt mezi Ruskem a Ukrajinou, ale vnitřní ukrajinský konflikt.“
-Meziúčelova recese Kremlu, která má napravit „špatnou interpretaci“ Putinových výroků, podtrhl přístup ruského vedení k jednání se se separatistickou vzpourou na východě jinak než jako přímé obsazení Krymu, kde tvoří většina z 2 milionů obyvatel etnické.
+Meziústupce mluvčího Kremlu, která má napravit „myší interpretaci“ Putinových výroků, podtrhl přístup ruského vedení k jednání se separatistickou vzpourou na východě jinak než jeho otevřené obsazení Krymu, kde je většina z 2 milionů obyvatel etnickými ruskými.
 Moskva by měla mnohem obtížnější boj o anexi i Doněcké a Luhanské oblasti východní Ukrajiny, neboť většina z 6,5 milionu obyvatel není ruských a předkonfliktními průzkumy veřejného mínění ukázaly širokou podporu setrvání na Ukrajině.
 Samostatnost, o níž ruští diplomaté diskutovali na mezinárodních fórech, by regionální vlády na Ukrajině poskytla pravomoc určovat si vlastní obchodní dohody a zahraniční vztahy, čímž by Kremlu de facto předalo pod kontrolou území, které by spojovalo ruskou pevninu s Krymem.
 Černomořský poloostrov, který byl před pěti měsíci anektován, je domovem hlavní ruské námořní flotily, jakož i komerčních námořních zařízení a historických pobřežních letovisek.
@@ -2613,8 +2613,8 @@ Na seznamu je 101 celebrit.
 Edelsten, který Grecka minulý měsíc požádal o ruku, řekl Confidential: „Je to nechutné“.
 Veškerá soukromá korespondence a obrázky by měly zůstat v soukromí.
 Je ostudné, že osobní informace mohou být ukradeny a rozptýleny na ostatní.
-Grecko, který je v New Yorku, údajně řekl zpravodajskému webu, že hackerský útok byl „ostudný“ a ti, na které se zaměřili, budou „cítit se v násilí“.
-Má se za to, že hacker má 30 snímků Palmera s bývalým přítelem Scottem Speedmanem, včetně dvou snímků, kde se v bazénu povaluje nahoře bez.
+Grecko, který je v New Yorku, údajně řekl zpravodajskému webu, že hackerský útok byl „ostudný“ a ti, na které se zaměřili, budou „vraždit v násilí“.
+Má se za to, že hacker má 30 snímků Palmera s bývalým přítelem Scottem Speedmanem, včetně dvou obrouček, kde se v bazénu povaluje nahoře bez.
 Mezi Palmerovy filmové kredity patří Love And Honor, popořadující Liam Hemsworth.
 Palmer, Chuck hvězda Strahovski a Sucker Punch herečka Browning včera neměl žádný komentář k hacknutým obrázkům.
 Zástupce Lawrence řekl TMZ: „Je to flagrantní porušení soukromí.“
@@ -2632,20 +2632,20 @@ Kdybychom tak hráli od začátku sezóny, jsem přesvědčena, že bychom nepro
 V Opavě Sigma zastavil počáteční tlak domácího týmu, pak to vyrovnalo hru a ve druhé půli to bylo lepší.
 Po vítězství Kalvodovi svěřili hráči, kteří se snažili, ale nedosáhli žádného gólu, a tak nemohli vyhrát.
 „Výsledkem jsme nečekali.
-Ale pro naprosté uspokojení jsme prodělali jen jednu proměněnou příležitost,“ řekl Lébra, který se však domnívá, že změna hráčského přístupu byla způsobena pouze jeho hrozbou.
+Ale pro naprostou spokojenost jsme prošvihli pouze jednu proměněnou příležitost,“ řekl Lébra, který se však domnívá, že změna v přístupu hráčů byla způsobena pouze jeho hrozbou.
 „Určitě existovalo několik aspektů.
-Jak z mé strany, tak ze strany trenéra nebo fanoušků,“ řekl Lébra.
+Jak z boku, tak ze strany trenéra nebo fanoušků,“ řekl Lébra.
 Sigma musí předvídat tlak.
 Po zápase v Opavě se hráči nechtěli k událostem z minulého týdne moc vyjadřovat.
 „Snažím se to za hlavu zahodit.
 Snažil jsem se situaci neuznávat,“ řekl mladý brankář Michal Reichl a zavrtěl hlavou.
-Lébrovo prohlášení z minulého týdne zůstalo zcela bez komentáře od útočníka Václav Vašíčka, který v sobotním zápase Sigmovou nenaplňoval největší příležitost.
+Lébrovo prohlášení z minulého týdne zůstalo zcela bez komentáře od útočníka Václav Vašíčka, který v sobotním zápase Sigma nenaplnil největší příležitost.
 Nakonec o tom však jen trochu mluvil.
 „Vždycky budeme pod tlakem.
 Každý nás chce roztrhat na kusy.
 Dnes jsme ukázali, že když se budeme prát a nakopeme do zadku, tak to funguje,“ řekl.
 Vzali varování k srdci.
-Ani trenér Leoš Kalvoda neváhal říci, že příprava na hru nebyla nejjednodušší, vzhledem k atmosféře, která se v Olomouci minulý týden vyskytovala.
+Ani trenér Leoš Kalvoda neváhal říci, že příprava na hru nebyla nejjednodušší, vzhledem k atmosféře, která se minulý týden v Orácičce vyskytla.
 Bylo to velmi těžké.
 Ale myslím, že si to kluci uvědomili a dnes bylo jasné, že si vzali pana. Lébra varuje k srdci.
 To je pravda, i když ani dříve nechtěli bojovat a flákali se,“ řekl olomoucký trenér.

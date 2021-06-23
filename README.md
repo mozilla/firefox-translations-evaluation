@@ -1,6 +1,6 @@
 # Bergamot Evaluation
 
-Calculates BLEU scores for [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
+Calculates BLEU scores for Firefox Translations [models](https://github.com/mozilla-applied-ml/bergamot-models/prod) using [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
 
 
 ## Clone repo
@@ -79,9 +79,13 @@ You can run them separately if you need only some translators to be installed
 From inside docker container run:
 
 
-`python3 eval/evaluate.py --translators=bergamot,microsoft --pairs=all`
+`python3 eval/evaluate.py --translators=bergamot,microsoft --pairs=all --envs=prod`
 
-or 
+or
+
+`python3 eval/evaluate.py --translators=bergamot,google --pairs=ru-en --skip-existing`
+
+more options:
 
 `python3 eval/evaluate.py --help` for more options
 
@@ -111,6 +115,8 @@ and evaluation will run for all of them.
 
 ## Results
 
-See results reports [here](results/).
+[Prod models](results/prod/results.md)
 
-Intermediate results and translations are be written to `results/xx-xx` folders.
+[Dev models](results/dev/results.md) (can be of low quality)
+
+Intermediate results and translations are written to `results/<env>/<src>-<trg>` folders.

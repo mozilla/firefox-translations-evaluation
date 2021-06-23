@@ -1,4 +1,4 @@
-# Bergamot Evaluation
+# Firefox Translations Evaluation
 
 Calculates BLEU scores for Firefox Translations [models](https://github.com/mozilla-applied-ml/bergamot-models/prod) using [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
 
@@ -10,7 +10,7 @@ mkdir workspace
 
 cd workspace
 
-git clone https://github.com/mozilla/bergamot-evaluation.git
+git clone https://github.com/mozilla/firefox-translations-evaluation.git
 
 cd bergamot-evaluation
 

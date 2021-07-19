@@ -12,13 +12,12 @@ import pandas as pd
 
 HOME_DIR = '/workspace'
 BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'bergamot-evaluation')
-RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results')
-EVAL_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval')
+DEFAULT_RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results')
 
 EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval', 'eval.sh')
+DEFAULT_MODELS_DIR = os.path.join(HOME_DIR, 'bergamot-models', 'prod')
 
-BERGAMOT_MODELS_DIR = os.path.join(HOME_DIR, 'bergamot-models')
-BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
+BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot-translator-app')
 BERGAMOT_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.sh')
 
 MARIAN_APP_PATH = os.path.join(HOME_DIR, 'marian-dev', 'build', 'marian-decoder')
@@ -30,7 +29,7 @@ trans_order = {'bergamot': 0,
                'microsoft': 3}
 
 
-def evaluate(pair, set_name, translator, models_dir, results_dir):
+def evaluate(pair, set_name, translator, results_dir, models_dir):
     source, target = pair
 
     my_env = os.environ.copy()
@@ -61,26 +60,28 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
     return float(res.stdout.decode('utf-8').strip())
 
 
-def build_report(res_dir):
-    results = read_results(res_dir)
-    os.makedirs(os.path.join(res_dir, 'img'), exist_ok=True)
+def build_report(results_dir):
+    results = read_results(results_dir)
+    img_dir = os.path.join(DEFAULT_RESULTS_DIR, 'img')
+    os.makedirs(img_dir, exist_ok=True)
 
-    with open(os.path.join(EVAL_DIR, 'results.md')) as f:
-        lines = [l.strip() for l in f.readlines()]
+    lines = ['# Evaluation results',
+             '\n Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) '
+             'and official WMT ([Conference on Machine Translation](http://statmt.org/wmt17)) datasets.']
 
     avg_results = get_avg_scores(results)
-    build_section(avg_results, 'avg', lines, res_dir)
+    build_section(avg_results, 'avg', lines)
 
     for lang_pair, datasets in results.items():
-        build_section(datasets, lang_pair, lines, res_dir)
+        build_section(datasets, lang_pair, lines)
 
-    results_path = os.path.join(res_dir, 'results.md')
+    results_path = os.path.join(results_dir, datetime.today().strftime('%Y-%m-%d') + '_results.md')
     with open(results_path, 'w+') as f:
         f.write('\n'.join(lines))
         print(f'Results are written to {results_path}')
 
 
-def build_section(datasets, key, lines, res_dir):
+def build_section(datasets, key, lines):
     lines.append(f'\n## {key}\n')
     lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
     lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
@@ -93,9 +94,7 @@ def build_section(datasets, key, lines, res_dir):
         reordered = sorted(translators.items(), key=lambda x: trans_order[x[0]])
 
         for translator, score in reordered:
-            if score == 0:
-                formatted_score = 'N/A'
-            elif translator != 'bergamot' and bergamot_res:
+            if translator != 'bergamot' and bergamot_res:
                 change_perc = (score - bergamot_res) / bergamot_res * 100
                 change = score - bergamot_res
                 sign = '+' if change > 0 else ''
@@ -109,16 +108,17 @@ def build_section(datasets, key, lines, res_dir):
     for translator, scores in inverted_formatted.items():
         lines.append(f'| {translator} | {" | ".join(scores.values())} |')
 
-    img_path = os.path.join(res_dir, 'img', f'{key}.png')
+    img_dir = os.path.join(DEFAULT_RESULTS_DIR, 'img')
+    img_path = os.path.join(img_dir, f'{key}.png')
     plot_lang_pair(datasets, inverted_scores, img_path)
 
     img_relative_path = '/'.join(img_path.split("/")[-2:])
     lines.append(f'\n![Results]({img_relative_path})')
 
 
-def read_results(res_dir):
+def read_results(results_idr):
     results = defaultdict(dict)
-    for bleu_file in glob(res_dir + '/*/*.bleu'):
+    for bleu_file in glob(results_idr + '/*/*.bleu'):
         dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
         pair = bleu_file.split('/')[-2]
         with open(bleu_file) as f:
@@ -127,14 +127,6 @@ def read_results(res_dir):
         if dataset_name not in results[pair]:
             results[pair][dataset_name] = {}
         results[pair][dataset_name][translator] = score
-
-    # fix missing translators
-    for _, datasets in results.items():
-        for _, translators in datasets.items():
-            for translator in trans_order.keys():
-                if translator not in translators:
-                    translators[translator] = 0
-
     return results
 
 
@@ -153,12 +145,34 @@ def get_avg_scores(results):
 def plot_lang_pair(datasets, inverted_scores, img_path):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
     df = pd.DataFrame(trans_scores, index=datasets, columns=trans_order.keys())
-    fig = df.plot.bar(ylim=(15, None), ylabel='bleu').get_figure()
+    fig = df.plot.bar(ylim=(20, None), ylabel='bleu').get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")
 
 
-def run_env(lang_pairs, skip_existing, translators, results_dir, models_dir):
+@click.command()
+@click.option('--pairs',
+              default='all',
+              help='Comma separated language pairs or `all`. Example: es-en,de-et')
+@click.option('--translators',
+              default='bergamot',
+              help='Comma separated translators. Example: bergamot,google')
+@click.option('--results-dir',
+              default=DEFAULT_RESULTS_DIR,
+              help='Directory for results')
+@click.option('--models-dir',
+              default=DEFAULT_MODELS_DIR,
+              help='Directory with models')
+@click.option('--skip-existing',
+              default=False,
+              is_flag=True,
+              help='Whether to skip already calculated scores. '
+                   'They are located in `results/xx-xx` folders as *.bleu files.')
+def run(pairs, translators, results_dir, models_dir, skip_existing):
+    lang_pairs = [(pair[:2], pair[-2:])
+                  for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
+    print(f'Language pairs to evaluate: {lang_pairs}')
+
     for pair in lang_pairs:
         formatted_pair = f'{pair[0]}-{pair[1]}'
 
@@ -172,42 +186,15 @@ def run_env(lang_pairs, skip_existing, translators, results_dir, models_dir):
                 print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
 
                 res_path = os.path.join(results_dir, formatted_pair, f'{dataset_name}.{translator}.{pair[1]}.bleu')
-                if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
+                if skip_existing and os.path.isfile(res_path):
                     with open(res_path) as f:
                         bleu = float(f.read().strip())
                 else:
-                    bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
+                    bleu = evaluate(pair, dataset_name, translator, results_dir, models_dir)
 
                 print(f'Result BLEU: {bleu}\n')
 
-
-@click.command()
-@click.option('--pairs',
-              default='all',
-              help='Comma separated language pairs or `all`. Example: es-en,de-et')
-@click.option('--translators',
-              default='bergamot',
-              help='Comma separated translators. Example: bergamot,google')
-@click.option('--envs',
-              default='prod',
-              help='Comma separated environments. Example: prod,dev')
-@click.option('--skip-existing',
-              default=False,
-              is_flag=True,
-              help='Whether to skip already calculated scores. '
-                   'They are located in `results/xx-xx` folders as *.bleu files.')
-def run(pairs, translators, envs, skip_existing):
-    for env in envs.split(','):
-        print(f'Environment: {env}')
-        models_dir = os.path.join(BERGAMOT_MODELS_DIR, env)
-        results_dir = os.path.join(RESULTS_DIR, env)
-        lang_pairs = [(pair[:2], pair[-2:])
-                      for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
-        print(f'Language pairs to evaluate: {lang_pairs}')
-
-        run_env(lang_pairs, skip_existing, translators, models_dir=models_dir, results_dir=results_dir)
-
-        build_report(results_dir)
+    build_report(results_dir)
 
 
 if __name__ == '__main__':

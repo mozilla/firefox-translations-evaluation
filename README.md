@@ -1,6 +1,7 @@
 # Firefox Translations Evaluation
 
-Calculates BLEU scores for Firefox Translations [models](https://github.com/mozilla-applied-ml/bergamot-models/prod) using [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
+Calculates BLEU scores for Firefox Translations [models](https://github.com/mozilla/firefox-translations-models) 
+using [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
 
 
 ## Clone repo
@@ -12,7 +13,7 @@ cd workspace
 
 git clone https://github.com/mozilla/firefox-translations-evaluation.git
 
-cd bergamot-evaluation
+cd firefox-translations-evaluation
 
 ```
 
@@ -91,7 +92,7 @@ more options:
 
 ### Translators
 
-1. **bergamot** - uses compiled  [bergamot-translator](https://github.com/mozilla/bergamot-translator) 
+1. **bergamot** - uses compiled [bergamot-translator](https://github.com/mozilla/bergamot-translator) in wasm mode
 2. **marian** - uses compiled [marian](https://github.com/marian-nmt/marian-dev)
 3. **google** - users Google Translation [API](https://cloud.google.com/translate)
 4. **microsoft** - users Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
@@ -109,14 +110,12 @@ Only official `wmtXX` datasets are supported at this point.
 ### Language pairs
 
 With option `--pairs=all`, language pairs will be discovered 
-from downloaded Mozilla production [models](https://github.com/mozilla-applied-ml/bergamot-models/prod) 
+in the specified models folder (option `--models-dir`) 
 and evaluation will run for all of them.
 
 
 ## Results
 
-[Prod models](results/prod/results.md)
+Results will be written to the specified directory (option `--results-dir`).
 
-[Dev models](results/dev/results.md) (can be of low quality)
-
-Intermediate results and translations are written to `results/<env>/<src>-<trg>` folders.
+Evaluation results for models that are used in Firefox Translation can be found in [firefox-translations-models/evaluation](https://github.com/mozilla/firefox-translations-models/tree/main/evaluation)

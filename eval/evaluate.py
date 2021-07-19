@@ -178,7 +178,9 @@ def run(pairs, translators, results_dir, models_dir, skip_existing):
 
         for dataset_name, descr in dataset.DATASETS.items():
             # consider only official wmtXX datasets
-            if not dataset_name.startswith('wmt') or len(dataset_name) > 5 or formatted_pair not in descr:
+            is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
+            is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
+            if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
                 continue
 
             reordered = sorted(translators.split(','), key=lambda x: trans_order[x])

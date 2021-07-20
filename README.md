@@ -80,7 +80,7 @@ You can run them separately if you need only some translators to be installed
 From inside docker container run:
 
 
-`python3 eval/evaluate.py --translators=bergamot,microsoft --pairs=all --envs=prod`
+`python3 eval/evaluate.py --translators=bergamot,microsoft --pairs=all --models-dir=<dir> --results-dir=<dir>
 
 or
 

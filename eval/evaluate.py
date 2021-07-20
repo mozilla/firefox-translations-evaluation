@@ -1,7 +1,6 @@
 import subprocess
 import os
 from collections import defaultdict
-from datetime import datetime
 import statistics
 
 from sacrebleu import dataset
@@ -11,13 +10,14 @@ from glob import glob
 import pandas as pd
 
 HOME_DIR = '/workspace'
-BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'bergamot-evaluation')
-DEFAULT_RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results')
+BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'firefox-translations-evaluation')
+DEFAULT_RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results', 'prod')
+EVAL_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval')
 
 EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval', 'eval.sh')
-DEFAULT_MODELS_DIR = os.path.join(HOME_DIR, 'bergamot-models', 'prod')
+DEFAULT_MODELS_DIR = os.path.join(HOME_DIR, 'firefox-translations-models', 'models', 'prod')
 
-BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot-translator-app')
+BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
 BERGAMOT_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.sh')
 
 MARIAN_APP_PATH = os.path.join(HOME_DIR, 'marian-dev', 'build', 'marian-decoder')
@@ -29,7 +29,7 @@ trans_order = {'bergamot': 0,
                'microsoft': 3}
 
 
-def evaluate(pair, set_name, translator, results_dir, models_dir):
+def evaluate(pair, set_name, translator, models_dir, results_dir):
     source, target = pair
 
     my_env = os.environ.copy()
@@ -60,28 +60,26 @@ def evaluate(pair, set_name, translator, results_dir, models_dir):
     return float(res.stdout.decode('utf-8').strip())
 
 
-def build_report(results_dir):
-    results = read_results(results_dir)
-    img_dir = os.path.join(DEFAULT_RESULTS_DIR, 'img')
-    os.makedirs(img_dir, exist_ok=True)
+def build_report(res_dir):
+    results = read_results(res_dir)
+    os.makedirs(os.path.join(res_dir, 'img'), exist_ok=True)
 
-    lines = ['# Evaluation results',
-             '\n Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) '
-             'and official WMT ([Conference on Machine Translation](http://statmt.org/wmt17)) datasets.']
+    with open(os.path.join(EVAL_DIR, 'results.md')) as f:
+        lines = [l.strip() for l in f.readlines()]
 
     avg_results = get_avg_scores(results)
-    build_section(avg_results, 'avg', lines)
+    build_section(avg_results, 'avg', lines, res_dir)
 
     for lang_pair, datasets in results.items():
-        build_section(datasets, lang_pair, lines)
+        build_section(datasets, lang_pair, lines, res_dir)
 
-    results_path = os.path.join(results_dir, datetime.today().strftime('%Y-%m-%d') + '_results.md')
+    results_path = os.path.join(res_dir, 'results.md')
     with open(results_path, 'w+') as f:
         f.write('\n'.join(lines))
         print(f'Results are written to {results_path}')
 
 
-def build_section(datasets, key, lines):
+def build_section(datasets, key, lines, res_dir):
     lines.append(f'\n## {key}\n')
     lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
     lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
@@ -94,7 +92,9 @@ def build_section(datasets, key, lines):
         reordered = sorted(translators.items(), key=lambda x: trans_order[x[0]])
 
         for translator, score in reordered:
-            if translator != 'bergamot' and bergamot_res:
+            if score == 0:
+                formatted_score = 'N/A'
+            elif translator != 'bergamot' and bergamot_res:
                 change_perc = (score - bergamot_res) / bergamot_res * 100
                 change = score - bergamot_res
                 sign = '+' if change > 0 else ''
@@ -108,17 +108,16 @@ def build_section(datasets, key, lines):
     for translator, scores in inverted_formatted.items():
         lines.append(f'| {translator} | {" | ".join(scores.values())} |')
 
-    img_dir = os.path.join(DEFAULT_RESULTS_DIR, 'img')
-    img_path = os.path.join(img_dir, f'{key}.png')
+    img_path = os.path.join(res_dir, 'img', f'{key}.png')
     plot_lang_pair(datasets, inverted_scores, img_path)
 
     img_relative_path = '/'.join(img_path.split("/")[-2:])
     lines.append(f'\n![Results]({img_relative_path})')
 
 
-def read_results(results_idr):
+def read_results(res_dir):
     results = defaultdict(dict)
-    for bleu_file in glob(results_idr + '/*/*.bleu'):
+    for bleu_file in glob(res_dir + '/*/*.bleu'):
         dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
         pair = bleu_file.split('/')[-2]
         with open(bleu_file) as f:
@@ -127,6 +126,14 @@ def read_results(results_idr):
         if dataset_name not in results[pair]:
             results[pair][dataset_name] = {}
         results[pair][dataset_name][translator] = score
+
+    # fix missing translators
+    for _, datasets in results.items():
+        for _, translators in datasets.items():
+            for translator in trans_order.keys():
+                if translator not in translators:
+                    translators[translator] = 0
+
     return results
 
 
@@ -145,9 +152,33 @@ def get_avg_scores(results):
 def plot_lang_pair(datasets, inverted_scores, img_path):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
     df = pd.DataFrame(trans_scores, index=datasets, columns=trans_order.keys())
-    fig = df.plot.bar(ylim=(20, None), ylabel='bleu').get_figure()
+    fig = df.plot.bar(ylim=(15, None), ylabel='bleu').get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")
+
+
+def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
+    for pair in lang_pairs:
+        formatted_pair = f'{pair[0]}-{pair[1]}'
+
+        for dataset_name, descr in dataset.DATASETS.items():
+            is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
+            is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
+            if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
+                continue
+
+            reordered = sorted(translators.split(','), key=lambda x: trans_order[x])
+            for translator in reordered:
+                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
+
+                res_path = os.path.join(results_dir, formatted_pair, f'{dataset_name}.{translator}.{pair[1]}.bleu')
+                if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
+                    with open(res_path) as f:
+                        bleu = float(f.read().strip())
+                else:
+                    bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
+
+                print(f'Result BLEU: {bleu}\n')
 
 
 @click.command()
@@ -172,30 +203,7 @@ def run(pairs, translators, results_dir, models_dir, skip_existing):
     lang_pairs = [(pair[:2], pair[-2:])
                   for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
     print(f'Language pairs to evaluate: {lang_pairs}')
-
-    for pair in lang_pairs:
-        formatted_pair = f'{pair[0]}-{pair[1]}'
-
-        for dataset_name, descr in dataset.DATASETS.items():
-            # consider only official wmtXX datasets
-            is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
-            is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
-            if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
-                continue
-
-            reordered = sorted(translators.split(','), key=lambda x: trans_order[x])
-            for translator in reordered:
-                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
-
-                res_path = os.path.join(results_dir, formatted_pair, f'{dataset_name}.{translator}.{pair[1]}.bleu')
-                if skip_existing and os.path.isfile(res_path):
-                    with open(res_path) as f:
-                        bleu = float(f.read().strip())
-                else:
-                    bleu = evaluate(pair, dataset_name, translator, results_dir, models_dir)
-
-                print(f'Result BLEU: {bleu}\n')
-
+    run_dir(lang_pairs, skip_existing, translators, models_dir=models_dir, results_dir=results_dir)
     build_report(results_dir)
 
 

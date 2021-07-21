@@ -14,7 +14,7 @@ BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'firefox-translations-evaluatio
 DEFAULT_RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results', 'prod')
 EVAL_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval')
 
-EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval', 'eval.sh')
+EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
 DEFAULT_MODELS_DIR = os.path.join(HOME_DIR, 'firefox-translations-models', 'models', 'prod')
 
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
@@ -29,6 +29,16 @@ trans_order = {'bergamot': 0,
                'microsoft': 3}
 
 
+def get_dataset_prefix(dataset_name, pair, results_dir):
+    dataset_name = dataset_name.replace('/', '_')
+    return os.path.join(results_dir, f'{pair[0]}-{pair[1]}', f'{dataset_name}')
+
+
+def get_bleu_path(dataset_name, pair, results_dir, translator):
+    prefix = get_dataset_prefix(dataset_name, pair, results_dir)
+    return f'{prefix}.{translator}.{pair[1]}.bleu'
+
+
 def evaluate(pair, set_name, translator, models_dir, results_dir):
     source, target = pair
 
@@ -36,7 +46,7 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
     my_env['SRC'] = source
     my_env['TRG'] = target
     my_env['DATASET'] = set_name
-    my_env['EVAL_DIR'] = results_dir
+    my_env['EVAL_PREFIX'] = get_dataset_prefix(set_name, pair, results_dir)
     my_env['TRANSLATOR'] = translator
 
     if translator == 'bergamot':
@@ -171,11 +181,14 @@ def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
             for translator in reordered:
                 print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
 
-                res_path = os.path.join(results_dir, formatted_pair, f'{dataset_name}.{translator}.{pair[1]}.bleu')
+                res_path = get_bleu_path(dataset_name, pair, results_dir, translator)
+                print(f'Searching for {res_path}')
                 if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
+                    print(f"Already exists, skipping ({res_path})")
                     with open(res_path) as f:
                         bleu = float(f.read().strip())
                 else:
+                    print('Not found, running evaluation...')
                     bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
 
                 print(f'Result BLEU: {bleu}\n')

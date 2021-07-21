@@ -4,12 +4,10 @@
 set -e
 set -o pipefail
 
-mkdir -p $EVAL_DIR
-mkdir -p $EVAL_DIR/$SRC-$TRG
 
-sacrebleu -t $DATASET -l $SRC-$TRG --echo src \
-    | tee $EVAL_DIR/$SRC-$TRG/$DATASET.$SRC \
+sacrebleu -t "$DATASET" -l "$SRC-$TRG" --echo src \
+    | tee "$EVAL_PREFIX.$SRC" \
     | $TRANSLATOR_CMD \
-    | tee $EVAL_DIR/$SRC-$TRG/$DATASET.$TRANSLATOR.$TRG \
-    | sacrebleu --score-only -q -t $DATASET -l $SRC-$TRG \
-    | tee $EVAL_DIR/$SRC-$TRG/$DATASET.$TRANSLATOR.$TRG.bleu
+    | tee "$EVAL_PREFIX.$TRANSLATOR.$TRG" \
+    | sacrebleu --score-only -q -t "$DATASET" -l "$SRC-$TRG" \
+    | tee "$EVAL_PREFIX.$TRANSLATOR.$TRG.bleu"

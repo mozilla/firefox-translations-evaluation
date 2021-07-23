@@ -10,18 +10,14 @@ from glob import glob
 import pandas as pd
 
 HOME_DIR = '/workspace'
-BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'firefox-translations-evaluation')
-DEFAULT_RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results', 'prod')
-EVAL_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval')
-
+EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
-DEFAULT_MODELS_DIR = os.path.join(HOME_DIR, 'firefox-translations-models', 'models', 'prod')
 
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
-BERGAMOT_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.sh')
+BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
 
 MARIAN_APP_PATH = os.path.join(HOME_DIR, 'marian-dev', 'build', 'marian-decoder')
-MARIAN_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'marian.sh')
+MARIAN_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'marian.sh')
 
 trans_order = {'bergamot': 0,
                'marian': 1,
@@ -58,9 +54,9 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
         my_env['APP_PATH'] = MARIAN_APP_PATH
         cmd = f'bash {MARIAN_EVAL_PATH}'
     elif translator == 'google':
-        cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'google_translate.py')}"
+        cmd = f"python3 {os.path.join(HOME_DIR, 'translators', 'google_translate.py')}"
     elif translator == 'microsoft':
-        cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'microsoft.py')}"
+        cmd = f"python3 {os.path.join(HOME_DIR, 'translators', 'microsoft.py')}"
     else:
         raise ValueError(f'Translator is not supported: {translator}')
 
@@ -202,10 +198,8 @@ def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
               default='bergamot',
               help='Comma separated translators. Example: bergamot,google')
 @click.option('--results-dir',
-              default=DEFAULT_RESULTS_DIR,
               help='Directory for results')
 @click.option('--models-dir',
-              default=DEFAULT_MODELS_DIR,
               help='Directory with models')
 @click.option('--skip-existing',
               default=False,

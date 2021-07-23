@@ -31,4 +31,7 @@ RUN pip3 install -r requirements.txt
 ADD ./install ./install
 RUN bash ./install/install-bergamot-translator.sh
 
+ADD ./eval ./eval
+ADD ./translators ./translators
+
 CMD ["/bin/bash"]

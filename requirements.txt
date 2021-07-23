@@ -1,8 +1,8 @@
-sacrebleu
-click
-google-cloud-translate
-requests
-toolz
-tqdm
-pandas
-matplotlib
+sacrebleu==1.5.1
+click==8.0.1
+google-cloud-translate==3.2.1
+requests==2.26.0
+toolz==0.11.1
+tqdm==4.61.2
+pandas==1.3.0
+matplotlib==3.4.2

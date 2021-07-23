@@ -12,6 +12,7 @@ import pandas as pd
 HOME_DIR = '/workspace'
 EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
+CLEAN_CACHE_PATH = os.path.join(EVAL_DIR, 'clean-cache.sh')
 
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
 BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
@@ -61,9 +62,19 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
         raise ValueError(f'Translator is not supported: {translator}')
 
     my_env['TRANSLATOR_CMD'] = cmd
-    res = subprocess.run(['bash', EVAL_PATH], env=my_env, stdout=subprocess.PIPE)
 
-    return float(res.stdout.decode('utf-8').strip())
+    retries = 3
+    while True:
+        try:
+            res = subprocess.run(['bash', EVAL_PATH], env=my_env, stdout=subprocess.PIPE)
+            float_res = float(res.stdout.decode('utf-8').strip())
+            return float_res
+        except:
+            if retries == 0:
+                raise
+            retries -= 1
+            subprocess.run(['bash', CLEAN_CACHE_PATH])
+            print('Attempt failed, retrying')
 
 
 def build_report(res_dir):

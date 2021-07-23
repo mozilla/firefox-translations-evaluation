@@ -5,8 +5,6 @@
 
 set -e
 
-cd ..
-
 if [ -e "bergamot-translator" ]; then
     echo "already cloned"
 else

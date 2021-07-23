@@ -2,7 +2,6 @@
 
 set -e
 
-cd ..
 
 if [ -e "firefox-translations-models" ]; then
     echo "Already cloned"

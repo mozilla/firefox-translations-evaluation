@@ -3,9 +3,9 @@
 set -e
 
 echo "Installing translators"
-bash ./install/insall-bergamot-translator.sh
-bash ./install/insall-marian.sh
-bash ./install/download-models.sh
+bash install/install-bergamot-translator.sh
+bash install/install-marian.sh
+bash install/download-models.sh
 
 chmod +x eval.sh
 chmod +x translators/bergamot.sh

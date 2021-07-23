@@ -5,7 +5,6 @@
 
 set -e
 
-cd ..
 
 if [ -e "marian-dev" ]; then
     echo "already cloned"

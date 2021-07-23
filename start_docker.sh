@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# to run locally
 #MODELS=
 #GCP_CREDS_PATH=
 #AZURE_TRANSLATOR_KEY=

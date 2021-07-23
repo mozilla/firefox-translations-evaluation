@@ -26,6 +26,7 @@ ARGS=(
     --cpu-threads 4
     --quiet
     --quiet-translation
+    --gemm-precision int8shift
     --shortlist $MODEL_DIR/lex.50.50.$SRC$TRG.s2t.bin 50 50
 )
 

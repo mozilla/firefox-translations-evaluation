@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Downloads and compiles Marian
+# Downloads and compiles Bergamot translator and Marian
 # See https://marian-nmt.github.io/docs/#installation for requirements
 
 set -e

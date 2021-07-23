@@ -16,7 +16,7 @@ EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
 BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
 
-MARIAN_APP_PATH = os.path.join(HOME_DIR, 'marian-dev', 'build', 'marian-decoder')
+MARIAN_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'marian-decoder')
 MARIAN_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'marian.sh')
 
 trans_order = {'bergamot': 0,
@@ -123,6 +123,7 @@ def build_section(datasets, key, lines, res_dir):
 
 def read_results(res_dir):
     results = defaultdict(dict)
+    all_translators = set()
     for bleu_file in glob(res_dir + '/*/*.bleu'):
         dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
         pair = bleu_file.split('/')[-2]
@@ -132,11 +133,12 @@ def read_results(res_dir):
         if dataset_name not in results[pair]:
             results[pair][dataset_name] = {}
         results[pair][dataset_name][translator] = score
+        all_translators.add(translator)
 
     # fix missing translators
     for _, datasets in results.items():
         for _, translators in datasets.items():
-            for translator in trans_order.keys():
+            for translator in all_translators:
                 if translator not in translators:
                     translators[translator] = 0
 
@@ -157,7 +159,9 @@ def get_avg_scores(results):
 
 def plot_lang_pair(datasets, inverted_scores, img_path):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
-    df = pd.DataFrame(trans_scores, index=datasets, columns=trans_order.keys())
+    translators = [t for t in trans_order.keys() if t in inverted_scores]
+
+    df = pd.DataFrame(trans_scores, index=datasets, columns=translators)
     fig = df.plot.bar(ylim=(15, None), ylabel='bleu').get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")

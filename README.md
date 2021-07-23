@@ -10,47 +10,46 @@ git clone https://github.com/mozilla/firefox-translations-evaluation.git
 cd firefox-translations-evaluation
 ```
 
+### Download models
+
+Use `install/download-model.sh` to get Firefox Translations [models](https://github.com/mozilla/firefox-translations-models) or use your own ones.
+
 ### Start docker
 Recommended memory size for Docker is **8gb**.
 
-Specify a directory with [models](https://github.com/mozilla/firefox-translations-models):
 
-`export MODELS=<absolute path to a local directory with models>`
+```
+export MODELS=<absolute path to a local directory with models>
 
-Specify Azure key and location if you want to add Azure Translator API for comparison:
+# Specify Azure key and location if you want to add Azure Translator API for comparison
+export AZURE_TRANSLATOR_KEY=<Azure translator resource API key>
+# optional, specify if it's different than default 'global'
+export AZURE_LOCATION=<location>
 
-`export AZURE_TRANSLATOR_KEY=<Azure translator resource API key>`
+# Specify GCP credentials json path if you want to add Google Translator API for comparison
+export GCP_CREDS_PATH=<absolute path to .json>
 
-`export AZURE_LOCATION=<location>` - optional, specify if it's different than default `global`
-
-Specify GCP credentials json path if you want to add Google Translator API for comparison:
-
-`export GCP_CREDS_PATH=<absolute path to .json>`
-
-Build and run docker container:
-
-`bash start_docker.sh`
+# Build and run docker container
+bash start_docker.sh
+```
 
 On completion, your terminal should be attached to the launched container.
 
 ### Run evaluation
 From inside docker container run:
 ```
-python3 eval/evaluate.py --translators=bergamot,microsoft,google --pairs=all --skip-existing
---models-dir=/models/models/prod --results-dir=/models/evaluation/prod
+python3 eval/evaluate.py --translators=bergamot,microsoft,google --pairs=all --skip-existing --models-dir=/models/models/prod --results-dir=/models/evaluation/prod
 ```
-more options:
+More options:
 ```
 python3 eval/evaluate.py --help
 ```
 
 ## Details
 ### Installation scripts
-`install/install-bergamot-translator.sh` clones and compiles [bergamot-translator](https://github.com/mozilla/bergamot-translator)
+`install/install-bergamot-translator.sh` - clones and compiles [bergamot-translator](https://github.com/mozilla/bergamot-translator) and [marian](https://github.com/marian-nmt/marian-dev) (launched in docker image).
 
-`install/install-marian.sh` clones and compiles [marian](https://github.com/marian-nmt/marian-dev)
-
-`install/download-models.sh` downloads current Mozilla production [models](https://github.com/mozilla/firefox-translations-models)
+`install/download-models.sh` - downloads current Mozilla production [models](https://github.com/mozilla/firefox-translations-models).
 
 ### Translators
 1. **bergamot** - uses compiled [bergamot-translator](https://github.com/mozilla/bergamot-translator) in wasm mode

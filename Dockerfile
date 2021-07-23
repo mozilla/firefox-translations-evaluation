@@ -23,13 +23,14 @@ RUN sh -c 'echo deb https://apt.repos.intel.com/mkl all main > /etc/apt/sources.
 # pcre2 is requried to build berrgamot-translator with -DUSE_WASM_COMPATIBLE_SOURCES=off
 RUN apt-get install -y libpcre2-dev
 
+# Compile bergamot translator
+ADD ./install/install-bergamot-translator.sh ./
+RUN bash ./install-bergamot-translator.sh
+
 # SacreBLEU and python dependencies
 RUN apt-get update && apt-get install -y python3 python3-venv python3-pip
 ADD ./requirements.txt ./
 RUN pip3 install -r requirements.txt
-
-ADD ./install ./install
-RUN bash ./install/install-bergamot-translator.sh
 
 ADD ./eval ./eval
 ADD ./translators ./translators

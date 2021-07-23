@@ -28,5 +28,7 @@ RUN apt-get update && apt-get install -y python3 python3-venv python3-pip
 ADD ./requirements.txt ./
 RUN pip3 install -r requirements.txt
 
+ADD ./install ./install
+RUN bash ./install/install-bergamot-translator.sh
 
 CMD ["/bin/bash"]

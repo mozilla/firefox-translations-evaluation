@@ -1,7 +1,6 @@
 import subprocess
 import os
 from collections import defaultdict
-from datetime import datetime
 import statistics
 
 from sacrebleu import dataset
@@ -11,23 +10,30 @@ from glob import glob
 import pandas as pd
 
 HOME_DIR = '/workspace'
-BERGAMOT_EVALUATION_DIR = os.path.join(HOME_DIR, 'bergamot-evaluation')
-RESULTS_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'results')
-EVAL_DIR = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval')
+EVAL_DIR = os.path.join(HOME_DIR, 'eval')
+EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
+CLEAN_CACHE_PATH = os.path.join(EVAL_DIR, 'clean-cache.sh')
 
-EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'eval', 'eval.sh')
-
-BERGAMOT_MODELS_DIR = os.path.join(HOME_DIR, 'bergamot-models')
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
-BERGAMOT_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'bergamot.sh')
+BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
 
-MARIAN_APP_PATH = os.path.join(HOME_DIR, 'marian-dev', 'build', 'marian-decoder')
-MARIAN_EVAL_PATH = os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'marian.sh')
+MARIAN_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'marian-decoder')
+MARIAN_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'marian.sh')
 
 trans_order = {'bergamot': 0,
                'marian': 1,
                'google': 2,
                'microsoft': 3}
+
+
+def get_dataset_prefix(dataset_name, pair, results_dir):
+    dataset_name = dataset_name.replace('/', '_')
+    return os.path.join(results_dir, f'{pair[0]}-{pair[1]}', f'{dataset_name}')
+
+
+def get_bleu_path(dataset_name, pair, results_dir, translator):
+    prefix = get_dataset_prefix(dataset_name, pair, results_dir)
+    return f'{prefix}.{translator}.{pair[1]}.bleu'
 
 
 def evaluate(pair, set_name, translator, models_dir, results_dir):
@@ -37,7 +43,7 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
     my_env['SRC'] = source
     my_env['TRG'] = target
     my_env['DATASET'] = set_name
-    my_env['EVAL_DIR'] = results_dir
+    my_env['EVAL_PREFIX'] = get_dataset_prefix(set_name, pair, results_dir)
     my_env['TRANSLATOR'] = translator
 
     if translator == 'bergamot':
@@ -49,16 +55,26 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
         my_env['APP_PATH'] = MARIAN_APP_PATH
         cmd = f'bash {MARIAN_EVAL_PATH}'
     elif translator == 'google':
-        cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'google_translate.py')}"
+        cmd = f"python3 {os.path.join(HOME_DIR, 'translators', 'google_translate.py')}"
     elif translator == 'microsoft':
-        cmd = f"python3 {os.path.join(BERGAMOT_EVALUATION_DIR, 'translators', 'microsoft.py')}"
+        cmd = f"python3 {os.path.join(HOME_DIR, 'translators', 'microsoft.py')}"
     else:
         raise ValueError(f'Translator is not supported: {translator}')
 
     my_env['TRANSLATOR_CMD'] = cmd
-    res = subprocess.run(['bash', EVAL_PATH], env=my_env, stdout=subprocess.PIPE)
 
-    return float(res.stdout.decode('utf-8').strip())
+    retries = 3
+    while True:
+        try:
+            res = subprocess.run(['bash', EVAL_PATH], env=my_env, stdout=subprocess.PIPE)
+            float_res = float(res.stdout.decode('utf-8').strip())
+            return float_res
+        except:
+            if retries == 0:
+                raise
+            retries -= 1
+            subprocess.run(['bash', CLEAN_CACHE_PATH])
+            print('Attempt failed, retrying')
 
 
 def build_report(res_dir):
@@ -118,6 +134,7 @@ def build_section(datasets, key, lines, res_dir):
 
 def read_results(res_dir):
     results = defaultdict(dict)
+    all_translators = set()
     for bleu_file in glob(res_dir + '/*/*.bleu'):
         dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
         pair = bleu_file.split('/')[-2]
@@ -127,11 +144,12 @@ def read_results(res_dir):
         if dataset_name not in results[pair]:
             results[pair][dataset_name] = {}
         results[pair][dataset_name][translator] = score
+        all_translators.add(translator)
 
     # fix missing translators
     for _, datasets in results.items():
         for _, translators in datasets.items():
-            for translator in trans_order.keys():
+            for translator in all_translators:
                 if translator not in translators:
                     translators[translator] = 0
 
@@ -152,30 +170,36 @@ def get_avg_scores(results):
 
 def plot_lang_pair(datasets, inverted_scores, img_path):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
-    df = pd.DataFrame(trans_scores, index=datasets, columns=trans_order.keys())
+    translators = [t for t in trans_order.keys() if t in inverted_scores]
+
+    df = pd.DataFrame(trans_scores, index=datasets, columns=translators)
     fig = df.plot.bar(ylim=(15, None), ylabel='bleu').get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")
 
 
-def run_env(lang_pairs, skip_existing, translators, results_dir, models_dir):
+def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
     for pair in lang_pairs:
         formatted_pair = f'{pair[0]}-{pair[1]}'
 
         for dataset_name, descr in dataset.DATASETS.items():
-            # consider only official wmtXX datasets
-            if not dataset_name.startswith('wmt') or len(dataset_name) > 5 or formatted_pair not in descr:
+            is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
+            is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
+            if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
                 continue
 
             reordered = sorted(translators.split(','), key=lambda x: trans_order[x])
             for translator in reordered:
                 print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
 
-                res_path = os.path.join(results_dir, formatted_pair, f'{dataset_name}.{translator}.{pair[1]}.bleu')
+                res_path = get_bleu_path(dataset_name, pair, results_dir, translator)
+                print(f'Searching for {res_path}')
                 if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
+                    print(f"Already exists, skipping ({res_path})")
                     with open(res_path) as f:
                         bleu = float(f.read().strip())
                 else:
+                    print('Not found, running evaluation...')
                     bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
 
                 print(f'Result BLEU: {bleu}\n')
@@ -188,26 +212,21 @@ def run_env(lang_pairs, skip_existing, translators, results_dir, models_dir):
 @click.option('--translators',
               default='bergamot',
               help='Comma separated translators. Example: bergamot,google')
-@click.option('--envs',
-              default='prod',
-              help='Comma separated environments. Example: prod,dev')
+@click.option('--results-dir',
+              help='Directory for results')
+@click.option('--models-dir',
+              help='Directory with models')
 @click.option('--skip-existing',
               default=False,
               is_flag=True,
               help='Whether to skip already calculated scores. '
                    'They are located in `results/xx-xx` folders as *.bleu files.')
-def run(pairs, translators, envs, skip_existing):
-    for env in envs.split(','):
-        print(f'Environment: {env}')
-        models_dir = os.path.join(BERGAMOT_MODELS_DIR, env)
-        results_dir = os.path.join(RESULTS_DIR, env)
-        lang_pairs = [(pair[:2], pair[-2:])
-                      for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
-        print(f'Language pairs to evaluate: {lang_pairs}')
-
-        run_env(lang_pairs, skip_existing, translators, models_dir=models_dir, results_dir=results_dir)
-
-        build_report(results_dir)
+def run(pairs, translators, results_dir, models_dir, skip_existing):
+    lang_pairs = [(pair[:2], pair[-2:])
+                  for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
+    print(f'Language pairs to evaluate: {lang_pairs}')
+    run_dir(lang_pairs, skip_existing, translators, models_dir=models_dir, results_dir=results_dir)
+    build_report(results_dir)
 
 
 if __name__ == '__main__':

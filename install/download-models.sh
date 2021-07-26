@@ -2,16 +2,12 @@
 
 set -e
 
-cd ..
-
-if [ -e "bergamot-models" ]; then
+if [ -e "firefox-translations-models" ]; then
     echo "Already cloned"
 else
-    echo "Cloning https://github.com/mozilla-applied-ml/bergamot-models.git"
-    git clone https://github.com/mozilla-applied-ml/bergamot-models.git
+    echo "Cloning https://github.com/mozilla/firefox-translations-models.git"
+    git clone https://github.com/mozilla/firefox-translations-models.git
+
+    echo "Extracting models"
+    gzip -dr firefox-translations-models/models/*
 fi
-
-cd bergamot-models
-
-echo "Extracting models"
-gzip -d -r *

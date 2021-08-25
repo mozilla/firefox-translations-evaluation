@@ -34,5 +34,6 @@ RUN pip3 install -r requirements.txt
 
 ADD ./eval ./eval
 ADD ./translators ./translators
+ADD ./data ./data
 
 CMD ["/bin/bash"]

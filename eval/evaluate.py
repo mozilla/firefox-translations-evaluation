@@ -1,3 +1,4 @@
+import shutil
 import subprocess
 import os
 from collections import defaultdict
@@ -8,11 +9,17 @@ import click
 from toolz import groupby
 from glob import glob
 import pandas as pd
+from mtdata import iso
 
 HOME_DIR = '/workspace'
 EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
+EVAL_CUSTOM_PATH = os.path.join(EVAL_DIR, 'eval-custom.sh')
 CLEAN_CACHE_PATH = os.path.join(EVAL_DIR, 'clean-cache.sh')
+
+CUSTOM_DATASETS = ['flores-dev', 'flores-test']
+CUSTOM_DATA_DIR = os.path.join(HOME_DIR, 'data')
+FLORES_PATH = os.path.join(CUSTOM_DATA_DIR, 'flores.sh')
 
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
 BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
@@ -20,7 +27,7 @@ BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
 MARIAN_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'marian-decoder')
 MARIAN_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'marian.sh')
 
-trans_order = {'bergamot': 0,
+TRANS_ORDER = {'bergamot': 0,
                'marian': 1,
                'google': 2,
                'microsoft': 3}
@@ -34,6 +41,60 @@ def get_dataset_prefix(dataset_name, pair, results_dir):
 def get_bleu_path(dataset_name, pair, results_dir, translator):
     prefix = get_dataset_prefix(dataset_name, pair, results_dir)
     return f'{prefix}.{translator}.{pair[1]}.bleu'
+
+
+# Custom data
+
+
+def download_custom_data():
+    print('Downloading Flores dataset')
+    os.makedirs(CUSTOM_DATA_DIR, exist_ok=True)
+    subprocess.run(['bash', FLORES_PATH, CUSTOM_DATA_DIR])
+
+
+def copy_flores_lang(dataset_name, lang, eval_prefix):
+    flores_dataset = 'dev' if dataset_name == 'flores-dev' else 'devtest'
+
+    if lang == 'zh' or lang == 'zh-Hans':
+        lang_code = 'zho_simpl'
+    elif lang == 'zh-Hant':
+        lang_code = 'zho_trad'
+    else:
+        lang_code = iso.iso3_code(lang)
+
+    os.makedirs(os.path.dirname(eval_prefix), exist_ok=True)
+    shutil.copy(os.path.join(CUSTOM_DATA_DIR, 'flores101_dataset', flores_dataset, f'{lang_code}.{flores_dataset}'),
+                f'{eval_prefix}.{lang}')
+
+
+def copy_custom_data(dataset_name, pair, results_dir):
+    src, trg = pair
+    eval_prefix = get_dataset_prefix(dataset_name, pair, results_dir)
+
+    if dataset_name.startswith('flores'):
+        copy_flores_lang(dataset_name, src, eval_prefix)
+        copy_flores_lang(dataset_name, trg, eval_prefix)
+    else:
+        raise ValueError(f'Unsupported custom dataset: {dataset_name}')
+
+
+# Evaluation
+
+def find_datasets(pair):
+    formatted_pair = f'{pair[0]}-{pair[1]}'
+    datasets = []
+    datasets += CUSTOM_DATASETS
+
+    for dataset_name, descr in dataset.DATASETS.items():
+        is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
+        is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
+
+        if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
+            continue
+
+        datasets.append(dataset_name)
+
+    return datasets
 
 
 def evaluate(pair, set_name, translator, models_dir, results_dir):
@@ -62,11 +123,12 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
         raise ValueError(f'Translator is not supported: {translator}')
 
     my_env['TRANSLATOR_CMD'] = cmd
+    eval_path = EVAL_CUSTOM_PATH if set_name in CUSTOM_DATASETS else EVAL_PATH
 
     retries = 3
     while True:
         try:
-            res = subprocess.run(['bash', EVAL_PATH], env=my_env, stdout=subprocess.PIPE)
+            res = subprocess.run(['bash', eval_path], env=my_env, stdout=subprocess.PIPE)
             float_res = float(res.stdout.decode('utf-8').strip())
             return float_res
         except:
@@ -76,6 +138,32 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
             subprocess.run(['bash', CLEAN_CACHE_PATH])
             print('Attempt failed, retrying')
 
+
+def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
+    reordered = sorted(translators.split(','), key=lambda x: TRANS_ORDER[x])
+
+    for pair in lang_pairs:
+        for dataset_name in find_datasets(pair):
+            for translator in reordered:
+                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {pair[0]}-{pair[1]}')
+
+                res_path = get_bleu_path(dataset_name, pair, results_dir, translator)
+                print(f'Searching for {res_path}')
+
+                if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
+                    print(f"Already exists, skipping ({res_path})")
+                    with open(res_path) as f:
+                        bleu = float(f.read().strip())
+                else:
+                    print('Not found, running evaluation...')
+                    if dataset_name in CUSTOM_DATASETS:
+                        copy_custom_data(dataset_name, pair, results_dir)
+                    bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
+
+                print(f'Result BLEU: {bleu}\n')
+
+
+# Report generation
 
 def build_report(res_dir):
     results = read_results(res_dir)
@@ -106,7 +194,7 @@ def build_section(datasets, key, lines, res_dir):
 
     for dataset_name, translators in datasets.items():
         bergamot_res = translators.get('bergamot')
-        reordered = sorted(translators.items(), key=lambda x: trans_order[x[0]])
+        reordered = sorted(translators.items(), key=lambda x: TRANS_ORDER[x[0]])
 
         for translator, score in reordered:
             if score == 0:
@@ -170,7 +258,7 @@ def get_avg_scores(results):
 
 def plot_lang_pair(datasets, inverted_scores, img_path):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
-    translators = [t for t in trans_order.keys() if t in inverted_scores]
+    translators = [t for t in TRANS_ORDER.keys() if t in inverted_scores]
 
     df = pd.DataFrame(trans_scores, index=datasets, columns=translators)
     fig = df.plot.bar(ylim=(15, None), ylabel='bleu').get_figure()
@@ -178,31 +266,7 @@ def plot_lang_pair(datasets, inverted_scores, img_path):
     fig.savefig(img_path, bbox_inches="tight")
 
 
-def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
-    for pair in lang_pairs:
-        formatted_pair = f'{pair[0]}-{pair[1]}'
-
-        for dataset_name, descr in dataset.DATASETS.items():
-            is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
-            is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
-            if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
-                continue
-
-            reordered = sorted(translators.split(','), key=lambda x: trans_order[x])
-            for translator in reordered:
-                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {formatted_pair}')
-
-                res_path = get_bleu_path(dataset_name, pair, results_dir, translator)
-                print(f'Searching for {res_path}')
-                if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
-                    print(f"Already exists, skipping ({res_path})")
-                    with open(res_path) as f:
-                        bleu = float(f.read().strip())
-                else:
-                    print('Not found, running evaluation...')
-                    bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
-
-                print(f'Result BLEU: {bleu}\n')
+# Main
 
 
 @click.command()
@@ -225,6 +289,7 @@ def run(pairs, translators, results_dir, models_dir, skip_existing):
     lang_pairs = [(pair[:2], pair[-2:])
                   for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
     print(f'Language pairs to evaluate: {lang_pairs}')
+    download_custom_data()
     run_dir(lang_pairs, skip_existing, translators, models_dir=models_dir, results_dir=results_dir)
     build_report(results_dir)
 

@@ -2,7 +2,7 @@
 Calculates BLEU scores for Firefox Translations [models](https://github.com/mozilla/firefox-translations-models) 
 using [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
 
-##Running
+## Running
 
 ### Clone repo
 ```
@@ -63,8 +63,9 @@ It is useful to continue evaluation if it was interrupted
 or to rebuild a full report reevaluating only selected translators.
 
 ### Datasets
-Only [SacreBLEU](https://github.com/mjpost/sacrebleu) datasets are supported at the moment. 
-All available datasets for a language pair are used for evaluation.
+[SacreBLEU](https://github.com/mjpost/sacrebleu) - all available datasets for a language pair are used for evaluation.
+
+[Flores](https://github.com/facebookresearch/flores) - parallel evaluation dataset for 101 languages.
 
 ### Language pairs
 With option `--pairs=all`, language pairs will be discovered 

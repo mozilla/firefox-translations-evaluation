@@ -59,6 +59,8 @@ def copy_flores_lang(dataset_name, lang, eval_prefix):
         lang_code = 'zho_simpl'
     elif lang == 'zh-Hant':
         lang_code = 'zho_trad'
+    elif lang == 'nb':
+        lang_code = 'nob'
     else:
         lang_code = iso.iso3_code(lang)
 
@@ -143,6 +145,11 @@ def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
     reordered = sorted(translators.split(','), key=lambda x: TRANS_ORDER[x])
 
     for pair in lang_pairs:
+        if 'nn' in pair:
+            print('There are no evaluation datasets for Norwegian Nynorsk '
+                  'and it is not supported by Google and Microsoft API. Skipping evaluation')
+            continue
+
         for dataset_name in find_datasets(pair):
             for translator in reordered:
                 print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {pair[0]}-{pair[1]}')

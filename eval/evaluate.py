@@ -24,13 +24,10 @@ FLORES_PATH = os.path.join(CUSTOM_DATA_DIR, 'flores.sh')
 BERGAMOT_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'app', 'bergamot')
 BERGAMOT_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'bergamot.sh')
 
-MARIAN_APP_PATH = os.path.join(HOME_DIR, 'bergamot-translator', 'build', 'marian-decoder')
-MARIAN_EVAL_PATH = os.path.join(HOME_DIR, 'translators', 'marian.sh')
 
 TRANS_ORDER = {'bergamot': 0,
-               'marian': 1,
-               'google': 2,
-               'microsoft': 3}
+               'google': 1,
+               'microsoft': 2}
 
 
 def get_dataset_prefix(dataset_name, pair, results_dir):
@@ -113,10 +110,6 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
         my_env['MODEL_DIR'] = os.path.join(models_dir, f'{source}{target}')
         my_env['APP_PATH'] = BERGAMOT_APP_PATH
         cmd = f'bash {BERGAMOT_EVAL_PATH}'
-    elif translator == 'marian':
-        my_env['MODEL_DIR'] = os.path.join(models_dir, f'{source}{target}')
-        my_env['APP_PATH'] = MARIAN_APP_PATH
-        cmd = f'bash {MARIAN_EVAL_PATH}'
     elif translator == 'google':
         cmd = f"python3 {os.path.join(HOME_DIR, 'translators', 'google_translate.py')}"
     elif translator == 'microsoft':

@@ -123,7 +123,10 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
     retries = 3
     while True:
         try:
-            res = subprocess.run(['bash', eval_path], env=my_env, stdout=subprocess.PIPE)
+            res = subprocess.run(['bash', eval_path], env=my_env, stdout=subprocess.PIPE,
+                                 stderr=subprocess.PIPE)
+            print("stdout: ", res.stdout.decode('utf-8'))
+            print("stderr: ", res.stderr.decode('utf-8'))
             float_res = float(res.stdout.decode('utf-8').strip())
             return float_res
         except:

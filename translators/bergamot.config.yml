@@ -24,8 +24,5 @@ skip-cost: true
 cpu-threads: 0
 quiet: false
 quiet-translation: false
-log: log.txt
-gemm-precision: int8shiftAlphaAll
-# todo: for uk models
-#gemm-precision: int8
+gemm-precision: PRECISION
 alignment: soft

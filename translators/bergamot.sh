@@ -13,7 +13,7 @@ CONFIG="/tmp/bergamot.config.${SRC}${TRG}.yml"
 if [[ ${MODEL} == *.intgemm.alphas.bin ]]; then
   PRECISION=int8shiftAlphaAll
 elif [[ ${MODEL} == *.intgemm8.bin ]]; then
-  PRECISION=int8shift
+  PRECISION=int8shiftAll
 else
   echo "Unknown model name pattern: ${MODEL}"
   exit 1

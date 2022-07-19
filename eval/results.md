@@ -1,4 +1,4 @@
-# What is BLEU
+# What is BLEU?
 
 [BLEU (BiLingual Evaluation Understudy)](https://en.wikipedia.org/wiki/BLEU) is a metric for automatically evaluating machine-translated text. The BLEU score is a number between zero and one that measures the similarity of the machine-translated text to a set of high quality reference translations. A value of 0 means that the machine-translated output has no overlap with the reference translation (low quality) while a value of 1 means there is perfect overlap with the reference translations (high quality).
 
@@ -24,28 +24,28 @@ BLEU Score |	Interpretation
 Source: https://cloud.google.com/translate/automl/docs/evaluate#bleu
 
 
-BLEU is the most popular becnhmark in academia, so using BLEU allows us also to compare with reserach papers results and competitions (see [Conference on Machine Translation Conference (WMT)](http://statmt.org/wmt21/)).
+BLEU is the most popular benchmark in academia, so using BLEU allows us also to compare with research papers' results and competitions (see [Conference on Machine Translation Conference (WMT)](https://statmt.org/wmt21/)).
 
 Read [this article](https://www.rws.com/blog/understanding-mt-quality-bleu-scores/) to better understand what BLEU is and why it is not perfect.
 
-# What are these benchmarks
+# What are these benchmarks?
 
 ## Translators
 
-1. **bergamot** - uses compiled  [bergamot-translator](https://github.com/mozilla/bergamot-translator)  (wrapper for marian that is used by Firefox Translations web extension)
-2. **marian** - uses compiled [marian](https://github.com/marian-nmt/marian-dev) (translation engine bergamot-translator is based on)
-3. **google** - uses Google Translation [API](https://cloud.google.com/translate)
-4. **microsoft** - uses Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
+1. **bergamot** - uses compiled  [bergamot-translator](https://github.com/mozilla/bergamot-translator)  (wrapper for marian which is used by the Firefox Translations web extension)
+2. **marian** - uses compiled [marian](https://github.com/marian-nmt/marian-dev) (the translation engine bergamot-translator is based on)
+3. **google** - uses the Google Translation [API](https://cloud.google.com/translate)
+4. **microsoft** - uses the Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
 
-Translation quality of Marian and Bergamot is supposed to be very similar.
+The translation quality of Marian and Bergamot is supposed to be very similar.
 
 ## Method
 
-We use official WMT ([Conference on Machine Translation](http://statmt.org/wmt21/)) parallel datasets. Available datsets are discovered automatically based on a language pair.
+We use official WMT ([Conference on Machine Translation](https://statmt.org/wmt21/)) parallel datasets. Available datsets are discovered automatically based on a language pair.
 
 We perform translation from source to target langauge using one of 4 translation systems and then compare the result with the dataset reference and calculate BLEU score.
 
-Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) tool which is reliable and widely used in academic world.
+Evaluation is done using the [SacreBLEU](https://github.com/mjpost/sacrebleu) tool, which is reliable and widely used in the academic world.
 
 Both absolute and relative differences in BLEU scores between Bergamot and other systems are reported.
 

@@ -14,7 +14,9 @@ from mtdata import iso
 HOME_DIR = '/workspace'
 EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
+EVAL_PATH_COMET = os.path.join(EVAL_DIR, 'eval-comet.sh')
 EVAL_CUSTOM_PATH = os.path.join(EVAL_DIR, 'eval-custom.sh')
+EVAL_CUSTOM_PATH_COMET = os.path.join(EVAL_DIR, 'eval-custom-comet.sh')
 CLEAN_CACHE_PATH = os.path.join(EVAL_DIR, 'clean-cache.sh')
 
 CUSTOM_DATASETS = ['flores-dev', 'flores-test']
@@ -35,9 +37,9 @@ def get_dataset_prefix(dataset_name, pair, results_dir):
     return os.path.join(results_dir, f'{pair[0]}-{pair[1]}', f'{dataset_name}')
 
 
-def get_bleu_path(dataset_name, pair, results_dir, translator):
+def get_bleu_path(dataset_name, pair, results_dir, translator, evaluation_engine):
     prefix = get_dataset_prefix(dataset_name, pair, results_dir)
-    return f'{prefix}.{translator}.{pair[1]}.bleu'
+    return f'{prefix}.{translator}.{pair[1]}.{evaluation_engine}'
 
 
 # Custom data
@@ -88,7 +90,7 @@ def find_datasets(pair):
         is_wmt_official = dataset_name.startswith('wmt') and len(dataset_name) == 5
         is_other_accepted = dataset_name == 'iwslt17' or dataset_name == 'mtedx/test'
 
-        if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr:
+        if not (is_wmt_official or is_other_accepted) or formatted_pair not in descr.langpairs:
             continue
 
         datasets.append(dataset_name)
@@ -96,7 +98,7 @@ def find_datasets(pair):
     return datasets
 
 
-def evaluate(pair, set_name, translator, models_dir, results_dir):
+def evaluate(pair, set_name, translator, evaluation_engine, gpus, models_dir, results_dir):
     source, target = pair
 
     my_env = os.environ.copy()
@@ -105,6 +107,7 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
     my_env['DATASET'] = set_name
     my_env['EVAL_PREFIX'] = get_dataset_prefix(set_name, pair, results_dir)
     my_env['TRANSLATOR'] = translator
+    my_env['GPUS'] = gpus
 
     if translator == 'bergamot':
         my_env['MODEL_DIR'] = os.path.join(models_dir, f'{source}{target}')
@@ -119,6 +122,15 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
 
     my_env['TRANSLATOR_CMD'] = cmd
     eval_path = EVAL_CUSTOM_PATH if set_name in CUSTOM_DATASETS else EVAL_PATH
+
+    if set_name in CUSTOM_DATASETS and evaluation_engine == 'bleu':
+        eval_path = EVAL_CUSTOM_PATH
+    elif set_name in CUSTOM_DATASETS and evaluation_engine == 'comet':
+        eval_path = EVAL_CUSTOM_PATH_COMET
+    elif set_name not in CUSTOM_DATASETS and evaluation_engine == 'bleu':
+        eval_path = EVAL_PATH
+    elif set_name not in CUSTOM_DATASETS and evaluation_engine == 'comet':
+        eval_path = EVAL_PATH_COMET
 
     retries = 3
     while True:
@@ -137,7 +149,7 @@ def evaluate(pair, set_name, translator, models_dir, results_dir):
             print('Attempt failed, retrying')
 
 
-def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
+def run_dir(lang_pairs, skip_existing, translators, evaluation_engine, gpus, results_dir, models_dir):
     reordered = sorted(translators.split(','), key=lambda x: TRANS_ORDER[x])
 
     for pair in lang_pairs:
@@ -148,22 +160,22 @@ def run_dir(lang_pairs, skip_existing, translators, results_dir, models_dir):
 
         for dataset_name in find_datasets(pair):
             for translator in reordered:
-                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {pair[0]}-{pair[1]}')
+                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {pair[0]}-{pair[1]}, evaluation: {evaluation_engine}')
 
-                res_path = get_bleu_path(dataset_name, pair, results_dir, translator)
+                res_path = get_bleu_path(dataset_name, pair, results_dir, translator, evaluation_engine)
                 print(f'Searching for {res_path}')
 
                 if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
                     print(f"Already exists, skipping ({res_path})")
                     with open(res_path) as f:
-                        bleu = float(f.read().strip())
+                        score = float(f.read().strip())
                 else:
                     print('Not found, running evaluation...')
                     if dataset_name in CUSTOM_DATASETS:
                         copy_custom_data(dataset_name, pair, results_dir)
-                    bleu = evaluate(pair, dataset_name, translator, results_dir=results_dir, models_dir=models_dir)
+                    score = evaluate(pair, dataset_name, translator, evaluation_engine, gpus, results_dir=results_dir, models_dir=models_dir)
 
-                print(f'Result BLEU: {bleu}\n')
+                print(f'Result {evaluation_engine}: {score}\n')
 
 
 # Report generation
@@ -288,12 +300,18 @@ def plot_lang_pair(datasets, inverted_scores, img_path):
               is_flag=True,
               help='Whether to skip already calculated scores. '
                    'They are located in `results/xx-xx` folders as *.bleu files.')
-def run(pairs, translators, results_dir, models_dir, skip_existing):
+@click.option('--evaluation-engine',
+              default="bleu",
+              help='Determine which evaluation engine to use: bleu or comet')
+@click.option('--gpus',
+              default="0",
+              help='Determine the number of GPUs used by the comet engine (if applicable). Default: 0')
+def run(pairs, translators, results_dir, models_dir, skip_existing, evaluation_engine, gpus):
     lang_pairs = [(pair[:2], pair[-2:])
                   for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
     print(f'Language pairs to evaluate: {lang_pairs}')
     download_custom_data()
-    run_dir(lang_pairs, skip_existing, translators, models_dir=models_dir, results_dir=results_dir)
+    run_dir(lang_pairs, skip_existing, translators, evaluation_engine, gpus, models_dir=models_dir, results_dir=results_dir)
     build_report(results_dir)
 
 

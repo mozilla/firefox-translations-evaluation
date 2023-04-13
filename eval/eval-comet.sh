@@ -11,4 +11,5 @@ sacrebleu -t "$DATASET" -l "$SRC-$TRG" --echo src \
     | $TRANSLATOR_CMD \
     | tee "$EVAL_PREFIX.$TRANSLATOR.$TRG" \
     ; comet-score --gpus "$GPUS" --quiet -d "$DATASET:$SRC-$TRG" -t "$EVAL_PREFIX.$TRANSLATOR.$TRG" \
+    | awk -F"score: " '{print $2}' \
     | tee "$EVAL_PREFIX.$TRANSLATOR.$TRG.comet"

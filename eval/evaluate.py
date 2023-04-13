@@ -3,7 +3,7 @@ import subprocess
 import os
 from collections import defaultdict
 import statistics
-
+import traceback
 from sacrebleu import dataset
 import click
 from toolz import groupby
@@ -11,7 +11,7 @@ from glob import glob
 import pandas as pd
 from mtdata import iso
 
-HOME_DIR = '/workspace'
+HOME_DIR = './'
 EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
 EVAL_PATH_COMET = os.path.join(EVAL_DIR, 'eval-comet.sh')
@@ -139,9 +139,13 @@ def evaluate(pair, set_name, translator, evaluation_engine, gpus, models_dir, re
                                  stderr=subprocess.PIPE)
             print("stdout: ", res.stdout.decode('utf-8'))
             print("stderr: ", res.stderr.decode('utf-8'))
-            float_res = float(res.stdout.decode('utf-8').strip())
+            if evaluation_engine == "bleu":
+                float_res = float(res.stdout.decode('utf-8').strip())
+            elif evaluation_engine == "comet":
+                float_res = float(res.stdout.decode('utf-8').strip().split("\n")[-1])
             return float_res
         except:
+            traceback.print_exc()
             if retries == 0:
                 raise
             retries -= 1
@@ -180,26 +184,26 @@ def run_dir(lang_pairs, skip_existing, translators, evaluation_engine, gpus, res
 
 # Report generation
 
-def build_report(res_dir):
-    results = read_results(res_dir)
+def build_report(res_dir, evaluation_engine):
+    results = read_results(res_dir, evaluation_engine)
     os.makedirs(os.path.join(res_dir, 'img'), exist_ok=True)
 
-    with open(os.path.join(EVAL_DIR, 'results.md')) as f:
+    with open(os.path.join(EVAL_DIR, evaluation_engine + '-results.md')) as f:
         lines = [l.strip() for l in f.readlines()]
 
     avg_results = get_avg_scores(results)
-    build_section(avg_results, 'avg', lines, res_dir)
+    build_section(avg_results, 'avg', lines, res_dir, evaluation_engine)
 
     for lang_pair, datasets in results.items():
-        build_section(datasets, lang_pair, lines, res_dir)
+        build_section(datasets, lang_pair, lines, res_dir, evaluation_engine)
 
-    results_path = os.path.join(res_dir, 'results.md')
+    results_path = os.path.join(res_dir, evaluation_engine + '-results.md')
     with open(results_path, 'w+') as f:
         f.write('\n'.join(lines))
         print(f'Results are written to {results_path}')
 
 
-def build_section(datasets, key, lines, res_dir):
+def build_section(datasets, key, lines, res_dir, evaluation_engine):
     lines.append(f'\n## {key}\n')
     lines.append(f'| Translator/Dataset | {" | ".join(datasets.keys())} |')
     lines.append(f"| {' | '.join(['---' for _ in range(len(datasets) + 1)])} |")
@@ -229,16 +233,16 @@ def build_section(datasets, key, lines, res_dir):
         lines.append(f'| {translator} | {" | ".join(scores.values())} |')
 
     img_path = os.path.join(res_dir, 'img', f'{key}.png')
-    plot_lang_pair(datasets, inverted_scores, img_path)
+    plot_lang_pair(datasets, inverted_scores, img_path, evaluation_engine)
 
     img_relative_path = '/'.join(img_path.split("/")[-2:])
     lines.append(f'\n![Results]({img_relative_path})')
 
 
-def read_results(res_dir):
+def read_results(res_dir, evaluation_engine):
     results = defaultdict(dict)
     all_translators = set()
-    for bleu_file in glob(res_dir + '/*/*.bleu'):
+    for bleu_file in glob(res_dir + '/*/*.' + evaluation_engine):
         dataset_name, translator, = os.path.basename(bleu_file).split('.')[:2]
         pair = bleu_file.split('/')[-2]
         with open(bleu_file) as f:
@@ -271,12 +275,12 @@ def get_avg_scores(results):
     return scores
 
 
-def plot_lang_pair(datasets, inverted_scores, img_path):
+def plot_lang_pair(datasets, inverted_scores, img_path, evaluation_engine):
     trans_scores = {t: s.values() for t, s in inverted_scores.items()}
     translators = [t for t in TRANS_ORDER.keys() if t in inverted_scores]
 
     df = pd.DataFrame(trans_scores, index=datasets, columns=translators)
-    fig = df.plot.bar(ylim=(15, None), ylabel='bleu').get_figure()
+    fig = df.plot.bar(ylim=(15, None), ylabel=evaluation_engine).get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")
 
@@ -299,7 +303,7 @@ def plot_lang_pair(datasets, inverted_scores, img_path):
               default=False,
               is_flag=True,
               help='Whether to skip already calculated scores. '
-                   'They are located in `results/xx-xx` folders as *.bleu files.')
+                   'They are located in `results/xx-xx` folders as *.bleu or *.comet files.')
 @click.option('--evaluation-engine',
               default="bleu",
               help='Determine which evaluation engine to use: bleu or comet')
@@ -312,7 +316,7 @@ def run(pairs, translators, results_dir, models_dir, skip_existing, evaluation_e
     print(f'Language pairs to evaluate: {lang_pairs}')
     download_custom_data()
     run_dir(lang_pairs, skip_existing, translators, evaluation_engine, gpus, models_dir=models_dir, results_dir=results_dir)
-    build_report(results_dir)
+    build_report(results_dir,evaluation_engine)
 
 
 if __name__ == '__main__':

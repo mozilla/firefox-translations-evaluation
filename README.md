@@ -38,7 +38,7 @@ On completion, your terminal should be attached to the launched container.
 ### Run evaluation
 From inside docker container run:
 ```
-python3 eval/evaluate.py --translators=bergamot,microsoft,google --pairs=all --skip-existing --models-dir=/models/models/prod --results-dir=/models/evaluation/prod
+python3 eval/evaluate.py --translators=bergamot,microsoft,google --pairs=all --skip-existing --gpus=1 --evaluation-engine=comet,bleu --models-dir=/models/models/prod --results-dir=/models/evaluation/prod
 ```
 More options:
 ```

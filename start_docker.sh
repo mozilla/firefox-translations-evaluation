@@ -11,6 +11,7 @@ docker build -t bergamot-eval .
 
 echo "Running docker container"
 docker run --name bergamot-eval -it --rm \
+      --runtime=nvidia --gpus all \
       -v $MODELS:/models \
       -v $GCP_CREDS_PATH:/.gcp_creds \
       -e GOOGLE_APPLICATION_CREDENTIALS=/.gcp_creds \

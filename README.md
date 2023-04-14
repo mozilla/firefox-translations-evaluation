@@ -51,6 +51,10 @@ python3 eval/evaluate.py --help
 
 `install/download-models.sh` - downloads current Mozilla production [models](https://github.com/mozilla/firefox-translations-models).
 
+### Docker & CUDA
+The COMET evaluation framework supports CUDA, and you can enable it by setting the `--gpus` argument in the `eval\evaluate.py` script to the number of GPUs you wish to utilize (`0` disables it). 
+If you are using it, make sure you have the [nvidia container toolkit enabled](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker) in your docker setup.
+
 ### Translators
 1. **bergamot** - uses compiled [bergamot-translator](https://github.com/mozilla/bergamot-translator) in wasm mode
 2. **marian** - uses compiled [marian](https://github.com/marian-nmt/marian-dev)

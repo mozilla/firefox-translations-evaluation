@@ -12,7 +12,7 @@ cd firefox-translations-evaluation
 
 ### Download models
 
-Use `install/download-model.sh` to get Firefox Translations [models](https://github.com/mozilla/firefox-translations-models) or use your own ones.
+Use `install/download-models.sh` to get Firefox Translations [models](https://github.com/mozilla/firefox-translations-models) or use your own ones.
 
 ### Start docker
 Recommended memory size for Docker is **8gb**.

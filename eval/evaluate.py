@@ -11,7 +11,7 @@ from glob import glob
 import pandas as pd
 from mtdata import iso
 
-HOME_DIR = './'
+HOME_DIR = '/workspace'
 EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
 EVAL_PATH_COMET = os.path.join(EVAL_DIR, 'eval-comet.sh')
@@ -153,54 +153,56 @@ def evaluate(pair, set_name, translator, evaluation_engine, gpus, models_dir, re
             print('Attempt failed, retrying')
 
 
-def run_dir(lang_pairs, skip_existing, translators, evaluation_engine, gpus, results_dir, models_dir):
+def run_dir(lang_pairs, skip_existing, translators, evaluation_engines, gpus, results_dir, models_dir):
     reordered = sorted(translators.split(','), key=lambda x: TRANS_ORDER[x])
 
-    for pair in lang_pairs:
-        if 'nn' in pair:
-            print('There are no evaluation datasets for Norwegian Nynorsk '
-                  'and it is not supported by Google and Microsoft API. Skipping evaluation')
-            continue
+    for evaluation_engine in evaluation_engines.split(','):
+        for pair in lang_pairs:
+            if 'nn' in pair:
+                print('There are no evaluation datasets for Norwegian Nynorsk '
+                    'and it is not supported by Google and Microsoft API. Skipping evaluation')
+                continue
 
-        for dataset_name in find_datasets(pair):
-            for translator in reordered:
-                print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {pair[0]}-{pair[1]}, evaluation: {evaluation_engine}')
+            for dataset_name in find_datasets(pair):
+                for translator in reordered:
+                    print(f'Evaluation for dataset: {dataset_name}, translator: {translator}, pair: {pair[0]}-{pair[1]}, evaluation engine: {evaluation_engine}')
 
-                res_path = get_bleu_path(dataset_name, pair, results_dir, translator, evaluation_engine)
-                print(f'Searching for {res_path}')
+                    res_path = get_bleu_path(dataset_name, pair, results_dir, translator, evaluation_engine)
+                    print(f'Searching for {res_path}')
 
-                if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
-                    print(f"Already exists, skipping ({res_path})")
-                    with open(res_path) as f:
-                        score = float(f.read().strip())
-                else:
-                    print('Not found, running evaluation...')
-                    if dataset_name in CUSTOM_DATASETS:
-                        copy_custom_data(dataset_name, pair, results_dir)
-                    score = evaluate(pair, dataset_name, translator, evaluation_engine, gpus, results_dir=results_dir, models_dir=models_dir)
+                    if skip_existing and os.path.isfile(res_path) and os.stat(res_path).st_size > 0:
+                        print(f"Already exists, skipping ({res_path})")
+                        with open(res_path) as f:
+                            score = float(f.read().strip())
+                    else:
+                        print('Not found, running evaluation...')
+                        if dataset_name in CUSTOM_DATASETS:
+                            copy_custom_data(dataset_name, pair, results_dir)
+                        score = evaluate(pair, dataset_name, translator, evaluation_engine, gpus, results_dir=results_dir, models_dir=models_dir)
 
-                print(f'Result {evaluation_engine}: {score}\n')
+                    print(f'Result {evaluation_engine}: {score}\n')
 
 
 # Report generation
 
-def build_report(res_dir, evaluation_engine):
-    results = read_results(res_dir, evaluation_engine)
+def build_report(res_dir, evaluation_engines):
     os.makedirs(os.path.join(res_dir, 'img'), exist_ok=True)
 
-    with open(os.path.join(EVAL_DIR, evaluation_engine + '-results.md')) as f:
-        lines = [l.strip() for l in f.readlines()]
+    for evaluation_engine in evaluation_engines.split(","):
+        results = read_results(res_dir, evaluation_engine)
+        with open(os.path.join(EVAL_DIR, evaluation_engine + '-results.md')) as f:
+            lines = [l.strip() for l in f.readlines()]
 
-    avg_results = get_avg_scores(results)
-    build_section(avg_results, 'avg', lines, res_dir, evaluation_engine)
+        avg_results = get_avg_scores(results)
+        build_section(avg_results, 'avg', lines, res_dir, evaluation_engine)
 
-    for lang_pair, datasets in results.items():
-        build_section(datasets, lang_pair, lines, res_dir, evaluation_engine)
+        for lang_pair, datasets in results.items():
+            build_section(datasets, lang_pair, lines, res_dir, evaluation_engine)
 
-    results_path = os.path.join(res_dir, evaluation_engine + '-results.md')
-    with open(results_path, 'w+') as f:
-        f.write('\n'.join(lines))
-        print(f'Results are written to {results_path}')
+        results_path = os.path.join(res_dir, evaluation_engine + '-results.md')
+        with open(results_path, 'w+') as f:
+            f.write('\n'.join(lines))
+            print(f'Results are written to {results_path}')
 
 
 def build_section(datasets, key, lines, res_dir, evaluation_engine):
@@ -232,7 +234,7 @@ def build_section(datasets, key, lines, res_dir, evaluation_engine):
     for translator, scores in inverted_formatted.items():
         lines.append(f'| {translator} | {" | ".join(scores.values())} |')
 
-    img_path = os.path.join(res_dir, 'img', f'{key}.png')
+    img_path = os.path.join(res_dir, 'img', f'{key}-{evaluation_engine}.png')
     plot_lang_pair(datasets, inverted_scores, img_path, evaluation_engine)
 
     img_relative_path = '/'.join(img_path.split("/")[-2:])
@@ -280,7 +282,7 @@ def plot_lang_pair(datasets, inverted_scores, img_path, evaluation_engine):
     translators = [t for t in TRANS_ORDER.keys() if t in inverted_scores]
 
     df = pd.DataFrame(trans_scores, index=datasets, columns=translators)
-    fig = df.plot.bar(ylim=(15, None), ylabel=evaluation_engine).get_figure()
+    fig = df.plot.bar(ylabel=evaluation_engine).get_figure()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(img_path, bbox_inches="tight")
 

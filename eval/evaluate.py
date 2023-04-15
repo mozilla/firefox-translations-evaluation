@@ -192,6 +192,7 @@ def run_comet_compare(lang_pairs, skip_existing, translators, gpus, models_dir, 
         source, target = pair
 
         for dataset_name in find_datasets(pair):
+            dataset_name = dataset_name.replace('/', '_')
             print(f'Comparison for dataset: {dataset_name}, pair: {source}-{target}')
             working_folder = f'{results_dir}/{source}-{target}/'
             output_filename = f'{working_folder}/{dataset_name}.{source}-{target}.cometcompare'

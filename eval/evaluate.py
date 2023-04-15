@@ -192,6 +192,7 @@ def run_comet_compare(lang_pairs, skip_existing, translators, gpus, models_dir, 
         source, target = pair
 
         for dataset_name in find_datasets(pair):
+            original_dataset_name = dataset_name
             dataset_name = dataset_name.replace('/', '_')
             print(f'Comparison for dataset: {dataset_name}, pair: {source}-{target}')
             working_folder = f'{results_dir}/{source}-{target}/'
@@ -209,7 +210,7 @@ def run_comet_compare(lang_pairs, skip_existing, translators, gpus, models_dir, 
                 reference = f'{dataset_name}.{target}'
                 command = f'comet-compare --gpus {gpus} -s {source_dataset} -t {targets.strip()} -r {reference}'
             else:
-                command = f'comet-compare --gpus {gpus} -d {dataset_name}:{source}-{target} -t {targets.strip()}'
+                command = f'comet-compare --gpus {gpus} -d {original_dataset_name}:{source}-{target} -t {targets.strip()}'
             res = subprocess.run(command.split(' '), cwd=working_folder,
                                  stdout=subprocess.PIPE,
                                  stderr=subprocess.PIPE)

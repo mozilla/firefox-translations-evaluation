@@ -182,6 +182,42 @@ def run_dir(lang_pairs, skip_existing, translators, evaluation_engines, gpus, re
 
                     print(f'Result {evaluation_engine}: {score}\n')
 
+def run_comet_compare(lang_pairs, skip_existing, translators, gpus, models_dir, results_dir):
+    for pair in lang_pairs:
+        if 'nn' in pair:
+            print('There are no evaluation datasets for Norwegian Nynorsk '
+                'and it is not supported by Google and Microsoft API. Skipping comparison')
+            continue
+
+        source, target = pair
+
+        for dataset_name in find_datasets(pair):
+            print(f'Comparison for dataset: {dataset_name}, pair: {source}-{target}')
+            working_folder = f'{results_dir}/{source}-{target}/'
+            output_filename = f'{working_folder}/{dataset_name}.{source}-{target}.cometcompare'
+            if skip_existing and os.path.isfile(output_filename) and os.stat(output_filename).st_size > 0:
+                print(f'Comparison exists. Skipping...')
+                continue
+
+            source_dataset = f'{dataset_name}.{source}'
+            targets = ""
+            for translator in translators.split(','):
+                targets += f'{dataset_name}.{translator}.{target} '
+            command = ""
+            if dataset_name in CUSTOM_DATASETS:
+                reference = f'{dataset_name}.{target}'
+                command = f'comet-compare --gpus {gpus} -s {source_dataset} -t {targets.strip()} -r {reference}'
+            else:
+                command = f'comet-compare --gpus {gpus} -d {dataset_name}:{source}-{target} -t {targets.strip()}'
+            res = subprocess.run(command.split(' '), cwd=working_folder,
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.PIPE)
+            stdout =  res.stdout.decode('utf-8')
+            with open(output_filename, 'w') as f:
+                f.write(stdout)
+            print("stdout: ", res.stdout.decode('utf-8'))
+            print("stderr: ", res.stderr.decode('utf-8'))
+
 
 # Report generation
 
@@ -309,15 +345,20 @@ def plot_lang_pair(datasets, inverted_scores, img_path, evaluation_engine):
 @click.option('--evaluation-engine',
               default="bleu",
               help='Determine which evaluation engine to use: bleu or comet')
+@click.option('--comet-compare',
+              default=True,
+              help='Determine if comet-compare should be executed or not. Default: True')
 @click.option('--gpus',
               default="0",
               help='Determine the number of GPUs used by the comet engine (if applicable). Default: 0')
-def run(pairs, translators, results_dir, models_dir, skip_existing, evaluation_engine, gpus):
+def run(pairs, translators, results_dir, models_dir, skip_existing, evaluation_engine, gpus, comet_compare):
     lang_pairs = [(pair[:2], pair[-2:])
                   for pair in (os.listdir(models_dir) if pairs == 'all' else pairs.split(','))]
     print(f'Language pairs to evaluate: {lang_pairs}')
     download_custom_data()
     run_dir(lang_pairs, skip_existing, translators, evaluation_engine, gpus, models_dir=models_dir, results_dir=results_dir)
+    if comet_compare:
+        run_comet_compare(lang_pairs, skip_existing, translators, gpus, models_dir=models_dir, results_dir=results_dir)
     build_report(results_dir,evaluation_engine)
 
 

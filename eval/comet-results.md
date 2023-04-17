@@ -1,53 +1,32 @@
-# What is BLEU
+# What is COMET
 
-[BLEU (BiLingual Evaluation Understudy)](https://en.wikipedia.org/wiki/BLEU) is a metric for automatically evaluating machine-translated text. The BLEU score is a number between zero and one that measures the similarity of the machine-translated text to a set of high quality reference translations. A value of 0 means that the machine-translated output has no overlap with the reference translation (low quality) while a value of 1 means there is perfect overlap with the reference translations (high quality).
+COMET is a neural framework its developers present for training multilingual machine translation evaluation models. The framework has been reported to obtain new state-of-the-art levels of correlation with human judgments. Recent breakthroughs in cross-lingual pre-trained language modeling have been leveraged by the framework resulting in highly multilingual and adaptable MT evaluation models.
 
-It has been shown that BLEU scores correlate well with human judgment of translation quality. Note that even human translators do not achieve a perfect score of 1.0.
+Three models with different human judgments have been trained to showcase the framework. These include Direct Assessments, Human-mediated Translation Edit Rate, and Multidimensional Quality Metrics. These models are designed to exploit information from source input and a target-language reference translation to more accurately predict MT quality.
 
-BLEU scores are expressed as a percentage rather than a decimal between 0 and 1.
-Trying to compare BLEU scores across different corpora and languages is strongly discouraged. Even comparing BLEU scores for the same corpus but with different numbers of reference translations can be highly misleading.
+The models developed by COMET have achieved new state-of-the-art performance on the WMT 2019 Metrics shared task, demonstrating robustness to high-performing systems.
 
-However, as a rough guideline, the following interpretation of BLEU scores (expressed as percentages rather than decimals) might be helpful.
+Source: https://aclanthology.org/2020.emnlp-main.213.pdf
 
-BLEU Score |	Interpretation
---- | ---
-< 10 |	Almost useless
-10 - 19 |	Hard to get the gist
-20 - 29 |	The gist is clear, but has significant grammatical errors
-30 - 40 |	Understandable to good translations
-40 - 50 |	High quality translations
-50 - 60 |	Very high quality, adequate, and fluent translations
-\> 60 |	Quality often better than human
-
-[More mathematical details](https://cloud.google.com/translate/automl/docs/evaluate#the_mathematical_details)
-
-Source: https://cloud.google.com/translate/automl/docs/evaluate#bleu
-
-
-BLEU is the most popular becnhmark in academia, so using BLEU allows us also to compare with reserach papers results and competitions (see [Conference on Machine Translation Conference (WMT)](http://statmt.org/wmt21/)).
-
-Read [this article](https://www.rws.com/blog/understanding-mt-quality-bleu-scores/) to better understand what BLEU is and why it is not perfect.
+Tool: https://github.com/Unbabel/COMET
 
 # What are these benchmarks
 
 ## Translators
 
 1. **bergamot** - uses compiled  [bergamot-translator](https://github.com/mozilla/bergamot-translator)  (wrapper for marian that is used by Firefox Translations web extension)
-2. **marian** - uses compiled [marian](https://github.com/marian-nmt/marian-dev) (translation engine bergamot-translator is based on)
-3. **google** - uses Google Translation [API](https://cloud.google.com/translate)
-4. **microsoft** - uses Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
-
-Translation quality of Marian and Bergamot is supposed to be very similar.
+2. **google** - uses Google Translation [API](https://cloud.google.com/translate)
+3. **microsoft** - uses Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
 
 ## Method
 
-We use official WMT ([Conference on Machine Translation](http://statmt.org/wmt21/)) parallel datasets. Available datsets are discovered automatically based on a language pair.
+We use official WMT ([Conference on Machine Translation](http://statmt.org/wmt21/)) parallel datasets. Available datasets are discovered automatically based on a language pair.
 
-We perform translation from source to target langauge using one of 4 translation systems and then compare the result with the dataset reference and calculate BLEU score.
+We perform the translation from source to target language using one of the three translation systems, compare the result with the dataset reference, and then calculate the [COMET](https://github.com/Unbabel/COMET) score.
 
-Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) tool which is reliable and widely used in academic world.
+Both absolute and relative differences in the scores between Bergamot and other systems are reported.
 
-Both absolute and relative differences in BLEU scores between Bergamot and other systems are reported.
+We also compare the systems using the `comet-compare` tool that calculates the statistical significance with Paired T-Test and bootstrap resampling.
 
 # Evaluation results
 

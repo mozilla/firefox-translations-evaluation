@@ -272,14 +272,14 @@ def build_section(datasets, key, lines, res_dir, evaluation_engine):
 
         # if this is a non-avg comet report, and a cometcompare report exists, we print it
         cometcompare_path = "{}/{}/{}.{}.cometcompare".format(res_dir,key,dataset_name,key)
-        if evaluation_engine == "comet" and key != "avg" and "{}-{}".format(dataset_name, key) not in comet_comparisons and exists(cometcompare_path):
+        if evaluation_engine == "comet" and key != "avg" and "{}.{}".format(dataset_name, key) not in comet_comparisons and exists(cometcompare_path):
             cometcompare_file = open(cometcompare_path)
             filelines = cometcompare_file.readlines()
             final_report = ""
             for line in filelines:
                 if "outperforms" in line:
                     final_report += f'- {line}'
-            comet_comparisons["{}-{}".format(dataset_name, key)] = final_report
+            comet_comparisons["{}.{}".format(dataset_name, key)] = final_report
 
     for translator, scores in inverted_formatted.items():
         lines.append(f'| {translator} | {" | ".join(scores.values())} |')
@@ -290,8 +290,14 @@ def build_section(datasets, key, lines, res_dir, evaluation_engine):
     img_relative_path = '/'.join(img_path.split("/")[-2:])
     lines.append(f'\n![Results]({img_relative_path})')
 
+    printed_header = False
     for dataset in comet_comparisons:
-        lines.append(f'### {dataset}')
+        if (not printed_header):
+            lines.append("### Comparisons between systems")
+            lines.append("*If a comparison is omitted, the systems have equal averages (tie). Click on the dataset for a complete report*")
+            printed_header = True
+
+        lines.append(f'#### [{dataset}]({key}/{dataset}.cometcompare)')
         lines.append(f'{comet_comparisons[dataset]}')
 
     lines.append("---")

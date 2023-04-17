@@ -10,8 +10,9 @@ from toolz import groupby
 from glob import glob
 import pandas as pd
 from mtdata import iso
+from os.path import exists
 
-HOME_DIR = '/workspace'
+HOME_DIR = './'
 EVAL_DIR = os.path.join(HOME_DIR, 'eval')
 EVAL_PATH = os.path.join(EVAL_DIR, 'eval.sh')
 EVAL_PATH_COMET = os.path.join(EVAL_DIR, 'eval-comet.sh')
@@ -250,7 +251,7 @@ def build_section(datasets, key, lines, res_dir, evaluation_engine):
 
     inverted_formatted = defaultdict(dict)
     inverted_scores = defaultdict(dict)
-
+    comet_comparisons = defaultdict(dict)
     for dataset_name, translators in datasets.items():
         bergamot_res = translators.get('bergamot')
         reordered = sorted(translators.items(), key=lambda x: TRANS_ORDER[x[0]])
@@ -269,6 +270,17 @@ def build_section(datasets, key, lines, res_dir, evaluation_engine):
             inverted_formatted[translator][dataset_name] = formatted_score
             inverted_scores[translator][dataset_name] = score
 
+        # if this is a non-avg comet report, and a cometcompare report exists, we print it
+        cometcompare_path = "{}/{}/{}.{}.cometcompare".format(res_dir,key,dataset_name,key)
+        if evaluation_engine == "comet" and key != "avg" and "{}-{}".format(dataset_name, key) not in comet_comparisons and exists(cometcompare_path):
+            cometcompare_file = open(cometcompare_path)
+            filelines = cometcompare_file.readlines()
+            final_report = ""
+            for line in filelines:
+                if "outperforms" in line:
+                    final_report += f'- {line}'
+            comet_comparisons["{}-{}".format(dataset_name, key)] = final_report
+
     for translator, scores in inverted_formatted.items():
         lines.append(f'| {translator} | {" | ".join(scores.values())} |')
 
@@ -278,6 +290,11 @@ def build_section(datasets, key, lines, res_dir, evaluation_engine):
     img_relative_path = '/'.join(img_path.split("/")[-2:])
     lines.append(f'\n![Results]({img_relative_path})')
 
+    for dataset in comet_comparisons:
+        lines.append(f'### {dataset}')
+        lines.append(f'{comet_comparisons[dataset]}')
+
+    lines.append("---")
 
 def read_results(res_dir, evaluation_engine):
     results = defaultdict(dict)

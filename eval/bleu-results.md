@@ -33,17 +33,16 @@ Read [this article](https://www.rws.com/blog/understanding-mt-quality-bleu-score
 ## Translators
 
 1. **bergamot** - uses compiled  [bergamot-translator](https://github.com/mozilla/bergamot-translator)  (wrapper for marian that is used by Firefox Translations web extension)
-2. **marian** - uses compiled [marian](https://github.com/marian-nmt/marian-dev) (translation engine bergamot-translator is based on)
-3. **google** - uses Google Translation [API](https://cloud.google.com/translate)
-4. **microsoft** - uses Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
+2. **google** - uses Google Translation [API](https://cloud.google.com/translate)
+3. **microsoft** - uses Azure Cognitive Services Translator [API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
 
 Translation quality of Marian and Bergamot is supposed to be very similar.
 
 ## Method
 
-We use official WMT ([Conference on Machine Translation](http://statmt.org/wmt21/)) parallel datasets. Available datsets are discovered automatically based on a language pair.
+We use official WMT ([Conference on Machine Translation](http://statmt.org/wmt21/)) parallel datasets. Available datasets are discovered automatically based on a language pair.
 
-We perform translation from source to target langauge using one of 4 translation systems and then compare the result with the dataset reference and calculate BLEU score.
+We perform translation from source to target language using one of three translation systems and then compare the result with the dataset reference and calculate BLEU score.
 
 Evaluation is done using [SacreBLEU](https://github.com/mjpost/sacrebleu) tool which is reliable and widely used in academic world.
 

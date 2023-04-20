@@ -10,7 +10,8 @@ echo "Building docker image"
 docker build -t bergamot-eval .
 
 echo "Running docker container"
-docker run --name bergamot-eval -it --rm \
+docker run --name bergamot-eval -it --shm-size=16gb --rm \
+      --runtime=nvidia --gpus all \
       -v $MODELS:/models \
       -v $GCP_CREDS_PATH:/.gcp_creds \
       -e GOOGLE_APPLICATION_CREDENTIALS=/.gcp_creds \

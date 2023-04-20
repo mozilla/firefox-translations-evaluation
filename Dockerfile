@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM nvidia/cuda:11.4.0-runtime-ubuntu20.04
 
 WORKDIR workspace
 

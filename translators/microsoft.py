@@ -47,3 +47,4 @@ if __name__ == '__main__':
     texts = [line.strip() for line in sys.stdin]
     translations = translate(texts)
     sys.stdout.write('\n'.join(translations))
+    sys.stdout.write('\n')

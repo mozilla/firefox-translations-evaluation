@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.4.0-runtime-ubuntu20.04
+FROM nvidia/cuda:11.4.3-runtime-ubuntu20.04
 
 WORKDIR workspace
 

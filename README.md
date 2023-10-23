@@ -1,4 +1,7 @@
 # Firefox Translations Evaluation
+
+**The code was moved to https://github.com/mozilla/firefox-translations-models/tree/main/evals for easier debugging.**
+
 Calculates BLEU and COMET scores for Firefox Translations [models](https://github.com/mozilla/firefox-translations-models)
 using [bergamot-translator](https://github.com/mozilla/bergamot-translator) and compares them to other translation systems.
 
